@@ -26,6 +26,13 @@ service firebase.storage {
       allow read, write: if request.auth != null;
     }
 
+    match /task-attachments/{subjectId}/{fileName} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.resource.size < 25 * 1024 * 1024
+        && request.resource.contentType == 'application/pdf';
+    }
+
     match /hardcopy_scans/{subjectId}/{taskId}/{fileName} {
       allow read, write: if request.auth != null;
     }

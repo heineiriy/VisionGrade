@@ -36,10 +36,10 @@ class CloudinaryService {
               'https://api.cloudinary.com/v1_1/$_cloudName/$resourceType/upload',
             ),
           )
-          ..fields['upload_preset'] = _uploadPreset
           ..files.add(
             http.MultipartFile.fromBytes('file', bytes, filename: fileName),
           );
+    _setUploadOptions(request);
 
     return _sendUpload(request, timeout);
   }
@@ -57,17 +57,13 @@ class CloudinaryService {
       );
     }
 
-    final request =
-        http.MultipartRequest(
-            'POST',
-            Uri.parse(
-              'https://api.cloudinary.com/v1_1/$_cloudName/$resourceType/upload',
-            ),
-          )
-          ..fields['upload_preset'] = _uploadPreset
-          ..files.add(
-            http.MultipartFile('file', stream, length, filename: fileName),
-          );
+    final request = http.MultipartRequest(
+      'POST',
+      Uri.parse(
+        'https://api.cloudinary.com/v1_1/$_cloudName/$resourceType/upload',
+      ),
+    )..files.add(http.MultipartFile('file', stream, length, filename: fileName));
+    _setUploadOptions(request);
 
     return _sendUpload(request, timeout);
   }
@@ -78,17 +74,19 @@ class CloudinaryService {
     String resourceType = 'auto',
     Duration? timeout,
   }) async {
-    final request =
-        http.MultipartRequest(
-            'POST',
-            Uri.parse(
-              'https://api.cloudinary.com/v1_1/$_cloudName/$resourceType/upload',
-            ),
-          )
-          ..fields['upload_preset'] = _uploadPreset
-          ..files.add(await file_upload.createMultipartFile(path, fileName));
+    final request = http.MultipartRequest(
+      'POST',
+      Uri.parse(
+        'https://api.cloudinary.com/v1_1/$_cloudName/$resourceType/upload',
+      ),
+    )..files.add(await file_upload.createMultipartFile(path, fileName));
+    _setUploadOptions(request);
 
     return _sendUpload(request, timeout);
+  }
+
+  static void _setUploadOptions(http.MultipartRequest request) {
+    request.fields['upload_preset'] = _uploadPreset;
   }
 
   static Future<String> _sendUpload(

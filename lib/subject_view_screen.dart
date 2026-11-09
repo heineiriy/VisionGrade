@@ -2264,6 +2264,10 @@ class SubjectViewScreen extends StatelessWidget {
                                                   updateTaskFields: true,
                                                 );
                                               }
+                                              if (postId == null &&
+                                                  draftIndex != null) {
+                                                DraftStore.remove(draftIndex);
+                                              }
                                               if (!context.mounted) return;
                                               navigator.pop(true);
                                               scaffoldMessenger.showSnackBar(
@@ -3083,6 +3087,9 @@ class ClassroomTab extends StatelessWidget {
                                               attachmentName: attachmentName,
                                               attachmentUrl: attachmentUrl,
                                             );
+                                            if (draftIndex != null) {
+                                              DraftStore.remove(draftIndex);
+                                            }
                                             if (!context.mounted) return;
                                             Navigator.of(context).pop();
                                             ScaffoldMessenger.of(
@@ -3619,7 +3626,7 @@ class ClassroomTab extends StatelessWidget {
                                                 final result = await FilePicker
                                                     .platform
                                                     .pickFiles(
-                                                      withReadStream: kIsWeb,
+                                                      withReadStream: false,
                                                       type: FileType.custom,
                                                       allowedExtensions:
                                                           _instructionFileExtensions,
@@ -3633,8 +3640,6 @@ class ClassroomTab extends StatelessWidget {
                                                 final filePath = kIsWeb
                                                     ? null
                                                     : file.path;
-                                                final fileStream =
-                                                    file.readStream;
                                                 final extension = file.name
                                                     .split('.')
                                                     .last
@@ -3655,7 +3660,7 @@ class ClassroomTab extends StatelessWidget {
                                                   return;
                                                 }
                                                 if (kIsWeb
-                                                    ? fileStream == null
+                                                    ? file.bytes == null
                                                     : filePath == null) {
                                                   if (context.mounted) {
                                                     ScaffoldMessenger.of(
@@ -3679,24 +3684,36 @@ class ClassroomTab extends StatelessWidget {
                                                         RegExp(r'[/\\"]'),
                                                         '_',
                                                       );
-                                                  final uploadedUrl = kIsWeb
-                                                      ? await CloudinaryService.uploadStream(
-                                                          stream: fileStream!,
-                                                          length: file.size,
-                                                          fileName: safeName,
-                                                          resourceType:
-                                                              extension == 'pdf'
-                                                              ? 'raw'
-                                                              : 'auto',
-                                                        )
-                                                      : await CloudinaryService.uploadFile(
-                                                          path: filePath!,
-                                                          fileName: safeName,
-                                                          resourceType:
-                                                              extension == 'pdf'
-                                                              ? 'raw'
-                                                              : 'auto',
-                                                        );
+                                                  final String uploadedUrl;
+                                                  if (extension == 'pdf') {
+                                                    uploadedUrl = kIsWeb
+                                                        ? await CloudinaryService.uploadBytes(
+                                                            bytes: file.bytes!,
+                                                            fileName: safeName,
+                                                            resourceType:
+                                                                'image',
+                                                          )
+                                                        : await CloudinaryService.uploadFile(
+                                                            path: filePath!,
+                                                            fileName: safeName,
+                                                            resourceType:
+                                                                'image',
+                                                          );
+                                                  } else {
+                                                    uploadedUrl = kIsWeb
+                                                        ? await CloudinaryService.uploadBytes(
+                                                            bytes: file.bytes!,
+                                                            fileName: safeName,
+                                                            resourceType:
+                                                                'auto',
+                                                          )
+                                                        : await CloudinaryService.uploadFile(
+                                                            path: filePath!,
+                                                            fileName: safeName,
+                                                            resourceType:
+                                                                'auto',
+                                                          );
+                                                  }
                                                   attachmentName = file.name;
                                                   attachmentUrl = uploadedUrl;
                                                   if (extension == 'pdf') {
