@@ -1,0 +1,143 @@
+{
+  "model_path": "C:\\Users\\Yohann Hementera\\Downloads\\color update\\New folder\\visiongrade\\backend\\grading_api\\models\\answer_grader.joblib",
+  "dataset_path": "C:\\Users\\Yohann Hementera\\Downloads\\color update\\New folder\\visiongrade\\backend\\data\\student_answers.csv",
+  "training_samples": 14042,
+  "test_samples": 2590,
+  "training_questions": 251,
+  "test_questions": 63,
+  "score_labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "accuracy": 0.5313,
+  "within_one_level_accuracy": 0.6649,
+  "mean_absolute_error": 1.1892,
+  "quadratic_weighted_kappa": 0.4945,
+  "confidence_coverage_metrics": {
+    "0.8": {
+      "coverage": 0.1903,
+      "exact_accuracy": 0.7931,
+      "within_one_level_accuracy": 0.8195,
+      "mean_absolute_error": 0.6653,
+      "quadratic_weighted_kappa": 0.7678
+    },
+    "0.9": {
+      "coverage": 0.0861,
+      "exact_accuracy": 0.8386,
+      "within_one_level_accuracy": 0.8879,
+      "mean_absolute_error": 0.4709,
+      "quadratic_weighted_kappa": 0.8243
+    }
+  },
+  "held_out_benchmarks": {
+    "scientsbank_unseen_answers": {
+      "samples": 540,
+      "exact_accuracy": 0.6389,
+      "within_one_level_accuracy": 0.6389,
+      "mean_absolute_error": 1.1722,
+      "quadratic_weighted_kappa": 0.534,
+      "credit_decision_accuracy": 0.7833,
+      "credit_decision_f1": 0.8354
+    },
+    "scientsbank_unseen_questions": {
+      "samples": 733,
+      "exact_accuracy": 0.5662,
+      "within_one_level_accuracy": 0.5662,
+      "mean_absolute_error": 1.6317,
+      "quadratic_weighted_kappa": 0.3784,
+      "credit_decision_accuracy": 0.6535,
+      "credit_decision_f1": 0.7094
+    },
+    "scientsbank_unseen_domains": {
+      "samples": 4562,
+      "exact_accuracy": 0.5587,
+      "within_one_level_accuracy": 0.5587,
+      "mean_absolute_error": 1.5557,
+      "quadratic_weighted_kappa": 0.4027,
+      "credit_decision_accuracy": 0.6868,
+      "credit_decision_f1": 0.7486
+    },
+    "beetle_unseen_answers": {
+      "samples": 439,
+      "exact_accuracy": 0.7107,
+      "within_one_level_accuracy": 0.7107,
+      "mean_absolute_error": 1.0068,
+      "quadratic_weighted_kappa": 0.5918,
+      "credit_decision_accuracy": 0.7995,
+      "credit_decision_f1": 0.8472
+    },
+    "beetle_unseen_questions": {
+      "samples": 819,
+      "exact_accuracy": 0.6227,
+      "within_one_level_accuracy": 0.6227,
+      "mean_absolute_error": 1.4017,
+      "quadratic_weighted_kappa": 0.4503,
+      "credit_decision_accuracy": 0.707,
+      "credit_decision_f1": 0.7647
+    },
+    "jorgpt_unseen_questions": {
+      "samples": 530,
+      "exact_accuracy": 0.3566,
+      "within_one_level_accuracy": 0.8019,
+      "mean_absolute_error": 0.8849,
+      "quadratic_weighted_kappa": 0.4151,
+      "credit_decision_accuracy": 0.7094,
+      "credit_decision_f1": 0.8103
+    }
+  },
+  "report": {
+    "0": {
+      "precision": 0.5523012552301255,
+      "recall": 0.7021276595744681,
+      "f1-score": 0.6182669789227166,
+      "support": 564.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 72.0
+    },
+    "2": {
+      "precision": 0.2608695652173913,
+      "recall": 0.08,
+      "f1-score": 0.12244897959183673,
+      "support": 150.0
+    },
+    "3": {
+      "precision": 0.36900958466453676,
+      "recall": 0.3869346733668342,
+      "f1-score": 0.3777596075224857,
+      "support": 597.0
+    },
+    "4": {
+      "precision": 0.5214285714285715,
+      "recall": 0.24745762711864408,
+      "f1-score": 0.335632183908046,
+      "support": 295.0
+    },
+    "5": {
+      "precision": 0.6258246936852027,
+      "recall": 0.7280701754385965,
+      "f1-score": 0.6730866700456158,
+      "support": 912.0
+    },
+    "accuracy": 0.5312741312741313,
+    "macro avg": {
+      "precision": 0.38823894503763795,
+      "recall": 0.35743168924975716,
+      "f1-score": 0.35453240333178354,
+      "support": 2590.0
+    },
+    "weighted avg": {
+      "precision": 0.5001932872546182,
+      "recall": 0.5312741312741313,
+      "f1-score": 0.5040382031183733,
+      "support": 2590.0
+    }
+  }
+}

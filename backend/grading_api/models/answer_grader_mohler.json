@@ -1,0 +1,70 @@
+{
+  "model_path": "D:\\visiongrade\\backend\\grading_api\\models\\answer_grader_mohler.joblib",
+  "dataset_path": "D:\\visiongrade\\backend\\data\\mohler_asag_open.csv",
+  "training_samples": 2273,
+  "test_samples": 483,
+  "training_questions": 64,
+  "test_questions": 17,
+  "score_labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "accuracy": 0.3913,
+  "mean_absolute_error": 0.8986,
+  "quadratic_weighted_kappa": 0.2605,
+  "report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2.0
+    },
+    "2": {
+      "precision": 0.16666666666666666,
+      "recall": 0.11666666666666667,
+      "f1-score": 0.13725490196078433,
+      "support": 60.0
+    },
+    "3": {
+      "precision": 0.12962962962962962,
+      "recall": 0.1590909090909091,
+      "f1-score": 0.14285714285714285,
+      "support": 44.0
+    },
+    "4": {
+      "precision": 0.2925170068027211,
+      "recall": 0.27044025157232704,
+      "f1-score": 0.28104575163398693,
+      "support": 159.0
+    },
+    "5": {
+      "precision": 0.5443037974683544,
+      "recall": 0.6,
+      "f1-score": 0.5707964601769911,
+      "support": 215.0
+    },
+    "accuracy": 0.391304347826087,
+    "macro avg": {
+      "precision": 0.3555195167612286,
+      "recall": 0.3576996378883171,
+      "f1-score": 0.35532570943815084,
+      "support": 483.0
+    },
+    "weighted avg": {
+      "precision": 0.3773068824866099,
+      "recall": 0.391304347826087,
+      "f1-score": 0.3828747864414459,
+      "support": 483.0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model_path": "D:\\visiongrade\\backend\\grading_api\\models\\essay_scorer.joblib",
+  "dataset_path": "D:\\visiongrade\\backend\\data\\aes2_essay_scoring.csv",
+  "training_samples": 17307,
+  "test_samples": 3462,
+  "score_range": [
+    1,
+    6
+  ],
+  "exact_accuracy": 0.5861,
+  "within_one_level_accuracy": 0.9844,
+  "mean_absolute_error": 0.4298,
+  "quadratic_weighted_kappa": 0.7528,
+  "validation": "stratified random holdout; not a prompt-disjoint benchmark",
+  "production_scope": "free-form essay scoring only; not short answers or diagrams",
+  "license": "CC BY-NC-4.0",
+  "prediction_method": "Ridge regression rounded to the nearest AES2 score level"
+}

@@ -1,0 +1,331 @@
+:root {
+  --color-burgundy-dark: #2b0e15;
+  --color-burgundy: #3d1821;
+  --color-cream-bg: #f5eee6;
+  --color-accent-blue: #0088ff;
+  --font-family: system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-family); }
+body { background: var(--color-burgundy-dark); color: #222; height: 100vh; overflow: hidden; }
+.hidden { display: none !important; }
+
+/* Login */
+#login-page { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle, #52222d, #1f080e); }
+.login-branding { font-size: 2.5rem; color: #f5ded0; font-weight: bold; margin-bottom: 1.5rem; }
+.login-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2rem; border-radius: 16px; width: 360px; color: #fff; text-align: center; }
+.avatar-circle { width: 70px; height: 70px; background: #d1a89d; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-burgundy); }
+.input-group input { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 20px; border: 1px solid #777; background: rgba(0,0,0,0.2); color: #fff; }
+.form-options { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 1rem; color: #ccc; }
+.btn-login { width: 100%; padding: 10px; border-radius: 20px; border: none; background: #000; color: #fff; cursor: pointer; }
+
+/* Layout */
+#app-layout { display: flex; height: 100vh; background: var(--color-burgundy); }
+.sidebar { width: 230px; padding: 1.5rem; color: #fff; display: flex; flex-direction: column; }
+.sidebar-logo { font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem; }
+.nav-menu { display: flex; flex-direction: column; gap: 8px; }
+.nav-item { color: #d8c2c6; text-decoration: none; padding: 10px; border-radius: 8px; display: flex; gap: 10px; align-items: center; }
+.nav-item.active, .nav-item:hover { background: rgba(255,255,255,0.15); color: #fff; }
+.sidebar-footer { margin-top: auto; }
+.logout-btn { background: none; border: none; color: #fff; cursor: pointer; display: flex; gap: 10px; }
+
+.main-content { flex: 1; background: var(--color-cream-bg); border-radius: 20px 0 0 20px; display: flex; flex-direction: column; overflow: hidden; }
+.top-header { background: var(--color-burgundy); padding: 1rem 2rem; display: flex; justify-content: space-between; color: #fff; }
+.search-box { background: #fff; border-radius: 20px; padding: 5px 15px; color: #333; display: flex; align-items: center; gap: 8px; }
+.search-box input { border: none; outline: none; }
+
+.view-container { padding: 2rem; overflow-y: auto; flex: 1; }
+.view-section { display: none; }
+.view-section.active { display: block; }
+.page-title { margin-bottom: 1.5rem; font-size: 1.8rem; }
+.view-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+
+/* Dashboard Content */
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.metric-card { background: #32131b; color: #fff; padding: 1.5rem; border-radius: 12px; }
+.chart-container-card { background: #32131b; color: #fff; padding: 1.5rem; border-radius: 12px; }
+.chart-wrapper { background: #fff; padding: 1rem; border-radius: 8px; height: 250px; }
+
+/* Tables & Modals */
+.content-card { background: #fff; padding: 1.5rem; border-radius: 12px; }
+.data-table { width: 100%; border-collapse: collapse; text-align: left; }
+.data-table th, .data-table td { padding: 10px; border-bottom: 1px solid #ddd; }
+.btn { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; }
+.btn-blue { background: var(--color-accent-blue); color: #fff; }
+.btn-outline { background: transparent; border: 1px solid #ccc; }
+
+.modal-backdrop { position: fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; }
+.modal { background: #fff; padding: 1.5rem; border-radius: 12px; width: 350px; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.8rem; margin-bottom: 4px; }
+.form-control { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.modal-actions { display: flex; gap: 10px; margin-top: 1rem; }
+
+/* VisionGRADE reference-screen refresh */
+:root {
+  --vg-rose: #a34759;
+  --vg-rose-dark: #913d4e;
+  --vg-rose-soft: #c58a93;
+  --vg-cream: #efe4d8;
+  --vg-border: #b9b9b9;
+}
+html, body { min-height: 100%; }
+body { background: #000 !important; color: #111; }
+#app { background: #fff; }
+
+/* Dashboard frame */
+#mainDashboardView { background: #fff !important; }
+#mainDashboardView > aside {
+  width: 282px !important; min-width: 282px !important; padding: 0 !important;
+  background: #3d1821 !important; color: #fff !important; border: 0 !important; box-shadow: none !important;
+}
+#mainDashboardView > aside > div:first-child { padding: 22px 26px 26px !important; }
+#mainDashboardView > aside .brand-logo { font-size: 23px !important; letter-spacing: -.5px !important; }
+#mainDashboardView > aside nav { padding: 0 18px !important; }
+#mainDashboardView > aside .nav-item {
+  min-height: 49px !important; padding: 11px 18px !important; border-radius: 12px !important;
+  gap: 12px !important; font-size: 14px !important; color: #fff !important;
+}
+#mainDashboardView > aside .nav-item i { font-size: 15px !important; }
+#mainDashboardView > aside .nav-item.active,
+#mainDashboardView > aside .nav-item.bg-white\/15 { background: rgba(255,255,255,.15) !important; color: #fff !important; }
+#mainDashboardView > aside nav > div { margin: 5px 0 !important; padding-top: 5px !important; border-color: rgba(255,255,255,.12) !important; }
+#mainDashboardView > aside #nav-announcements { padding-left: 18px !important; min-height: 49px !important; font-size: 14px !important; }
+#mainDashboardView > aside > div:last-child { padding: 16px 18px !important; border-color: rgba(255,255,255,.12) !important; }
+#mainDashboardView > aside > div:last-child button { padding: 10px 18px !important; font-size: 14px !important; }
+
+#mainDashboardView > div { min-width: 0; background: var(--vg-cream); }
+#mainDashboardView header {
+  margin: 0;
+  min-height: 68px !important; padding: 10px 32px !important;
+  background: var(--vg-cream) !important; color: #333 !important; border: 0 !important;
+  border-radius: 0 !important; box-shadow: none !important;
+}
+#mainDashboardView header input { border-radius: 9999px !important; height: 30px !important; background: #fff !important; font-size: 11px !important; }
+#mainDashboardView header button { color: #333 !important; border-color: #d9cec5 !important; }
+#mainDashboardView header #headerAdminAvatarFrame {
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  clip-path: circle(50% at 50% 50%) !important;
+}
+#mainDashboardView header #headerAdminAvatar {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  clip-path: circle(50% at 50% 50%) !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+#mainDashboardView .admin-avatar-frame {
+  position: relative;
+  flex: none;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#mainDashboardView .admin-avatar-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+#mainDashboardView header .dashboard-notifications {
+  width: 28px; height: 32px; border: 0 !important; border-radius: 6px !important;
+  background: transparent; color: #333; font-size: 14px; cursor: pointer;
+}
+#mainDashboardView header .notification-dot {
+  position: absolute; top: 5px; right: 5px; width: 6px; height: 6px;
+  border: 1px solid var(--vg-cream); border-radius: 50%; background: #c94c58;
+}
+#mainDashboardView header .dashboard-language {
+  display: flex; align-items: center; gap: 5px; color: #333; font-size: 11px; white-space: nowrap;
+}
+#mainDashboardView header .dashboard-language > span:first-child { font-size: 14px; }
+#mainDashboardView header .dashboard-language i { font-size: 8px; color: #666; }
+#mainDashboardView main {
+  background: #fff !important;
+  border-radius: 18px 18px 0 0 !important;
+  padding: 24px 36px !important;
+}
+#mainDashboardView main > div:first-child { margin-bottom: 15px !important; }
+#viewTitle { font-size: 28px !important; font-weight: 700 !important; letter-spacing: -.5px !important; }
+#mainDashboardView main > div:first-child > div > div { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; font-size: 10px !important; }
+
+/* White statistic cards and activity chart */
+#tab-home > div:first-child { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 12px !important; max-width: none; }
+#tab-home > div:first-child > div { min-width: 0; min-height: 136px; background: #f8f8f8 !important; color: #111 !important; border: 1px solid #aaa !important; border-radius: 9px !important; box-shadow: none !important; padding: 22px !important; }
+#tab-home > div:first-child p:first-child { color: #222 !important; font-size: 14px !important; }
+#tab-home > div:first-child h3 { color: #111 !important; font-size: 28px !important; }
+#tab-home > div:first-child > div > div:last-child { color: #c08e8c !important; }
+#tab-home .pending-grade-card { overflow: visible; }
+#tab-home .pending-grade-card:hover,
+#tab-home .pending-grade-card:focus,
+#tab-home .pending-grade-card:focus-within { z-index: 40; }
+#tab-home #pendingGradesTooltip { display: none !important; }
+#tab-home .pending-grade-card:hover #pendingGradesTooltip,
+#tab-home .pending-grade-card:focus #pendingGradesTooltip,
+#tab-home .pending-grade-card:focus-within #pendingGradesTooltip { display: block !important; }
+#tab-home #pendingGradesTooltip { width: 320px; margin-top: 8px; color: #333 !important; }
+#tab-home > div:last-child { background: #f8f8f8 !important; color: #111 !important; border: 1px solid #aaa !important; border-radius: 10px !important; box-shadow: none !important; padding: 18px !important; margin-top: 20px !important; }
+#tab-home > div:last-child h3 { display: block !important; color: #222 !important; font-size: 19px !important; }
+#tab-home > div:last-child > div:first-child > div { display: block !important; }
+#tab-home > div:last-child > div:last-child { height: 320px !important; padding: 12px !important; border: 1px solid #aaa !important; border-radius: 6px !important; }
+#tab-home .activity-chart-filters { position: relative; color: #333; font-size: 12px; }
+#tab-home .activity-chart-filters > summary {
+  padding: 8px 12px; border: 1px solid #d1d5db; border-radius: 7px;
+  background: #fff; cursor: pointer; list-style: none; white-space: nowrap;
+}
+#tab-home .activity-chart-filters > summary::-webkit-details-marker { display: none; }
+#tab-home .activity-chart-filters > summary::after { content: "v"; margin-left: 10px; }
+#tab-home .activity-chart-filters[open] > summary::after { content: "^"; }
+#tab-home .activity-chart-filter-menu {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 50;
+  display: grid; min-width: 220px; gap: 10px; padding: 12px;
+  border: 1px solid #d1d5db; border-radius: 8px; background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+}
+#tab-home .activity-chart-filter-menu label { display: grid; gap: 4px; }
+#tab-home .activity-chart-filter-menu select {
+  width: 100%; padding: 7px 8px; border: 1px solid #d1d5db;
+  border-radius: 5px; background: #fff; color: #222;
+}
+#academicActivitiesChart { width: 100% !important; height: 290px !important; }
+
+/* Table pages use the screenshot's light-grey panel, small labels and green status chips */
+.tab-content > .bg-white {
+  border: 1px solid #aaa !important; border-radius: 9px !important; box-shadow: none !important;
+  padding: 18px !important; background: #f8f8f8 !important;
+}
+.tab-content h3 { color: #111 !important; font-size: 16px !important; }
+.tab-content p.text-xs { color: #666 !important; }
+.tab-content table thead { background: #e7e7e7 !important; }
+.tab-content table th { color: #333 !important; font-size: 10px !important; text-transform: none !important; letter-spacing: 0 !important; padding: 8px 10px !important; }
+.tab-content table td { font-size: 11px !important; padding: 8px 10px !important; }
+#subjectsTable th:nth-child(4),
+#subjectsTable td:nth-child(4) { min-width: 150px; padding-right: 22px !important; padding-left: 22px !important; }
+#subjectsTable th:nth-child(5),
+#subjectsTable td:nth-child(5) { min-width: 170px; padding-right: 22px !important; padding-left: 22px !important; }
+#subjectsTable th:nth-child(6),
+#subjectsTable td:nth-child(6) { min-width: 140px; padding-right: 22px !important; padding-left: 22px !important; }
+.tab-content button.bg-brandBlue { background: #0787ed !important; border-radius: 3px !important; }
+#tab-reports, #tab-announcements { min-height: 100%; }
+#tab-students > .bg-white, #tab-instructors > .bg-white, #tab-subjects > .bg-white,
+#tab-reports > .bg-white, #tab-announcements > .bg-white { min-height: calc(100vh - 190px) !important; }
+#tab-reports .grid > div { background: #fff !important; }
+#tab-settings > div { background: #f7f1e9 !important; border-radius: 8px !important; }
+#tab-settings input, #tab-settings select { border-radius: 2px !important; background: #dedede !important; }
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  #mainDashboardView > aside { width: 250px !important; min-width: 250px !important; }
+  #mainDashboardView header { padding-right: 18px !important; padding-left: 18px !important; }
+  #mainDashboardView main { padding-right: 22px !important; padding-left: 22px !important; }
+}
+
+@media (max-width: 760px) {
+  #mainDashboardView { overflow-y: auto !important; }
+  #mainDashboardView > aside { width: 100% !important; min-width: 0 !important; }
+  #mainDashboardView > aside nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #mainDashboardView > aside > div:last-child { display: none; }
+  #mainDashboardView header { padding: 10px 14px !important; }
+  #mainDashboardView main { padding: 16px !important; }
+  #tab-home > div:first-child { grid-template-columns: 1fr !important; }
+  #tab-home > div:last-child > div:last-child { height: 280px !important; }
+  #academicActivitiesChart { height: 250px !important; }
+  #mainDashboardView header .dashboard-language { display: none; }
+  #mainDashboardView header .dashboard-notifications { display: none; }
+  #tab-students > .bg-white, #tab-instructors > .bg-white, #tab-subjects > .bg-white,
+  #tab-reports > .bg-white, #tab-announcements > .bg-white { min-height: 0 !important; }
+}
+
+/* Admin login layout */
+#loginView {
+  background: #a34759 !important;
+  padding: 28px 20px !important;
+  gap: 0 !important;
+  overflow-y: auto;
+}
+#loginView > div:first-child { margin: 0 0 24px !important; }
+#loginView .brand-logo { font-size: 46px !important; letter-spacing: -1px !important; }
+#loginCard {
+  box-sizing: border-box;
+  flex: none;
+  width: 520px !important;
+  max-width: none !important;
+  min-height: 0;
+  padding: 40px 52px !important;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, .2) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+#loginCard > div:first-child {
+  width: 88px !important;
+  height: 88px !important;
+  margin: 0 0 20px !important;
+  border: 0 !important;
+  background: #d8b9b4 !important;
+  color: #382f2d !important;
+}
+#loginCard .login-user-icon { width: 58px; height: 70px; stroke: #382f2d; stroke-width: 1.5; }
+#loginCard h2 { margin: 0 0 24px !important; font-size: 30px !important; letter-spacing: 0 !important; }
+#loginCard form {
+  display: flex;
+  width: 100%;
+  max-width: 416px;
+  flex-direction: column;
+  gap: 14px !important;
+}
+#loginCard form > div input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 54px !important;
+  padding: 0 16px !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  background: #fff !important;
+  color: #333 !important;
+  font-size: 16px !important;
+}
+#loginCard form > div input::placeholder { color: #777 !important; }
+#loginCard .login-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  color: #fff;
+  font-size: 13px;
+}
+#loginCard .login-options label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+#loginCard .login-options input { width: 9px; height: 9px; margin: 0; accent-color: #39272a; }
+#loginCard .login-forgot-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+#loginCard .login-forgot-link:hover { text-decoration: underline; }
+#loginCard #loginError { font-size: 14px !important; }
+#loginCard button[type="submit"] {
+  align-self: stretch;
+  width: 100%;
+  margin-top: 4px !important;
+  padding: 14px !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  background: #39272a !important;
+  font-size: 16px !important;
+}

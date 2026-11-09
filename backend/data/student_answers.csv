@@ -1,0 +1,28 @@
+question_id,student_answer,expected_answer,score
+q1,"Plants make food using sunlight","Photosynthesis is the process plants use to make food using sunlight",5
+q1,"Plants use sunlight to make food","Photosynthesis is the process plants use to make food using sunlight",5
+q1,"The plant uses light to make its own food","Photosynthesis is the process plants use to make food using sunlight",4
+q1,"Sunlight helps plants grow","Photosynthesis is the process plants use to make food using sunlight",3
+q1,"Plants need water and sunlight","Photosynthesis is the process plants use to make food using sunlight",2
+q1,"Plants are green","Photosynthesis is the process plants use to make food using sunlight",0
+q2,"The heart pumps blood around the body","The heart pumps blood around the body",5
+q2,"The heart moves blood through the body","The heart pumps blood around the body",4
+q2,"It pumps blood to the body","The heart pumps blood around the body",3
+q2,"Blood moves in the body","The heart pumps blood around the body",2
+q2,"The brain controls the body","The heart pumps blood around the body",0
+q3,"Evaporation condensation and precipitation are part of the water cycle","The water cycle includes evaporation, condensation and precipitation",5
+q3,"Water rises into the air and falls as rain","The water cycle includes evaporation, condensation and precipitation",4
+q3,"Water goes into the air then falls as rain","The water cycle includes evaporation, condensation and precipitation",4
+q3,"Water moves through clouds and rain","The water cycle includes evaporation, condensation and precipitation",3
+q3,"There is rain and clouds","The water cycle includes evaporation, condensation and precipitation",2
+q3,"The sky is blue","The water cycle includes evaporation, condensation and precipitation",0
+q4,"Mitochondria are the powerhouse of the cell","Mitochondria are the powerhouse of the cell",5
+q4,"Mitochondria make energy for the cell","Mitochondria are the powerhouse of the cell",4
+q4,"They provide energy for cells","Mitochondria are the powerhouse of the cell",3
+q4,"They are found in the cell","Mitochondria are the powerhouse of the cell",2
+q4,"The nucleus controls the cell","Mitochondria are the powerhouse of the cell",0
+q5,"The process is called photosynthesis and uses sunlight","Photosynthesis is the process where plants use sunlight to make glucose",5
+q5,"Plants use light to make glucose","Photosynthesis is the process where plants use sunlight to make glucose",4
+q5,"Plants make food using light","Photosynthesis is the process where plants use sunlight to make glucose",3
+q5,"Plants use sunlight to survive","Photosynthesis is the process where plants use sunlight to make glucose",2
+q5,"Plants grow in soil","Photosynthesis is the process where plants use sunlight to make glucose",0

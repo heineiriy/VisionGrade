@@ -1,0 +1,541 @@
+question_id,student_answer,expected_answer,score
+scientsbank:bdebef2dc6b4b202,We evaporated the water.,"The water was evaporated, leaving the salt.",5
+scientsbank:bdebef2dc6b4b202,We poured just the water into another thing and let the water evaporate.,"The water was evaporated, leaving the salt.",5
+scientsbank:bdebef2dc6b4b202,We kept the salt in the vial and put the water in the Petri dish.,"The water was evaporated, leaving the salt.",0
+scientsbank:bdebef2dc6b4b202,Get all the water out.,"The water was evaporated, leaving the salt.",3
+scientsbank:24965d454535422f,Well because we broke them apart.,The crystals were square with Xs on the surface.,0
+scientsbank:24965d454535422f,By looking very closely at it.,The crystals were square with Xs on the surface.,0
+scientsbank:24965d454535422f,We know the crystals were salt because we identified them.,The crystals were square with Xs on the surface.,0
+scientsbank:24965d454535422f,Because I look at the chart.,The crystals were square with Xs on the surface.,0
+scientsbank:be7b66456b10bc9a,Topaz is most like mineral Z because Topaz cannot be scratched by anything and mineral Z can only be scratched by one thing.,Topaz would be the hardest of the 4 minerals because none of the tools could scratch topaz and at least one tool could scratch each of the other minerals.,5
+scientsbank:be7b66456b10bc9a,"Topaz is harder than X, Y, and Z. Because it could not get scratched by the tools.",Topaz would be the hardest of the 4 minerals because none of the tools could scratch topaz and at least one tool could scratch each of the other minerals.,5
+scientsbank:be7b66456b10bc9a,"Topaz is harder than X, Y, Z.",Topaz would be the hardest of the 4 minerals because none of the tools could scratch topaz and at least one tool could scratch each of the other minerals.,3
+scientsbank:be7b66456b10bc9a,"Topaz would be the hardest because none of the tools could scratch X, Y, Z.",Topaz would be the hardest of the 4 minerals because none of the tools could scratch topaz and at least one tool could scratch each of the other minerals.,0
+scientsbank:4ed5850329eafb1a,She can rub them against each other.,Rub the minerals together and see which one scratches the other.,3
+scientsbank:4ed5850329eafb1a,Rubbing them together.,Rub the minerals together and see which one scratches the other.,3
+scientsbank:4ed5850329eafb1a,Rub one of the minerals against the other one and see if it has a mark or a scratch.,Rub the minerals together and see which one scratches the other.,5
+scientsbank:4ed5850329eafb1a,Rub them together and see if one scratches the other!,Rub the minerals together and see which one scratches the other.,5
+scientsbank:392e378c9fff5c40,The one that starts to gather.,"The harder mineral will leave a scratch on the less hard mineral. If the black mineral is harder, the brown mineral will have a scratch.",0
+scientsbank:392e378c9fff5c40,That it stay the scratch.,"The harder mineral will leave a scratch on the less hard mineral. If the black mineral is harder, the brown mineral will have a scratch.",3
+scientsbank:392e378c9fff5c40,Which one leaves a scratch.,"The harder mineral will leave a scratch on the less hard mineral. If the black mineral is harder, the brown mineral will have a scratch.",3
+scientsbank:392e378c9fff5c40,The harder one leave a scratch on the less scratch mineral.,"The harder mineral will leave a scratch on the less hard mineral. If the black mineral is harder, the brown mineral will have a scratch.",5
+scientsbank:bb01a027057665f7,He would put vinegar on the rock get the strange then is quiet it and see if there is calcite.,"Put acid on a rock. If the acid fizzes, Phil would know that the rock has calcite.",3
+scientsbank:bb01a027057665f7,Move.,"Put acid on a rock. If the acid fizzes, Phil would know that the rock has calcite.",0
+scientsbank:bb01a027057665f7,Cube to in test and look for crystals.,"Put acid on a rock. If the acid fizzes, Phil would know that the rock has calcite.",0
+scientsbank:bb01a027057665f7,If it fizzles it has calcite.,"Put acid on a rock. If the acid fizzes, Phil would know that the rock has calcite.",3
+scientsbank:4be6e19a32ad50da,Calcite crystals are flaky and salt crystals were not flaky. They are square instead.,The crystals have different shapes. Salt crystals are square with little Xs. The calcite crystals are shaped like needles (long and skinny).,3
+scientsbank:4be6e19a32ad50da,Calcite crystals look different than salt crystals.,The crystals have different shapes. Salt crystals are square with little Xs. The calcite crystals are shaped like needles (long and skinny).,3
+scientsbank:4be6e19a32ad50da,The mock rock is smelt like flour but the crystals did not.,The crystals have different shapes. Salt crystals are square with little Xs. The calcite crystals are shaped like needles (long and skinny).,0
+scientsbank:4be6e19a32ad50da,Crystals are already there so calcite will leave different crystals behind.,The crystals have different shapes. Salt crystals are square with little Xs. The calcite crystals are shaped like needles (long and skinny).,0
+scientsbank:1d35968884e358a1,The pictures look the same.,The crystals are the same shape as the alum crystals.,3
+scientsbank:1d35968884e358a1,Because the minerals on the top look just the same as alum on the bottom.,The crystals are the same shape as the alum crystals.,3
+scientsbank:1d35968884e358a1,"I was seen the Epsom salt rock, alum rock. And I see it is the sodium the sulfate rock and I said yes.",The crystals are the same shape as the alum crystals.,0
+scientsbank:1d35968884e358a1,Because it has some shapes in it.,The crystals are the same shape as the alum crystals.,3
+scientsbank:caceed5606927441,Salt crystals are small and white.,The salt crystals are squares with Xs on top.,0
+scientsbank:caceed5606927441,They are square with Xs in the middle.,The salt crystals are squares with Xs on top.,5
+scientsbank:caceed5606927441,The salt crystal evaporates when water gets by them.,The salt crystals are squares with Xs on top.,0
+scientsbank:caceed5606927441,The salt crystals will look like small squares with Xs.,The salt crystals are squares with Xs on top.,5
+scientsbank:bd34c38edaa77c4d,If you see bubbles coming from the rock it contains calcite.,Many tiny bubbles will rise from the calcite when the calcite contacts the cold acid.,5
+scientsbank:bd34c38edaa77c4d,You would observe if the rock or mineral bubbles when you put it in the vinegar.,Many tiny bubbles will rise from the calcite when the calcite contacts the cold acid.,5
+scientsbank:bd34c38edaa77c4d,You would observe if it was fizzing because calcite has a strong reaction to vinegar.,Many tiny bubbles will rise from the calcite when the calcite contacts the cold acid.,5
+scientsbank:bd34c38edaa77c4d,It would fizzles.,Many tiny bubbles will rise from the calcite when the calcite contacts the cold acid.,5
+scientsbank:b4650b66d646f568,"You could scratch the penny against the nickel and the nickel against the penny. If one scratches the other, it is harder.",The harder coin will scratch the other.,5
+scientsbank:b4650b66d646f568,Find the more harder metal and the rock and penny is harder and see it want is harder.,The harder coin will scratch the other.,0
+scientsbank:b4650b66d646f568,If she can scratch a penny with her fingernail the nickel is harder.,The harder coin will scratch the other.,0
+scientsbank:b4650b66d646f568,A nickel is harder than a penny and a penny is lighter at water.,The harder coin will scratch the other.,0
+scientsbank:50d36aacdc8068b4,Because it will not get dry.,The sand particles are larger and settle first. The flour particles are smaller and therefore settle more slowly.,0
+scientsbank:50d36aacdc8068b4,Because one is heavy and one is not.,The sand particles are larger and settle first. The flour particles are smaller and therefore settle more slowly.,3
+scientsbank:50d36aacdc8068b4,Because sand and flour do not mix very well.,The sand particles are larger and settle first. The flour particles are smaller and therefore settle more slowly.,0
+scientsbank:50d36aacdc8068b4,The rock is tough.,The sand particles are larger and settle first. The flour particles are smaller and therefore settle more slowly.,0
+scientsbank:f5fffda7368e4718,1. Get one ounce of walnuts and peanuts. 2. Smear each one on a circle of the same size on absorbent paper. 3. Put it flat on a tray. 4. Wait a couple of days. 5. Measure and take results.,Measure out equal masses of walnuts and peanuts. Smash the samples uniformly in the same size area on brown paper. Wait the same time for each sample.,5
+scientsbank:f5fffda7368e4718,1. Anna can use a brown paper bag. 2. Spread the food on the brown paper bag. 3. Wait 2 days. 4. See which one has the most grease spots.,Measure out equal masses of walnuts and peanuts. Smash the samples uniformly in the same size area on brown paper. Wait the same time for each sample.,3
+scientsbank:f5fffda7368e4718,"First weigh the walnuts and peanuts to one gram amount. Then, spread the one gram walnuts and peanuts on the same brown paper. Then wait 2 days.",Measure out equal masses of walnuts and peanuts. Smash the samples uniformly in the same size area on brown paper. Wait the same time for each sample.,5
+scientsbank:f5fffda7368e4718,"First you have to have these materials, 2 brown paper indicators, weigh machine, 2 cups, one gram block, spoon and stick. You put 2 cup on each side of the weigh machine with brown paper on each of the cups. Then you smear the food sample on the brown indicator then wait for 2 day.",Measure out equal masses of walnuts and peanuts. Smash the samples uniformly in the same size area on brown paper. Wait the same time for each sample.,5
+scientsbank:8bc7516f03792fc7,By looking at the scale and seeing which one is lower.,Anna should compare the size of the grease spots. The sample with the larger grease spot has more fat.,0
+scientsbank:8bc7516f03792fc7,A grease spot will appear whatever grease spot is bigger that food has more fat.,Anna should compare the size of the grease spots. The sample with the larger grease spot has more fat.,5
+scientsbank:8bc7516f03792fc7,The oil or fat will have spread on the paper.,Anna should compare the size of the grease spots. The sample with the larger grease spot has more fat.,3
+scientsbank:8bc7516f03792fc7,And she can help you to measure the cup.,Anna should compare the size of the grease spots. The sample with the larger grease spot has more fat.,0
+scientsbank:f58fbc3cc6d9853a,Susan will know which food contains the most sugar by comparing the amount of carbon dioxide each food sample has.,Susan should compare the amount of gas in each bag. The bag with the most gas contains the food with the most sugar.,3
+scientsbank:f58fbc3cc6d9853a,The bag will be full of carbohydrate and it will be fat.,Susan should compare the amount of gas in each bag. The bag with the most gas contains the food with the most sugar.,3
+scientsbank:f58fbc3cc6d9853a,She will know by measuring it also whichever has more bubbles.,Susan should compare the amount of gas in each bag. The bag with the most gas contains the food with the most sugar.,5
+scientsbank:f58fbc3cc6d9853a,Whichever one has the highest volume.,Susan should compare the amount of gas in each bag. The bag with the most gas contains the food with the most sugar.,3
+scientsbank:e592c19cee08dab9,No because if they were pure sugar it would be 200 milliliters not 150 milliliters.,"No, Fruity cream cookies are not pure sugar. The cookies did not produce as much gas as was produced by the pure sugar.",5
+scientsbank:e592c19cee08dab9,"No, because the Fruity Cream cookies is at 150 milliliters.","No, Fruity cream cookies are not pure sugar. The cookies did not produce as much gas as was produced by the pure sugar.",3
+scientsbank:e592c19cee08dab9,No because it show it on the picture plus it has less sugar on it.,"No, Fruity cream cookies are not pure sugar. The cookies did not produce as much gas as was produced by the pure sugar.",3
+scientsbank:e592c19cee08dab9,"Yes, it contain several grams of sugar.","No, Fruity cream cookies are not pure sugar. The cookies did not produce as much gas as was produced by the pure sugar.",0
+scientsbank:989b1a1cb5608f43,To see if Fruity Cream cookies are full of sugar like her father said.,Diva needs to know how much gas pure sugar produced in order to decide whether the cookies are pure sugar. Diva needs to make a controlled experiment.,0
+scientsbank:989b1a1cb5608f43,"Yeast, warm water, and some containers.",Diva needs to know how much gas pure sugar produced in order to decide whether the cookies are pure sugar. Diva needs to make a controlled experiment.,0
+scientsbank:989b1a1cb5608f43,To compare them and see how much less sugar Fruity Cream cookies.,Diva needs to know how much gas pure sugar produced in order to decide whether the cookies are pure sugar. Diva needs to make a controlled experiment.,3
+scientsbank:989b1a1cb5608f43,Because her dad told her that is pure sugar.,Diva needs to know how much gas pure sugar produced in order to decide whether the cookies are pure sugar. Diva needs to make a controlled experiment.,0
+scientsbank:81d1cba6da7d7864,She is doing a sugar test.,The food contains sugar.,5
+scientsbank:81d1cba6da7d7864,The chemical reaction indicates that yeast has acid.,The food contains sugar.,0
+scientsbank:81d1cba6da7d7864,That this food has acid and or sugar.,The food contains sugar.,5
+scientsbank:81d1cba6da7d7864,The chemical reaction creates acid.,The food contains sugar.,0
+scientsbank:5ce43c11d7e151c5,What amount of sugar and acid that is in the food.,"If gas (carbon dioxide) is produced, the food contains acid. If no gas is produced, the food does not contain acid.",0
+scientsbank:5ce43c11d7e151c5,If the syringe goes up and if it bubbles that means it has acid.,"If gas (carbon dioxide) is produced, the food contains acid. If no gas is produced, the food does not contain acid.",5
+scientsbank:5ce43c11d7e151c5,Well if it has a lot of volume it has sugar and if the syringe goes all the way up it has acid.,"If gas (carbon dioxide) is produced, the food contains acid. If no gas is produced, the food does not contain acid.",5
+scientsbank:5ce43c11d7e151c5,That the food contains acid and sugar.,"If gas (carbon dioxide) is produced, the food contains acid. If no gas is produced, the food does not contain acid.",3
+scientsbank:a4f6e7e882f02556,Overly Orange contains a higher concentration of vitamin C. The evidence is that it had the least number of drops to turn clear.,Overly Orange takes fewer drops to change the color of indophenol so Overly Orange has a higher concentration of vitamin C.,5
+scientsbank:a4f6e7e882f02556,It took less juice to make the indophenol turn clear.,Overly Orange takes fewer drops to change the color of indophenol so Overly Orange has a higher concentration of vitamin C.,3
+scientsbank:a4f6e7e882f02556,"Yes, because if is changes color it has more vitamin C.",Overly Orange takes fewer drops to change the color of indophenol so Overly Orange has a higher concentration of vitamin C.,3
+scientsbank:a4f6e7e882f02556,"Overly Orange has more vitamin C because it took less drops, more drops means less vitamin C. Less drop mean more vitamin C.",Overly Orange takes fewer drops to change the color of indophenol so Overly Orange has a higher concentration of vitamin C.,5
+scientsbank:489568cb8e46f809,Because it had no vitamin C.,Fruitsnap contains little or no vitamin C so Fruitsnap does not change the color of the indophenol.,5
+scientsbank:489568cb8e46f809,The indophenol did not change color because it does not have vitamin C in it.,Fruitsnap contains little or no vitamin C so Fruitsnap does not change the color of the indophenol.,5
+scientsbank:489568cb8e46f809,There probably was not any vitamin C in it.,Fruitsnap contains little or no vitamin C so Fruitsnap does not change the color of the indophenol.,5
+scientsbank:489568cb8e46f809,The reason it did not change color is because there is no vitamin C in the Fruitsnap.,Fruitsnap contains little or no vitamin C so Fruitsnap does not change the color of the indophenol.,5
+scientsbank:5743bd312a0dc2db,They are both loops.,Both finger patterns are loops.,5
+scientsbank:5743bd312a0dc2db,They are loops.,Both finger patterns are loops.,5
+scientsbank:5743bd312a0dc2db,They both have a whorl.,Both finger patterns are loops.,0
+scientsbank:5743bd312a0dc2db,They are both arches.,Both finger patterns are loops.,0
+scientsbank:5ad3c17cf6ac6fb3,They are rough. A has bumpy dots. B has bumpy dots and lines.,Fabric A is smoother and has a finer texture. Fabric B is rougher and has a coarser texture.,0
+scientsbank:5ad3c17cf6ac6fb3,A is like lines and B has squares and lines.,Fabric A is smoother and has a finer texture. Fabric B is rougher and has a coarser texture.,0
+scientsbank:5ad3c17cf6ac6fb3,B looks like it is bumpy and A looks like is smooth.,Fabric A is smoother and has a finer texture. Fabric B is rougher and has a coarser texture.,5
+scientsbank:5ad3c17cf6ac6fb3,A is probably smoother than B.,Fabric A is smoother and has a finer texture. Fabric B is rougher and has a coarser texture.,5
+scientsbank:106e31ae7404058f,The loop are go different.,The loops begin at opposite sides of the print.,3
+scientsbank:106e31ae7404058f,On his A arch.,The loops begin at opposite sides of the print.,0
+scientsbank:106e31ae7404058f,One is lighter than the other.,The loops begin at opposite sides of the print.,0
+scientsbank:106e31ae7404058f,They are going different directions.,The loops begin at opposite sides of the print.,3
+scientsbank:2031e3cafbc7b984,Look really carefully at the paper and see if it is the same.,Compare prints to see if the patterns are the same.,5
+scientsbank:2031e3cafbc7b984,Because there is small dogs and huge dogs.,Compare prints to see if the patterns are the same.,0
+scientsbank:2031e3cafbc7b984,"Because they may be arches, whorl and loop.",Compare prints to see if the patterns are the same.,0
+scientsbank:2031e3cafbc7b984,"The figure, texture, shape, and how it looks.",Compare prints to see if the patterns are the same.,3
+scientsbank:cd5064048e2d4894,By looking at the vinegar.,Seeing multiple colors would show that vinegar can separate the permanent ink.,0
+scientsbank:cd5064048e2d4894,She would use filter paper and dip it into water.,Seeing multiple colors would show that vinegar can separate the permanent ink.,0
+scientsbank:cd5064048e2d4894,By looking at the pigment and chromatography.,Seeing multiple colors would show that vinegar can separate the permanent ink.,3
+scientsbank:cd5064048e2d4894,We try it and it work.,Seeing multiple colors would show that vinegar can separate the permanent ink.,0
+scientsbank:3def0bb96cba9e90,Is flat but when you write your letters backwards.,The mirror would complete the image of the object and make the object appear whole.,0
+scientsbank:3def0bb96cba9e90,You would see the whole shape.,The mirror would complete the image of the object and make the object appear whole.,5
+scientsbank:3def0bb96cba9e90,Half of the flat object.,The mirror would complete the image of the object and make the object appear whole.,0
+scientsbank:3def0bb96cba9e90,What the mirror is reflecting on the flat object.,The mirror would complete the image of the object and make the object appear whole.,0
+scientsbank:6a156cacf4f4777d,"2. Then put the tape on the side, then trace your neighborhood.",2: Trace the features from the photograph onto the overlay grid. 4: Transfer the features to the matching squares on the smaller grid in your notebook.,3
+scientsbank:6a156cacf4f4777d,2. Make a model then copy it. 4. Trace it then make the closer together.,2: Trace the features from the photograph onto the overlay grid. 4: Transfer the features to the matching squares on the smaller grid in your notebook.,0
+scientsbank:6a156cacf4f4777d,2. Trace the things on the overlay grid. 4. Draw all the things that was on the overlay grid onto the map.,2: Trace the features from the photograph onto the overlay grid. 4: Transfer the features to the matching squares on the smaller grid in your notebook.,3
+scientsbank:6a156cacf4f4777d,"2. Trace the homes, train tracks, and trees.",2: Trace the features from the photograph onto the overlay grid. 4: Transfer the features to the matching squares on the smaller grid in your notebook.,3
+scientsbank:ef9e8aa7011c006f,Water pushes sand to make a slope.,Earth materials erode and are carried by flowing water (a river). The earth materials form a delta when the materials are dropped off or deposited when the water stops flowing (at the mouth of a river).,3
+scientsbank:ef9e8aa7011c006f,By erosion.,Earth materials erode and are carried by flowing water (a river). The earth materials form a delta when the materials are dropped off or deposited when the water stops flowing (at the mouth of a river).,3
+scientsbank:ef9e8aa7011c006f,Deltas are formed by erosion and deposition.,Earth materials erode and are carried by flowing water (a river). The earth materials form a delta when the materials are dropped off or deposited when the water stops flowing (at the mouth of a river).,3
+scientsbank:ef9e8aa7011c006f,Deltas form by the water wearing down the mouth and dragging it down.,Earth materials erode and are carried by flowing water (a river). The earth materials form a delta when the materials are dropped off or deposited when the water stops flowing (at the mouth of a river).,3
+scientsbank:fbe7ccfc20d3a9d6,"Because it is much lighter than sand and pebbles, so it can travel farther.","The clay particles are lighter or smaller and are therefore carried farther by the water, so the clay particles end up the greatest distance away from the mouth of the river.",5
+scientsbank:fbe7ccfc20d3a9d6,The clay is deposited in the lake because it is lightest and is like a basin.,"The clay particles are lighter or smaller and are therefore carried farther by the water, so the clay particles end up the greatest distance away from the mouth of the river.",5
+scientsbank:fbe7ccfc20d3a9d6,It is deposited where I indicated because the clay is the second heaviest so the river could not move it as far as the sand easily.,"The clay particles are lighter or smaller and are therefore carried farther by the water, so the clay particles end up the greatest distance away from the mouth of the river.",0
+scientsbank:fbe7ccfc20d3a9d6,The clay is the farthest from the mouth of the river because it is the lightest and smallest.,"The clay particles are lighter or smaller and are therefore carried farther by the water, so the clay particles end up the greatest distance away from the mouth of the river.",5
+scientsbank:2db16f07b3259a4b,I think the water flows that direction because happy valley is where it empties into.,Water will always flow downhill (mountain to valley).,0
+scientsbank:2db16f07b3259a4b,"I think the river flows in that direction because the pathway, the river flows toward happy valley.",Water will always flow downhill (mountain to valley).,0
+scientsbank:2db16f07b3259a4b,Because somewhere in that mountain there is a water source and the water flows down the mountain.,Water will always flow downhill (mountain to valley).,5
+scientsbank:2db16f07b3259a4b,I believe it flows in that direction because the earth water comes out of cracks in mountain a flow down the mountain and into river.,Water will always flow downhill (mountain to valley).,5
+scientsbank:a7d584b496a2b0c8,A flooded stream would run faster and the height of the river would be higher.,During a flood there is more water in the creek and the water flows faster.,5
+scientsbank:a7d584b496a2b0c8,The water flows a lot faster.,During a flood there is more water in the creek and the water flows faster.,5
+scientsbank:a7d584b496a2b0c8,The water flow would change because if it floods it would overflow start a new and wider channel.,During a flood there is more water in the creek and the water flows faster.,0
+scientsbank:a7d584b496a2b0c8,The water flows slow in a creek during a flood compared to a normal water flow.,During a flood there is more water in the creek and the water flows faster.,0
+scientsbank:943e14ac76482a9a,What time the things happen.,You can see how much time is taken for the earth materials to move.,3
+scientsbank:943e14ac76482a9a,It tells you when things happened.,You can see how much time is taken for the earth materials to move.,3
+scientsbank:943e14ac76482a9a,Water flows faster.,You can see how much time is taken for the earth materials to move.,0
+scientsbank:943e14ac76482a9a,"The times, as well as things that have to do with the time, and observations you cannot draw.",You can see how much time is taken for the earth materials to move.,3
+scientsbank:4f824f9ad52823ae,It tells you the elevation so you hike the easiest way.,She recommended the topographic map because the map shows the elevations along the trail. Pam would know where the trail was the steepest.,5
+scientsbank:4f824f9ad52823ae,Because you where how big or 4.,She recommended the topographic map because the map shows the elevations along the trail. Pam would know where the trail was the steepest.,0
+scientsbank:4f824f9ad52823ae,"She would recommend it because when they take the hike, they will know how steep the mountain is.",She recommended the topographic map because the map shows the elevations along the trail. Pam would know where the trail was the steepest.,5
+scientsbank:4f824f9ad52823ae,I think she would recommend this because a topographic map tells you more information for where you need to go.,She recommended the topographic map because the map shows the elevations along the trail. Pam would know where the trail was the steepest.,3
+scientsbank:9d8e35cffe452e28,I know because the contour lines are smaller.,The contour lines are closest together at Q.,5
+scientsbank:9d8e35cffe452e28,I Think this because for Q the mountains steepness 5000 and Q is very close.,The contour lines are closest together at Q.,3
+scientsbank:9d8e35cffe452e28,The contour lines are closer together.,The contour lines are closest together at Q.,5
+scientsbank:9d8e35cffe452e28,I know this by on the Q side the lines are closer together so they are steeper.,The contour lines are closest together at Q.,5
+scientsbank:9f3d3c4b65eee181,The earth materials will wear away.,Earth materials settle out during deposition.,0
+scientsbank:9f3d3c4b65eee181,Earth materials are moved by water to another spot in the stream.,Earth materials settle out during deposition.,5
+scientsbank:9f3d3c4b65eee181,During deposition earth materials are picked up and dropped on farther downstream near the mouth.,Earth materials settle out during deposition.,5
+scientsbank:9f3d3c4b65eee181,They are being dropped off.,Earth materials settle out during deposition.,3
+scientsbank:e5c2d7fe07d86b93,Because the circle is gets bigger.,40 meters. The change in elevation is 20 meters between A and B and 20 meters between B and C. So the change between A and C is 40 meters. 20 m plus 20 m equals 40 m.,0
+scientsbank:e5c2d7fe07d86b93,"40 meters, I know because each contour line is 20 meters.",40 meters. The change in elevation is 20 meters between A and B and 20 meters between B and C. So the change between A and C is 40 meters. 20 m plus 20 m equals 40 m.,5
+scientsbank:e5c2d7fe07d86b93,"B, Because it is between the A and C.",40 meters. The change in elevation is 20 meters between A and B and 20 meters between B and C. So the change between A and C is 40 meters. 20 m plus 20 m equals 40 m.,0
+scientsbank:e5c2d7fe07d86b93,"40 meters, The contour elevation goes up by 20 meters and if you double 20 you get 40.",40 meters. The change in elevation is 20 meters between A and B and 20 meters between B and C. So the change between A and C is 40 meters. 20 m plus 20 m equals 40 m.,5
+scientsbank:a5ac4eea032cb9c9,Because if you used a slope steeper it will destroy the earth material.,"A bigger hole puts more water in the stream. Increased flow moves more earth materials, increasing erosion. A steeper slope makes the water flow faster. Faster flow moves more earth materials, increasing erosion.",0
+scientsbank:a5ac4eea032cb9c9,I chose these choices because if there is a bigger hole then more water will flow through causing greater erosion. If the slope is steeper then the water will flow faster causing greater erosion..,"A bigger hole puts more water in the stream. Increased flow moves more earth materials, increasing erosion. A steeper slope makes the water flow faster. Faster flow moves more earth materials, increasing erosion.",5
+scientsbank:a5ac4eea032cb9c9,"If the water source has a bigger hole it would let out more water at one time, more water more erosion. If we make a steeper slope the water will have more momentum making it stronger to carry more earth materials.","A bigger hole puts more water in the stream. Increased flow moves more earth materials, increasing erosion. A steeper slope makes the water flow faster. Faster flow moves more earth materials, increasing erosion.",5
+scientsbank:a5ac4eea032cb9c9,Because more water would come out at once.,"A bigger hole puts more water in the stream. Increased flow moves more earth materials, increasing erosion. A steeper slope makes the water flow faster. Faster flow moves more earth materials, increasing erosion.",3
+scientsbank:df7e636e61280d02,They both start off with 0. And they both have effort in it.,"If the effort is applied farther from the fulcrum, less effort will lift the load.",0
+scientsbank:df7e636e61280d02,"If the effort is farther from the fulcrum, it takes less effort to lift it.","If the effort is applied farther from the fulcrum, less effort will lift the load.",5
+scientsbank:df7e636e61280d02,The farther the effort is applied from the fulcrum the effort decreases.,"If the effort is applied farther from the fulcrum, less effort will lift the load.",5
+scientsbank:df7e636e61280d02,If the effort is closer to the fulcrum then it is easier but if the effort is farther from the fulcrum then it is harder.,"If the effort is applied farther from the fulcrum, less effort will lift the load.",0
+scientsbank:19196d950f6e747a,A single fixed single movable has 2 more ropes than a single fixed. A single fixed system has one rope that separates the effort.,"You have to pull up in this system.  In the single fixed pulley system, you get a directional advantage.",0
+scientsbank:19196d950f6e747a,A single fixed does not change anything but a single fixed or single movable effort is 3 times the distance.,"You have to pull up in this system.  In the single fixed pulley system, you get a directional advantage.",0
+scientsbank:19196d950f6e747a,Another disadvantage would be that the system would be more time consuming.,"You have to pull up in this system.  In the single fixed pulley system, you get a directional advantage.",0
+scientsbank:19196d950f6e747a,"The disadvantage would again be distance. On the single fixed, if you wanted to lift something 4 foot, you would have to lift it 4 foot. On a single fixed or single movable upward effort, you would have to lift it 12 foot.","You have to pull up in this system.  In the single fixed pulley system, you get a directional advantage.",0
+scientsbank:a45ccb0757e47105,You will know because if it sticks it is iron if it does not it is aluminum.,"If the key sticks, the key is iron; if the key does not stick the key is aluminum.",5
+scientsbank:a45ccb0757e47105,"If it attracts, it is iron. If it does not, it is aluminum.","If the key sticks, the key is iron; if the key does not stick the key is aluminum.",5
+scientsbank:a45ccb0757e47105,If it is iron it will stick to a magnet if it is aluminum it will not.,"If the key sticks, the key is iron; if the key does not stick the key is aluminum.",5
+scientsbank:a45ccb0757e47105,Iron will stick. Aluminum will not stick.,"If the key sticks, the key is iron; if the key does not stick the key is aluminum.",5
+scientsbank:f5d5cc34bf7dc4d2,The reason why the rings do not touch is because the magnetic force of the magnet are the same.,Like poles repel and opposite poles attract.,3
+scientsbank:f5d5cc34bf7dc4d2,They are not touching each other because the same poles are facing towards each other making them repel.,Like poles repel and opposite poles attract.,3
+scientsbank:f5d5cc34bf7dc4d2,It is not touching because it is the other way around.,Like poles repel and opposite poles attract.,0
+scientsbank:f5d5cc34bf7dc4d2,The reason the magnets on the pencil are not touching because of magnetic force.,Like poles repel and opposite poles attract.,0
+scientsbank:9cda7c4c27f57eb1,When you stop Do not you see a white line. I think this has a magnet under it.,A car is made of a lot of iron or steel.,0
+scientsbank:9cda7c4c27f57eb1,That is because a car is made of metal and the magnet attract to metal.,A car is made of a lot of iron or steel.,3
+scientsbank:9cda7c4c27f57eb1,"There is a magnet that turns the color of the signal light that makes it turn red, yellow, green.",A car is made of a lot of iron or steel.,0
+scientsbank:9cda7c4c27f57eb1,"The light turn red will repel, if the light green.",A car is made of a lot of iron or steel.,0
+scientsbank:841adb3a6a4f9f18,It would not become a temporary magnet because it is not iron or metal it is brass.,"The brass ring would not stick to the nail because the ring is not iron. The nail is a temporary magnet, but brass cannot become a temporary magnet and thus does not stick to magnets.",5
+scientsbank:841adb3a6a4f9f18,If Anne attached the nail to a brass ring nothing would happen because the magnetic force would not be strong enough.,"The brass ring would not stick to the nail because the ring is not iron. The nail is a temporary magnet, but brass cannot become a temporary magnet and thus does not stick to magnets.",0
+scientsbank:841adb3a6a4f9f18,I think that the nail will fall. Because the brass ring is too much weight on the nail and magnet.,"The brass ring would not stick to the nail because the ring is not iron. The nail is a temporary magnet, but brass cannot become a temporary magnet and thus does not stick to magnets.",0
+scientsbank:841adb3a6a4f9f18,Probably not it depends on how heavy it is and if it is made of iron.,"The brass ring would not stick to the nail because the ring is not iron. The nail is a temporary magnet, but brass cannot become a temporary magnet and thus does not stick to magnets.",0
+scientsbank:69e9b028704f7939,The string does not have iron in it to make it work.,"No, string is an insulator, so the pathway would not be completed.",3
+scientsbank:69e9b028704f7939,Because it is not going in a circle so it will not work.,"No, string is an insulator, so the pathway would not be completed.",0
+scientsbank:69e9b028704f7939,You can use string because it will hook and make it work.,"No, string is an insulator, so the pathway would not be completed.",0
+scientsbank:69e9b028704f7939,"Why it does work, because if the string is together the motor will run.","No, string is an insulator, so the pathway would not be completed.",0
+scientsbank:4d8b689a80c861f2,Yes because it is aluminum.,"Yes, aluminum foil is a metal and all metals conduct. The aluminum foil would complete the circuit.",3
+scientsbank:4d8b689a80c861f2,"Yes, it has metal in it.","Yes, aluminum foil is a metal and all metals conduct. The aluminum foil would complete the circuit.",5
+scientsbank:4d8b689a80c861f2,No because it is not wires.,"Yes, aluminum foil is a metal and all metals conduct. The aluminum foil would complete the circuit.",0
+scientsbank:4d8b689a80c861f2,"No, because it cannot attract electricity or get power.","Yes, aluminum foil is a metal and all metals conduct. The aluminum foil would complete the circuit.",0
+scientsbank:c78ac5b6e029d39d,I choose no because the wires are not connecting.,The circuit is not complete. The electrical pathway is broken.,5
+scientsbank:c78ac5b6e029d39d,It does not make a complete circuit.,The circuit is not complete. The electrical pathway is broken.,5
+scientsbank:c78ac5b6e029d39d,I chose this answer because they are missing a wire.,The circuit is not complete. The electrical pathway is broken.,5
+scientsbank:c78ac5b6e029d39d,The circuit is open.,The circuit is not complete. The electrical pathway is broken.,5
+scientsbank:b495637450edf260,One wire needs to be touching the bottom and you can put another wire or battery on the side or the other way around. In this picture a wire is touching the bottom and the D-cell is touching the side.,That circuit is the only circuit that uses all of the correct contact points.,5
+scientsbank:b495637450edf260,It is because the wire is touching the right part of the bulb. The electricity is flowing.,That circuit is the only circuit that uses all of the correct contact points.,5
+scientsbank:b495637450edf260,The only circuit that will work is A.,That circuit is the only circuit that uses all of the correct contact points.,0
+scientsbank:b495637450edf260,The wire is on the D-cell are on the light bulb.,That circuit is the only circuit that uses all of the correct contact points.,5
+scientsbank:2e5be52e775008e4,He need to connect the wires to the object and see if the motor runs.,Lee should put one of the loose wires on one part of the object and the other loose wire on another part of the object and see if the object completes the circuit.,5
+scientsbank:2e5be52e775008e4,He will put one part of the wire one side and the other on the other side.,Lee should put one of the loose wires on one part of the object and the other loose wire on another part of the object and see if the object completes the circuit.,5
+scientsbank:2e5be52e775008e4,He can put the bends of the wire on the material.,Lee should put one of the loose wires on one part of the object and the other loose wire on another part of the object and see if the object completes the circuit.,5
+scientsbank:2e5be52e775008e4,Connect the object to the wires that do not connect to each other and turn the switch on.,Lee should put one of the loose wires on one part of the object and the other loose wire on another part of the object and see if the object completes the circuit.,5
+scientsbank:125eeafd75d9a693,He will know if the motor will run if it is a conductor it will not if it is a isolator.,"If the motor runs, the object is a conductor.",5
+scientsbank:125eeafd75d9a693,The conductor will make it go.,"If the motor runs, the object is a conductor.",5
+scientsbank:125eeafd75d9a693,He will know that if it works.,"If the motor runs, the object is a conductor.",5
+scientsbank:125eeafd75d9a693,"He could know if it works, motor.","If the motor runs, the object is a conductor.",5
+scientsbank:71ccc1e5ae6a96ed,The light bulb will turn on.,The bulb will light.,5
+scientsbank:71ccc1e5ae6a96ed,The light bulb will light up.,The bulb will light.,5
+scientsbank:71ccc1e5ae6a96ed,When she moves the switch to the left the bulb will light.,The bulb will light.,5
+scientsbank:71ccc1e5ae6a96ed,It might lose power.,The bulb will light.,0
+scientsbank:b68396783bbc1b50,That will happen because it is a complete circuit.,There is a complete circuit connecting the bulb to the D-cell battery.,5
+scientsbank:b68396783bbc1b50,Because when you turn it left the circuit is open which means it goes off.,There is a complete circuit connecting the bulb to the D-cell battery.,0
+scientsbank:b68396783bbc1b50,Because she only has one switch.,There is a complete circuit connecting the bulb to the D-cell battery.,0
+scientsbank:b68396783bbc1b50,Moving the switch the light bulb will make it light up.,There is a complete circuit connecting the bulb to the D-cell battery.,0
+scientsbank:06881abdaf248c19,It will work.,The motor will run.,5
+scientsbank:06881abdaf248c19,The motor will turn on.,The motor will run.,5
+scientsbank:06881abdaf248c19,The motor will run.,The motor will run.,5
+scientsbank:06881abdaf248c19,The bulb will still light.,The motor will run.,0
+scientsbank:a9b396a31920b406,Because the battery is hooked to the switch.,There is a complete circuit connecting the motor to the D-cell battery.,3
+scientsbank:a9b396a31920b406,Because Right is to turn off and Left is to turn on.,There is a complete circuit connecting the motor to the D-cell battery.,0
+scientsbank:a9b396a31920b406,Because she used the special switch.,There is a complete circuit connecting the motor to the D-cell battery.,0
+scientsbank:a9b396a31920b406,Because if you already had a series circuit then it has to be a parallel circuit.,There is a complete circuit connecting the motor to the D-cell battery.,5
+scientsbank:a4791e08daed820c,No because the switch is hooked in the middle.,No. Only one circuit can be complete at a time.,3
+scientsbank:a4791e08daed820c,Yes if it go in a circle.,No. Only one circuit can be complete at a time.,0
+scientsbank:a4791e08daed820c,She can too because it will be in a It will be a closed circuit.,No. Only one circuit can be complete at a time.,0
+scientsbank:a4791e08daed820c,"No she cannot, because the battery D-cell cannot hold that much energy.",No. Only one circuit can be complete at a time.,3
+scientsbank:6834fea51ba9a6b3,Because the hook needs the wire to move so one is on each side.,"The circuit does not include both contact points on the bulb holder, so the electricity can not go through the bulb.",5
+scientsbank:6834fea51ba9a6b3,The wire on the negative side of the light needs to be hooked to the motor's clip it should look like this?,"The circuit does not include both contact points on the bulb holder, so the electricity can not go through the bulb.",3
+scientsbank:6834fea51ba9a6b3,It is not a complete circuit.,"The circuit does not include both contact points on the bulb holder, so the electricity can not go through the bulb.",0
+scientsbank:6834fea51ba9a6b3,The bulb will not light because there is a closed circuit.,"The circuit does not include both contact points on the bulb holder, so the electricity can not go through the bulb.",0
+scientsbank:30d1f58e8ad67f01,They will not run because electricity flows from negative to positive and on here it is negative to negative.,"The negative terminals of the D-cell batteries are facing each other, so there is no flow of electricity.",5
+scientsbank:30d1f58e8ad67f01,"They will not run because the batteries have to be facing the same direction, negative to positive.","The negative terminals of the D-cell batteries are facing each other, so there is no flow of electricity.",5
+scientsbank:30d1f58e8ad67f01,They will not run because negative is pointing to negative.,"The negative terminals of the D-cell batteries are facing each other, so there is no flow of electricity.",5
+scientsbank:30d1f58e8ad67f01,The motors will not run because they do not have negative they only have positives.,"The negative terminals of the D-cell batteries are facing each other, so there is no flow of electricity.",3
+scientsbank:267521ed9bc4169e,The motor will burn out also.,The motor will continue to run because the motor still has a pathway to the D-cell.,0
+scientsbank:267521ed9bc4169e,The motor will also burn out with the light bulb because it is in parallel circuit.,The motor will continue to run because the motor still has a pathway to the D-cell.,0
+scientsbank:267521ed9bc4169e,The motor will keep running.,The motor will continue to run because the motor still has a pathway to the D-cell.,3
+scientsbank:267521ed9bc4169e,The motor will stop working because it is in a series.,The motor will continue to run because the motor still has a pathway to the D-cell.,0
+scientsbank:f58c052dba681f04,The magnet has more power so it is able to hold more.,"When a paperclip sticks to a magnet, the paperclip turns into a temporary magnet, so the paperclip can stick to other paperclips and other things made of iron.",0
+scientsbank:f58c052dba681f04,Because the magnetism is flowing.,"When a paperclip sticks to a magnet, the paperclip turns into a temporary magnet, so the paperclip can stick to other paperclips and other things made of iron.",0
+scientsbank:f58c052dba681f04,"Dear Kurt, that paperclip became a temporary magnet that is why you could pick up 3 magnets.","When a paperclip sticks to a magnet, the paperclip turns into a temporary magnet, so the paperclip can stick to other paperclips and other things made of iron.",5
+scientsbank:f58c052dba681f04,It is an induced magnetism.,"When a paperclip sticks to a magnet, the paperclip turns into a temporary magnet, so the paperclip can stick to other paperclips and other things made of iron.",3
+scientsbank:d60c60e55903d1ad,Nothing will happen.,If the middle bulb burns out the other 2 bulbs will stay lit.,5
+scientsbank:d60c60e55903d1ad,The others will not work.,If the middle bulb burns out the other 2 bulbs will stay lit.,0
+scientsbank:d60c60e55903d1ad,The other bulbs will burn out too.,If the middle bulb burns out the other 2 bulbs will stay lit.,0
+scientsbank:d60c60e55903d1ad,The bulb will go off.,If the middle bulb burns out the other 2 bulbs will stay lit.,0
+scientsbank:ebda294704f28b67,It is a parallel that is why just that one will go out.,"The circuit is parallel, so each bulb has its own pathway to the D-cell battery, so the bulbs that do not burn out continue to shine.",5
+scientsbank:ebda294704f28b67,It is a parallel circuit and each light bulb has its own path to the D-Cell or power supply.,"The circuit is parallel, so each bulb has its own pathway to the D-cell battery, so the bulbs that do not burn out continue to shine.",5
+scientsbank:ebda294704f28b67,It will happen because it is a parallel circuit.,"The circuit is parallel, so each bulb has its own pathway to the D-cell battery, so the bulbs that do not burn out continue to shine.",5
+scientsbank:ebda294704f28b67,I chose this answer because it is a series.,"The circuit is parallel, so each bulb has its own pathway to the D-cell battery, so the bulbs that do not burn out continue to shine.",0
+scientsbank:dca1a92ab14180a0,There has to be a more fatter thing.,"You can not tell because we do not know the strength of the magnets. If the magnets are weak, the second piece of foam might put too much distance between the 2 magnets for the interaction to hold the magnets in place. If the magnets are strong the magnets might stay in place.",0
+scientsbank:dca1a92ab14180a0,The magnets might be strong enough to get through the foam blocks or they are not strong enough to get through the foam blocks.,"You can not tell because we do not know the strength of the magnets. If the magnets are weak, the second piece of foam might put too much distance between the 2 magnets for the interaction to hold the magnets in place. If the magnets are strong the magnets might stay in place.",5
+scientsbank:dca1a92ab14180a0,I chose that answer because the magnets might go through the foam blocks but it might not go through.,"You can not tell because we do not know the strength of the magnets. If the magnets are weak, the second piece of foam might put too much distance between the 2 magnets for the interaction to hold the magnets in place. If the magnets are strong the magnets might stay in place.",5
+scientsbank:dca1a92ab14180a0,I chose that answer because I am not sure.,"You can not tell because we do not know the strength of the magnets. If the magnets are weak, the second piece of foam might put too much distance between the 2 magnets for the interaction to hold the magnets in place. If the magnets are strong the magnets might stay in place.",0
+scientsbank:58767b23875acc8b,She would hook the wires up to the D-cell.,Wendy should hook one end of the wire to the negative side of a D-cell battery and the other end to the positive side of the D-cell battery.,5
+scientsbank:58767b23875acc8b,Connect the 2 end of the wires to the D-cell.,Wendy should hook one end of the wire to the negative side of a D-cell battery and the other end to the positive side of the D-cell battery.,5
+scientsbank:58767b23875acc8b,"She needs a battery onto then, attach the wire to the battery.",Wendy should hook one end of the wire to the negative side of a D-cell battery and the other end to the positive side of the D-cell battery.,5
+scientsbank:58767b23875acc8b,Connect the wire tips to a D-cell.,Wendy should hook one end of the wire to the negative side of a D-cell battery and the other end to the positive side of the D-cell battery.,5
+scientsbank:fd26cf857ece9774,Greta's hand is probably longer than Andre's hand.,Greta and Andre have different sized hands.,5
+scientsbank:fd26cf857ece9774,Because Greta's hands are small. And Andre's hands are big.,Greta and Andre have different sized hands.,5
+scientsbank:fd26cf857ece9774,"Because they are older than the other and their hand have different hands, or one of them opened their finger and the other did not.",Greta and Andre have different sized hands.,5
+scientsbank:fd26cf857ece9774,I think different hands size.,Greta and Andre have different sized hands.,5
+scientsbank:4bd4afa83180e718,Because Jin's group has less marbles and Bee's group had more marbles.,The marbles used by the 2 groups were probably different masses.,0
+scientsbank:4bd4afa83180e718,I think you put 34 marbles to put the same sizes.,The marbles used by the 2 groups were probably different masses.,0
+scientsbank:4bd4afa83180e718,He could get a different apple.,The marbles used by the 2 groups were probably different masses.,0
+scientsbank:4bd4afa83180e718,They forgot to do some things before they balance.,The marbles used by the 2 groups were probably different masses.,0
+scientsbank:e63e0ee7a3639bd7,They should zero their balances.,Use a standard unit of mass like grams.,0
+scientsbank:e63e0ee7a3639bd7,Get the same marbles.,Use a standard unit of mass like grams.,0
+scientsbank:e63e0ee7a3639bd7,They should zero it out before they put the apple in.,Use a standard unit of mass like grams.,0
+scientsbank:e63e0ee7a3639bd7,Use grams.,Use a standard unit of mass like grams.,5
+scientsbank:99bc14ef7a72441c,Because you could not make measurement without a standard unit.,So people know exactly what the measurement means. A standard is necessary so everyone measures using the same unit and everyone gets the same measurement.,3
+scientsbank:99bc14ef7a72441c,If you have a standard measurement you can get the correct answer and you do not have the wrong answer.,So people know exactly what the measurement means. A standard is necessary so everyone measures using the same unit and everyone gets the same measurement.,3
+scientsbank:99bc14ef7a72441c,We use a standard unit so we do not get the measurement wrong.,So people know exactly what the measurement means. A standard is necessary so everyone measures using the same unit and everyone gets the same measurement.,3
+scientsbank:99bc14ef7a72441c,Because it is a standard unit.,So people know exactly what the measurement means. A standard is necessary so everyone measures using the same unit and everyone gets the same measurement.,0
+scientsbank:0eccfededfb2b526,A mass.,Bill must have been using degrees Celsius if 28 is a warm temperature.,0
+scientsbank:0eccfededfb2b526,He is using a Celsius.,Bill must have been using degrees Celsius if 28 is a warm temperature.,5
+scientsbank:0eccfededfb2b526,Thermometer.,Bill must have been using degrees Celsius if 28 is a warm temperature.,0
+scientsbank:0eccfededfb2b526,Celsius.,Bill must have been using degrees Celsius if 28 is a warm temperature.,5
+scientsbank:ccc0f09efd713333,Because 10 grams plus 20 grams is 30 grams.,There is 30 grams (20 grams plus 10 grams) in the right cup. The balance is tipped down on the ball side which means the ball weighs more than 30 grams. 40 grams is the only weight heavier than 30 grams.,3
+scientsbank:ccc0f09efd713333,I chose that answer because left side is heavy than the right side I think that is the answer.,There is 30 grams (20 grams plus 10 grams) in the right cup. The balance is tipped down on the ball side which means the ball weighs more than 30 grams. 40 grams is the only weight heavier than 30 grams.,3
+scientsbank:ccc0f09efd713333,I chose it because 20 grams plus 10 grams equals 30 grams and the ball is heavier that is why I chose it.,There is 30 grams (20 grams plus 10 grams) in the right cup. The balance is tipped down on the ball side which means the ball weighs more than 30 grams. 40 grams is the only weight heavier than 30 grams.,5
+scientsbank:ccc0f09efd713333,Because it is not 30 because they already show you so it must be 40.,There is 30 grams (20 grams plus 10 grams) in the right cup. The balance is tipped down on the ball side which means the ball weighs more than 30 grams. 40 grams is the only weight heavier than 30 grams.,5
+scientsbank:dc98fe0b30885b88,They could use a meter tape to measure or feet.,Use a standard unit of measurement such as centimeters or meters.,5
+scientsbank:dc98fe0b30885b88,They should use a standard.,Use a standard unit of measurement such as centimeters or meters.,5
+scientsbank:dc98fe0b30885b88,That they have different hands that are big and small.,Use a standard unit of measurement such as centimeters or meters.,0
+scientsbank:dc98fe0b30885b88,They could use a tape meter so they could measure both the rug and the floor.,Use a standard unit of measurement such as centimeters or meters.,5
+scientsbank:355d3a7856a3785d,I think it is because the salt was small enough and the sand was too big for it. The salt had gone away dissolved. Sand particles was too big.,"The dissolved salt particles are small enough to go through the holes in the filter paper, but the sand particles are too large.",3
+scientsbank:355d3a7856a3785d,Because the salt fit through the holes in the filter.,"The dissolved salt particles are small enough to go through the holes in the filter paper, but the sand particles are too large.",5
+scientsbank:355d3a7856a3785d,The salt is a smaller grain. The sand is more chunky and thicker so it not easy for it to go through.,"The dissolved salt particles are small enough to go through the holes in the filter paper, but the sand particles are too large.",3
+scientsbank:355d3a7856a3785d,Because the salt was a smaller particle than the sand.,"The dissolved salt particles are small enough to go through the holes in the filter paper, but the sand particles are too large.",5
+scientsbank:4d1184f680396d3d,"Because a solution is something you use in a everyday life, and mixture is something we do not always use.",A solution is a mixture formed when a solid dissolves in a liquid.,0
+scientsbank:4d1184f680396d3d,A solution is a mixture that cannot be taken apart.,A solution is a mixture formed when a solid dissolves in a liquid.,0
+scientsbank:4d1184f680396d3d,Different items.,A solution is a mixture formed when a solid dissolves in a liquid.,0
+scientsbank:4d1184f680396d3d,"A mixture is 2 thing put together, a solution is one thing that disperses into the so that the first material cannot be seen.",A solution is a mixture formed when a solid dissolves in a liquid.,3
+scientsbank:427eedc676b0c361,"Because you can see through it, and the mixture will dissolve into it.",The solid dissolves (seems to disappear) and the liquid remains clear.,5
+scientsbank:427eedc676b0c361,You can not see the solid no more because it is going and you cannot see the solution.,The solid dissolves (seems to disappear) and the liquid remains clear.,3
+scientsbank:427eedc676b0c361,You know when the solid cannot be seen.,The solid dissolves (seems to disappear) and the liquid remains clear.,3
+scientsbank:427eedc676b0c361,When the solid dissolves into the liquid.,The solid dissolves (seems to disappear) and the liquid remains clear.,3
+scientsbank:99fe8ad8a92f3b30,The crystals are the same shape and they look the same.,Emily's crystals are the same shape as the alum crystals shown on the key.,3
+scientsbank:99fe8ad8a92f3b30,"Because in the key, alum is the exact same pattern as the one above.",Emily's crystals are the same shape as the alum crystals shown on the key.,5
+scientsbank:99fe8ad8a92f3b30,I think that the Epsom salt because it look like salt crystal. It is sodium hyposulfite or alum.,Emily's crystals are the same shape as the alum crystals shown on the key.,0
+scientsbank:99fe8ad8a92f3b30,Because below the alum picture looks just like the one above.,Emily's crystals are the same shape as the alum crystals shown on the key.,5
+scientsbank:47f130d0b24de13b,Because the solid is big and it cannot go through the filter paper.,The particles of the solid are too big to go through the holes in the paper filter.,5
+scientsbank:47f130d0b24de13b,The solid stays because it is bigger than the holes in filter and stay in the filter.,The particles of the solid are too big to go through the holes in the paper filter.,5
+scientsbank:47f130d0b24de13b,The solid is bigger than the holes in the filter.,The particles of the solid are too big to go through the holes in the paper filter.,5
+scientsbank:47f130d0b24de13b,Because you cannot handle the water. For example we cannot handle water on our hands but we can handle solid things.,The particles of the solid are too big to go through the holes in the paper filter.,0
+scientsbank:ef977318ca8252d1,No because Mariella's is more concentrated because her's has less water so it is taste more sweeter or saltier.,"Yes. If both solutions are saturated (and at the same temperature), the solutions will both have the same concentration. Once a solution is saturated, the solution cannot get any more concentrated.",0
+scientsbank:ef977318ca8252d1,Yes because they both have the same amount of water.,"Yes. If both solutions are saturated (and at the same temperature), the solutions will both have the same concentration. Once a solution is saturated, the solution cannot get any more concentrated.",3
+scientsbank:ef977318ca8252d1,"Yes, because if the same amount of solute and make a saturated solution the concentration would be the same if the solutions had the same volume.","Yes. If both solutions are saturated (and at the same temperature), the solutions will both have the same concentration. Once a solution is saturated, the solution cannot get any more concentrated.",3
+scientsbank:ef977318ca8252d1,No because one has 100 milliliters of water and the other has 250 milliliters of water.,"Yes. If both solutions are saturated (and at the same temperature), the solutions will both have the same concentration. Once a solution is saturated, the solution cannot get any more concentrated.",0
+scientsbank:a2e8e05d59abbfbe,Because they are equally concentrated and they both have some of water.,The solutions have the same concentration (2 spoons in 50 milliliters is the same as 4 spoons in 100 milliliters) so the mass would also be the same.,3
+scientsbank:a2e8e05d59abbfbe,There is 2 times as much of the same solution in B as in A therefore equal volumes would weigh the same.,The solutions have the same concentration (2 spoons in 50 milliliters is the same as 4 spoons in 100 milliliters) so the mass would also be the same.,5
+scientsbank:a2e8e05d59abbfbe,Taking 50 milliliters from solution B would equal solution A.,The solutions have the same concentration (2 spoons in 50 milliliters is the same as 4 spoons in 100 milliliters) so the mass would also be the same.,3
+scientsbank:a2e8e05d59abbfbe,Solution B is just double solution A.,The solutions have the same concentration (2 spoons in 50 milliliters is the same as 4 spoons in 100 milliliters) so the mass would also be the same.,0
+scientsbank:15106bf82a508c6c,Cup 2 has more material on the bottom than cup one. So cup one might one scoop saturated and cup 2 might have 3 scoops on the bottom but the same concentration in the solution.,"Both solutions are saturated (as indicated by the material on the bottom) so, even though one cup has more spoonfuls of sugar, both have the same (maximum) concentration.",5
+scientsbank:15106bf82a508c6c,Because cup A have more solute then cup one. But they have the same amount of water.,"Both solutions are saturated (as indicated by the material on the bottom) so, even though one cup has more spoonfuls of sugar, both have the same (maximum) concentration.",0
+scientsbank:15106bf82a508c6c,I chose C because it has 8 spoons solute.,"Both solutions are saturated (as indicated by the material on the bottom) so, even though one cup has more spoonfuls of sugar, both have the same (maximum) concentration.",0
+scientsbank:15106bf82a508c6c,"Once saturated it is at the most concentration it can get, and they are both saturated.","Both solutions are saturated (as indicated by the material on the bottom) so, even though one cup has more spoonfuls of sugar, both have the same (maximum) concentration.",5
+scientsbank:009163a76d2cf1e7,Because it was bubbly.,Bubbling means a gas has formed. Gas is a new material. A new material indicates a reaction.,0
+scientsbank:009163a76d2cf1e7,Because it bubbled.,Bubbling means a gas has formed. Gas is a new material. A new material indicates a reaction.,0
+scientsbank:009163a76d2cf1e7,Jorge knew that because it was bubbly and when it bubbly it means it is gas.,Bubbling means a gas has formed. Gas is a new material. A new material indicates a reaction.,5
+scientsbank:009163a76d2cf1e7,Because once the 2 chemicals mixed the solution started to react by fizzing bubble.,Bubbling means a gas has formed. Gas is a new material. A new material indicates a reaction.,5
+scientsbank:a28f5b9f2b0280df,That indicates that there is a precipitate on the sides.,A chemical reaction occurred. [The white solid is a precipitate (a new material) which indicates the reaction.],3
+scientsbank:a28f5b9f2b0280df,It is a reaction.,A chemical reaction occurred. [The white solid is a precipitate (a new material) which indicates the reaction.],5
+scientsbank:a28f5b9f2b0280df,That indicates the 2 thing mixed together became a precipitate.,A chemical reaction occurred. [The white solid is a precipitate (a new material) which indicates the reaction.],3
+scientsbank:a28f5b9f2b0280df,There was a chemical reaction and a precipitate was formed.,A chemical reaction occurred. [The white solid is a precipitate (a new material) which indicates the reaction.],5
+scientsbank:12d0c6d7b303f620,A gas is being formed causing it to bubble.,"The fizzing indicates a gas, a new material, is produced. When a new material is produced, a chemical reaction has occurred.",3
+scientsbank:12d0c6d7b303f620,Fizzing usually means bubbles. And bubbles mean there was gas formed which is a sign of a chemical reaction so yes.,"The fizzing indicates a gas, a new material, is produced. When a new material is produced, a chemical reaction has occurred.",5
+scientsbank:12d0c6d7b303f620,The bubbles occurred because it was gas.,"The fizzing indicates a gas, a new material, is produced. When a new material is produced, a chemical reaction has occurred.",3
+scientsbank:12d0c6d7b303f620,Probably.,"The fizzing indicates a gas, a new material, is produced. When a new material is produced, a chemical reaction has occurred.",0
+scientsbank:22d1c094f1d709cb,She make a solution because she put eggshells into the cup and covered.,A solution was created when the eggshells disappeared (dissolved) and the mixture ended up as a clear liquid.,0
+scientsbank:22d1c094f1d709cb,Because when she found it was.,A solution was created when the eggshells disappeared (dissolved) and the mixture ended up as a clear liquid.,0
+scientsbank:22d1c094f1d709cb,She made a solution because she did eggshells and vinegar. Vinegar makes stuff bubble.,A solution was created when the eggshells disappeared (dissolved) and the mixture ended up as a clear liquid.,3
+scientsbank:22d1c094f1d709cb,Because something dissolved and stuff.,A solution was created when the eggshells disappeared (dissolved) and the mixture ended up as a clear liquid.,3
+scientsbank:60eb83c9a3930599,The bubbles.,A reaction was indicated by the bubbles of gas (a new material) being produced.,5
+scientsbank:60eb83c9a3930599,Because of the bubbles on the shell.,A reaction was indicated by the bubbles of gas (a new material) being produced.,5
+scientsbank:60eb83c9a3930599,Because the vinegar is a reaction to eggshells and because of the reaction the eggshells are gone.,A reaction was indicated by the bubbles of gas (a new material) being produced.,0
+scientsbank:60eb83c9a3930599,Because she added more than 2 chemicals producing the small bubbles on the eggshells that dissolved.,A reaction was indicated by the bubbles of gas (a new material) being produced.,5
+scientsbank:b402ba4b3507edda,Yes because solubility means how soluble a mixture is. So they can be more or less soluble.,"Yes, they could both be correct. Solubility is not the same for all materials.",5
+scientsbank:b402ba4b3507edda,Yes.,"Yes, they could both be correct. Solubility is not the same for all materials.",3
+scientsbank:b402ba4b3507edda,No because all different solids have different solubility.,"Yes, they could both be correct. Solubility is not the same for all materials.",0
+scientsbank:b402ba4b3507edda,They could be different because they are not the same thing.,"Yes, they could both be correct. Solubility is not the same for all materials.",5
+scientsbank:2a75743fdb7d276f,That it is clear that is how he can know.,The mixtures are all clear.,5
+scientsbank:2a75743fdb7d276f,Mixture one and 3 are both clear and nothing on bottom.,The mixtures are all clear.,5
+scientsbank:2a75743fdb7d276f,Mixture one and 2 are clear.,The mixtures are all clear.,5
+scientsbank:2a75743fdb7d276f,The mixture 4 and 5 are saturated and a mixture is not a solution until it is saturated.,The mixtures are all clear.,0
+scientsbank:76f724175bd441e9,"Mixture 5 is greater than mixture 4, it had more solid.",The concentrations are the same because both mixtures are saturated.,0
+scientsbank:76f724175bd441e9,The same because they are saturation and it cannot go any more.,The concentrations are the same because both mixtures are saturated.,5
+scientsbank:76f724175bd441e9,Same because they both got something.,The concentrations are the same because both mixtures are saturated.,3
+scientsbank:76f724175bd441e9,More because there is more solid.,The concentrations are the same because both mixtures are saturated.,0
+scientsbank:7897648fe847002e,You use a filter to separate the solid and the water in a cup the solid stays on the filter and the water goes through.,Set up evaporation dishes. The water will go into the air (evaporate) and the solid will be left in the dish (crystallize).,0
+scientsbank:7897648fe847002e,He could evaporate the water and then the solid will turn into crystals.,Set up evaporation dishes. The water will go into the air (evaporate) and the solid will be left in the dish (crystallize).,5
+scientsbank:7897648fe847002e,He could put the solution through filter paper and separated the solute and the solvent.,Set up evaporation dishes. The water will go into the air (evaporate) and the solid will be left in the dish (crystallize).,0
+scientsbank:7897648fe847002e,"Filter the solution and the salt, dissolved salt, will stay on the filter and the water will just go back in the cup.",Set up evaporation dishes. The water will go into the air (evaporate) and the solid will be left in the dish (crystallize).,0
+scientsbank:da10eacf460d9e05,Clear with nothing on the bottom because one is clear with nothing on the bottom and 3 is the same.,"Jim would see a clear solution. 3 spoons of solid dissolves, so 2 spoons will dissolve.",5
+scientsbank:da10eacf460d9e05,He would observe nothing. It would be a solution. Because mixture one and 3 each have one scoop more or less and they are still solutions.,"Jim would see a clear solution. 3 spoons of solid dissolves, so 2 spoons will dissolve.",3
+scientsbank:da10eacf460d9e05,It would probably saturate.,"Jim would see a clear solution. 3 spoons of solid dissolves, so 2 spoons will dissolve.",0
+scientsbank:da10eacf460d9e05,Clear nothing on bottom because mixture 3 has clear and nothing on the bottom and it has 3 scoops.,"Jim would see a clear solution. 3 spoons of solid dissolves, so 2 spoons will dissolve.",5
+scientsbank:0b77f045db86ab9a,"X, cup x is a lot more concentrated because x is more heavy.","X. When equal amounts of 2 solutions are compared, the solution that is more concentrated will have the greater mass (weigh more). 50 milliliters of X has a greater mass than 50 milliliters of Y, so X must be more concentrated.",5
+scientsbank:0b77f045db86ab9a,"Y, I think y because x just because it is heavier does not mean that that is more concentrated. I think it means it is less concentrated because there is more room the more water the more room.","X. When equal amounts of 2 solutions are compared, the solution that is more concentrated will have the greater mass (weigh more). 50 milliliters of X has a greater mass than 50 milliliters of Y, so X must be more concentrated.",0
+scientsbank:0b77f045db86ab9a,"X, because solution x weighs more and has more solute.","X. When equal amounts of 2 solutions are compared, the solution that is more concentrated will have the greater mass (weigh more). 50 milliliters of X has a greater mass than 50 milliliters of Y, so X must be more concentrated.",5
+scientsbank:0b77f045db86ab9a,"X, because cup x has more stuff in it than cup y. cup y could still hold more.","X. When equal amounts of 2 solutions are compared, the solution that is more concentrated will have the greater mass (weigh more). 50 milliliters of X has a greater mass than 50 milliliters of Y, so X must be more concentrated.",3
+scientsbank:58f86df168eada93,"Yes, because he could find out what type of crystals they are.",Crystals of different materials have different shapes. So the shape will help identify the material.,0
+scientsbank:58f86df168eada93,By comparing them to other solutions.,Crystals of different materials have different shapes. So the shape will help identify the material.,0
+scientsbank:58f86df168eada93,Weight them all.,Crystals of different materials have different shapes. So the shape will help identify the material.,0
+scientsbank:58f86df168eada93,Each crystal has its own properties so if he recognized if he would know what solute it was.,Crystals of different materials have different shapes. So the shape will help identify the material.,5
+scientsbank:452b5d9d6891a945,Because the vibration makes it.,The rubber band vibrates.,5
+scientsbank:452b5d9d6891a945,Because it vibrates.,The rubber band vibrates.,5
+scientsbank:452b5d9d6891a945,Because it is made rubber.,The rubber band vibrates.,0
+scientsbank:452b5d9d6891a945,"A rubber band make a sound by vibration when you pluck it, so that is how it cause the sound.",The rubber band vibrates.,5
+scientsbank:9e9ec42b6f9ca240,"Sammy's idea - Because the plastic, the metal, and the wood are different sounds.",Sammy's. Different materials would make very different sounds. Different size wood would make very similar sounds.,5
+scientsbank:9e9ec42b6f9ca240,Sammy - Because Nathaniel's is the same material and Sammy's is different material than just wood.,Sammy's. Different materials would make very different sounds. Different size wood would make very similar sounds.,5
+scientsbank:9e9ec42b6f9ca240,"Nathaniel - Because it has different sounds and metal vibrates more than wood and plastics, plastic is a different material than wood and makes a different sound.",Sammy's. Different materials would make very different sounds. Different size wood would make very similar sounds.,0
+scientsbank:9e9ec42b6f9ca240,Sammy - Because they are different things which make different sounds.,Sammy's. Different materials would make very different sounds. Different size wood would make very similar sounds.,5
+scientsbank:c2adc108f339276c,The short string has a higher pitch sound.,"If the string is shorter, the pitch will be higher. If the string is longer, the pitch will be lower.",5
+scientsbank:c2adc108f339276c,The lower pitch make's the loudest noise.,"If the string is shorter, the pitch will be higher. If the string is longer, the pitch will be lower.",0
+scientsbank:c2adc108f339276c,The shorter the string the higher the pitch the Longer the string the lower the pitch.,"If the string is shorter, the pitch will be higher. If the string is longer, the pitch will be lower.",5
+scientsbank:c2adc108f339276c,The shorter string has a higher pitch than the longer string!,"If the string is shorter, the pitch will be higher. If the string is longer, the pitch will be lower.",5
+scientsbank:a72d3cf1cdc2c751,Vibration maked all these sound so probably it was vibration.,The water splashed because the fork was vibrating. Vibrations make sounds.,5
+scientsbank:a72d3cf1cdc2c751,Because the water splashed because of the vibrations moving.,The water splashed because the fork was vibrating. Vibrations make sounds.,5
+scientsbank:a72d3cf1cdc2c751,Because it moves around.,The water splashed because the fork was vibrating. Vibrations make sounds.,3
+scientsbank:a72d3cf1cdc2c751,It moves and it vibrate.,The water splashed because the fork was vibrating. Vibrations make sounds.,5
+scientsbank:675e18a93e21f88f,You tighten the string you pull a string when the other hand tighten.,"When the string was tighter, the pitch was higher.",0
+scientsbank:675e18a93e21f88f,I get a higher pitch.,"When the string was tighter, the pitch was higher.",5
+scientsbank:675e18a93e21f88f,If the string on the guitar was shorter it would make a higher pitch.,"When the string was tighter, the pitch was higher.",5
+scientsbank:675e18a93e21f88f,It is going to sound high. And if it not tightened it going to sound low.,"When the string was tighter, the pitch was higher.",5
+scientsbank:f6a83fac22550552,If you shorten the string it is louder.,"When the string was shorter, the pitch was higher.",0
+scientsbank:f6a83fac22550552,The pitch was a higher pitch.,"When the string was shorter, the pitch was higher.",5
+scientsbank:f6a83fac22550552,It makes a loud sound.,"When the string was shorter, the pitch was higher.",0
+scientsbank:f6a83fac22550552,The pitch will get higher.,"When the string was shorter, the pitch was higher.",5
+scientsbank:a4c43d80acadcf6c,Because the bigger it is the lower the sound.,The saxophone has the longest and fattest tube.,5
+scientsbank:a4c43d80acadcf6c,I think it makes a low sound because it has a little hole so the sound can get through.,The saxophone has the longest and fattest tube.,0
+scientsbank:a4c43d80acadcf6c,Because it has to travel a long distance.,The saxophone has the longest and fattest tube.,3
+scientsbank:a4c43d80acadcf6c,The sound goes a long distance.,The saxophone has the longest and fattest tube.,3
+scientsbank:b883bcbbbf1ee271,Yes I do agree because there are some that have to shake.,Agree. Vibrations are movements. Vibrations produce sound.,3
+scientsbank:b883bcbbbf1ee271,No! Because a TV makes sound and does not move.,Agree. Vibrations are movements. Vibrations produce sound.,0
+scientsbank:b883bcbbbf1ee271,I agree with Kate because a vibration has to move And in order for sound to be made it needs to vibrate.,Agree. Vibrations are movements. Vibrations produce sound.,5
+scientsbank:b883bcbbbf1ee271,I agree because it has to vibrate and vibrating is moving.,Agree. Vibrations are movements. Vibrations produce sound.,5
+scientsbank:468bf5ce0815a0da,To get cars out of the way.,So that people notice the sound.,5
+scientsbank:468bf5ce0815a0da,Because to warn people to get out of the way.,So that people notice the sound.,5
+scientsbank:468bf5ce0815a0da,It is so loud about 2 blocks away can hear it.,So that people notice the sound.,5
+scientsbank:468bf5ce0815a0da,So the cars and people would know that a is burning or is stuck in a small place so the peoples and cars could get out of the way for the fire engine could get through.,So that people notice the sound.,5
+scientsbank:e98cecc596e4c8fc,If she did the pitch would be louder.,"When the string is tighter, the pitch will be higher.",0
+scientsbank:e98cecc596e4c8fc,It would of got higher.,"When the string is tighter, the pitch will be higher.",5
+scientsbank:e98cecc596e4c8fc,The pitch will be lower.,"When the string is tighter, the pitch will be higher.",0
+scientsbank:e98cecc596e4c8fc,The pitch would be higher if she pulled it really tight.,"When the string is tighter, the pitch will be higher.",5
+scientsbank:5f1e581da5804c52,It would be the same.,"When the string is longer, the pitch will be lower.",0
+scientsbank:5f1e581da5804c52,Low.,"When the string is longer, the pitch will be lower.",5
+scientsbank:5f1e581da5804c52,It would of got higher because it is a longer string so if she plucked it it still would be high.,"When the string is longer, the pitch will be lower.",0
+scientsbank:5f1e581da5804c52,It would be low pitch.,"When the string is longer, the pitch will be lower.",5
+scientsbank:8a845a9daf9b5ab8,Because earth rotates the sun does not move.,Shadows change during the day because the Earth is turning. The Sun stays in one place.,5
+scientsbank:8a845a9daf9b5ab8,"Because although it looks like the sun moves, the earth is really moving making the way the sun shines on the earth different.",Shadows change during the day because the Earth is turning. The Sun stays in one place.,5
+scientsbank:8a845a9daf9b5ab8,Because only the earth move not the sun and if you are on the earth you could feel the sun beam on you all the time when you are outside.,Shadows change during the day because the Earth is turning. The Sun stays in one place.,5
+scientsbank:8a845a9daf9b5ab8,So you can tell the time by your shadow instead of looking at a watch.,Shadows change during the day because the Earth is turning. The Sun stays in one place.,0
+scientsbank:8d84c0512bdb4fc4,Because the person the north side has the longest shadow and the fountain on the west and the tree have the west shadow.,"In the afternoon, shadows point east because the Sun is in the west. So the west side is opposite of the shadows.",0
+scientsbank:8d84c0512bdb4fc4,"I knew which direction was north, so I figured that west was to the left.","In the afternoon, shadows point east because the Sun is in the west. So the west side is opposite of the shadows.",0
+scientsbank:8d84c0512bdb4fc4,Because I remember a compass rose and west is on the left side.,"In the afternoon, shadows point east because the Sun is in the west. So the west side is opposite of the shadows.",0
+scientsbank:8d84c0512bdb4fc4,I know which direction is west because west always points at the opposite direction.,"In the afternoon, shadows point east because the Sun is in the west. So the west side is opposite of the shadows.",0
+scientsbank:9f37f5eec9b4653d,The light makes the shadow.,The tree blocks the light from the Sun.,0
+scientsbank:9f37f5eec9b4653d,The tree picture is look like the tree is in east.,The tree blocks the light from the Sun.,0
+scientsbank:9f37f5eec9b4653d,Because it is dark and the sun is on east direction.,The tree blocks the light from the Sun.,0
+scientsbank:9f37f5eec9b4653d,Because since the sun is out it gives it a shadow.,The tree blocks the light from the Sun.,0
+scientsbank:e09d4d89703f1e7d,A material that goes slowly and energy goes slowly.,A heat sink is any material that absorbs (a lot of) heat.,0
+scientsbank:e09d4d89703f1e7d,Something the heat sinks into.,A heat sink is any material that absorbs (a lot of) heat.,0
+scientsbank:e09d4d89703f1e7d,Sand is heat sink.,A heat sink is any material that absorbs (a lot of) heat.,3
+scientsbank:e09d4d89703f1e7d,A system that takes a long time to heat up and a long time to cool off.,A heat sink is any material that absorbs (a lot of) heat.,3
+scientsbank:cb81d58e725ac763,I looked at the graph and saw that if 10 centimeters was 3 then it might be 6 centimeters.,"20 centimeters size is between 10 and 30 centimeters, so the temperature change must be less than the 30 centimeters container, but more than the 10 centimeters container. 6 degrees Celsius is halfway between.",3
+scientsbank:cb81d58e725ac763,I decided by looking at collector A's temperature at 10 minutes and doubled it.,"20 centimeters size is between 10 and 30 centimeters, so the temperature change must be less than the 30 centimeters container, but more than the 10 centimeters container. 6 degrees Celsius is halfway between.",3
+scientsbank:cb81d58e725ac763,Because it was the highest one so C got hotter.,"20 centimeters size is between 10 and 30 centimeters, so the temperature change must be less than the 30 centimeters container, but more than the 10 centimeters container. 6 degrees Celsius is halfway between.",0
+scientsbank:cb81d58e725ac763,Because almost all in the 10 minute time zone are in 3 degree intervals.,"20 centimeters size is between 10 and 30 centimeters, so the temperature change must be less than the 30 centimeters container, but more than the 10 centimeters container. 6 degrees Celsius is halfway between.",0
+scientsbank:597cd095b15b2d8d,That the uncovered items are colder than the covered items.,Water heats up faster when covered.,5
+scientsbank:597cd095b15b2d8d,If the heater is covered the water is hotter faster.,Water heats up faster when covered.,5
+scientsbank:597cd095b15b2d8d,The covered container can conceal heat.,Water heats up faster when covered.,0
+scientsbank:597cd095b15b2d8d,That it maybe gets hotter than uncovered.,Water heats up faster when covered.,5
+scientsbank:95ea4e0c1e6e2768,Blue is a dark color so blue covered and uncovered are the warmest temperatures then red is a kind of lighter color so they go under the blue on the chart.,Solar water heaters with blue collectors heat up faster than solar water heaters with red collectors.,5
+scientsbank:95ea4e0c1e6e2768,It tells you the blue covered and uncovered are hotter than the reds.,Solar water heaters with blue collectors heat up faster than solar water heaters with red collectors.,5
+scientsbank:95ea4e0c1e6e2768,It tells you that blue heats up faster because it is a darker color than red.,Solar water heaters with blue collectors heat up faster than solar water heaters with red collectors.,5
+scientsbank:95ea4e0c1e6e2768,That blue absorbs heat faster than the red.,Solar water heaters with blue collectors heat up faster than solar water heaters with red collectors.,5
+scientsbank:67aff396a86d8f0e,Because the red is uncovered and blue is covered and you cannot compare them.,"When 2 variables are changed, it is impossible to determine which variable is causing what effect.",5
+scientsbank:67aff396a86d8f0e,"Red uncovered water is not really hot, and the blue covered is hot, so when you compare them you would not get that much of useful information.","When 2 variables are changed, it is impossible to determine which variable is causing what effect.",5
+scientsbank:67aff396a86d8f0e,Because one is uncovered and one is covered. Also I think because they are now the same color.,"When 2 variables are changed, it is impossible to determine which variable is causing what effect.",0
+scientsbank:67aff396a86d8f0e,Because blue goes so high and red goes so low you cannot tell anything.,"When 2 variables are changed, it is impossible to determine which variable is causing what effect.",0
+scientsbank:a026d9ef6b9122ef,Because the darker the color the hotter it gets.,Darker colors absorb more heat than lighter colors. The dark green sheeting is the darkest color available so she should use the green sheeting.,5
+scientsbank:a026d9ef6b9122ef,I chose this answer because dark green is a darker color and would heat faster.,Darker colors absorb more heat than lighter colors. The dark green sheeting is the darkest color available so she should use the green sheeting.,5
+scientsbank:a026d9ef6b9122ef,Because darker colors heat up faster.,Darker colors absorb more heat than lighter colors. The dark green sheeting is the darkest color available so she should use the green sheeting.,5
+scientsbank:a026d9ef6b9122ef,Because the darkest color available would transfer from absorbing the heat from the dark green.,Darker colors absorb more heat than lighter colors. The dark green sheeting is the darkest color available so she should use the green sheeting.,5
+scientsbank:2da5ff6a6869fc92,The as the day go on it gets cooler because the sun is going down.,The black areas in the 2 collectors (and the collectors themselves) are the same size. The amount of heat absorbed will be the same so the temperature change will also be the same.,0
+scientsbank:2da5ff6a6869fc92,Because the triangles and containers are the same size and color they will both absorb the same amount of heat.,The black areas in the 2 collectors (and the collectors themselves) are the same size. The amount of heat absorbed will be the same so the temperature change will also be the same.,5
+scientsbank:2da5ff6a6869fc92,"I think the same because it is the same size, same shape, same color. It is just placed differently in the container which would not have an impact.",The black areas in the 2 collectors (and the collectors themselves) are the same size. The amount of heat absorbed will be the same so the temperature change will also be the same.,5
+scientsbank:2da5ff6a6869fc92,They would be the same because they are the exact same size in the same position with the same size of containers.,The black areas in the 2 collectors (and the collectors themselves) are the same size. The amount of heat absorbed will be the same so the temperature change will also be the same.,5
+scientsbank:a75b1b27a978a681,A. Because it has a higher temperature than water.,"A. Dry soil heats more quickly and cools off more quickly than water. The graph shows A heats and cools more quickly than B, so A must be the dry soil.",3
+scientsbank:a75b1b27a978a681,A. The graph helped because dry soil will heat up faster than wet and A is higher so it would definitely be A.,"A. Dry soil heats more quickly and cools off more quickly than water. The graph shows A heats and cools more quickly than B, so A must be the dry soil.",5
+scientsbank:a75b1b27a978a681,"A. A, because if you use or put any water in an earth material it will hold the temperature. Because water is a heat sink.","A. Dry soil heats more quickly and cools off more quickly than water. The graph shows A heats and cools more quickly than B, so A must be the dry soil.",3
+scientsbank:a75b1b27a978a681,B. I think dry soil goes down so it bring plants do not grow quickly so it goes down.,"A. Dry soil heats more quickly and cools off more quickly than water. The graph shows A heats and cools more quickly than B, so A must be the dry soil.",0
+scientsbank:68e855ead97500b3,B. That they both painted black on the inside in the bottom and filled the top with liters of water. And the heaters will set the sun.,A. The water in Julie's heater got hotter faster (or had a greater temperature change in 20 minutes). The collector in heater A has the greater surface area so the water in A would get hotter faster than the water in B.,0
+scientsbank:68e855ead97500b3,"A. When a box has more black than the other it will heat up faster, and hotter.",A. The water in Julie's heater got hotter faster (or had a greater temperature change in 20 minutes). The collector in heater A has the greater surface area so the water in A would get hotter faster than the water in B.,5
+scientsbank:68e855ead97500b3,A. Because Julie's had more black flooring. The more black flooring you get the hotter it gets. Julie's side of the chart had the highest temperature. So box A is hers.,A. The water in Julie's heater got hotter faster (or had a greater temperature change in 20 minutes). The collector in heater A has the greater surface area so the water in A would get hotter faster than the water in B.,5
+scientsbank:68e855ead97500b3,"B. Because in B, it is long and it hold more heat.",A. The water in Julie's heater got hotter faster (or had a greater temperature change in 20 minutes). The collector in heater A has the greater surface area so the water in A would get hotter faster than the water in B.,0
+scientsbank:2f23ac748da3c764,Because the sun rounded around us that is why it is pointing the opposite direction.,In the morning the Sun is in the east so shadows point west. In the afternoon the Sun is in the west so shadows point east.,0
+scientsbank:2f23ac748da3c764,"The sun rises in the east and it sets in the west, so the school bus must be facing east so that is why.",In the morning the Sun is in the east so shadows point west. In the afternoon the Sun is in the west so shadows point east.,3
+scientsbank:2f23ac748da3c764,Because the object is blocking the sun in that area.,In the morning the Sun is in the east so shadows point west. In the afternoon the Sun is in the west so shadows point east.,0
+scientsbank:2f23ac748da3c764,The earth rotates.,In the morning the Sun is in the east so shadows point west. In the afternoon the Sun is in the west so shadows point east.,0
+scientsbank:2cac6c91bc6a07ef,Yes. Black is a hotter color than white.,Yes. Black absorbs more heat (energy) than white. White reflects more heat (energy) than black. Therefore the black covered box will heat up faster than the white covered box.,3
+scientsbank:2cac6c91bc6a07ef,"Yes. Yes, it would because since she put them both in the sun and stuck a thermometer in both then she will know which box will heat up faster, and she will see if her prediction is correct.",Yes. Black absorbs more heat (energy) than white. White reflects more heat (energy) than black. Therefore the black covered box will heat up faster than the white covered box.,3
+scientsbank:2cac6c91bc6a07ef,Yes. Yes because black absorbs the heat more than white.,Yes. Black absorbs more heat (energy) than white. White reflects more heat (energy) than black. Therefore the black covered box will heat up faster than the white covered box.,5
+scientsbank:2cac6c91bc6a07ef,"Yes. Yes, because black absorbs heat from the sun.",Yes. Black absorbs more heat (energy) than white. White reflects more heat (energy) than black. Therefore the black covered box will heat up faster than the white covered box.,5
+scientsbank:704ca32a2d88e387,C. Because black absorbs heat and C has more black area so I think it is C.,C. Black absorbs more heat (energy) than white. Pan C has the most dark surface area so C would heat up the fastest and have the highest temperature.,5
+scientsbank:704ca32a2d88e387,C. Because it has the most black disks. Black absorbs heat.,C. Black absorbs more heat (energy) than white. Pan C has the most dark surface area so C would heat up the fastest and have the highest temperature.,5
+scientsbank:704ca32a2d88e387,C. I picked C because A and B only have one or 2 black plastic disks and that does not take as much heat. Also C has more black so it would be hotter because there is more black.,C. Black absorbs more heat (energy) than white. Pan C has the most dark surface area so C would heat up the fastest and have the highest temperature.,5
+scientsbank:704ca32a2d88e387,C. Pan C held the hottest water because pan C has a lot of black in it and black absorbs heat. Pan A and B have barely any black. There is more water showing and I know that since water is a heat sink it takes longer to heat up.,C. Black absorbs more heat (energy) than white. Pan C has the most dark surface area so C would heat up the fastest and have the highest temperature.,5
+scientsbank:ca97813c61626924,Is the leaf and stem inside the seed.,The cotyledon provides food for the plant to begin growing.,0
+scientsbank:ca97813c61626924,Baby plant.,The cotyledon provides food for the plant to begin growing.,0
+scientsbank:ca97813c61626924,A cotyledon is a food supplies.,The cotyledon provides food for the plant to begin growing.,5
+scientsbank:ca97813c61626924,Food supply.,The cotyledon provides food for the plant to begin growing.,5
+scientsbank:1de54f34bb9f404f,The sprout that grows into a stem.,The embryo contains the tiny leaves and root of the plant.,3
+scientsbank:1de54f34bb9f404f,The embryo is the part of the seed that grow into the root and then the stem.,The embryo contains the tiny leaves and root of the plant.,3
+scientsbank:1de54f34bb9f404f,Food.,The embryo contains the tiny leaves and root of the plant.,0
+scientsbank:1de54f34bb9f404f,Protects stem and root.,The embryo contains the tiny leaves and root of the plant.,3
+scientsbank:03a714896862f6d3,To see if it have seed.,"If a part of the plant contains seeds, that part is the fruit.",5
+scientsbank:03a714896862f6d3,Because it has seeds.,"If a part of the plant contains seeds, that part is the fruit.",5
+scientsbank:03a714896862f6d3,If it has seed inside it is a fruit.,"If a part of the plant contains seeds, that part is the fruit.",5
+scientsbank:03a714896862f6d3,It is plant.,"If a part of the plant contains seeds, that part is the fruit.",0
+scientsbank:376c89f827955d78,To protect it.,The seed coat protects the seed until the plant begins to grow.,5
+scientsbank:376c89f827955d78,To protect the seed.,The seed coat protects the seed until the plant begins to grow.,5
+scientsbank:376c89f827955d78,It protects the cotyledon.,The seed coat protects the seed until the plant begins to grow.,5
+scientsbank:376c89f827955d78,To protect the seed.,The seed coat protects the seed until the plant begins to grow.,5
+scientsbank:bb55269fd3b413d4,To give food to the baby plant.,The cotyledon provides food for the plant until the plant can make food for itself.,5
+scientsbank:bb55269fd3b413d4,It holds food for the plant before the roots grow.,The cotyledon provides food for the plant until the plant can make food for itself.,5
+scientsbank:bb55269fd3b413d4,Food storage.,The cotyledon provides food for the plant until the plant can make food for itself.,3
+scientsbank:bb55269fd3b413d4,Store food.,The cotyledon provides food for the plant until the plant can make food for itself.,3
+scientsbank:3e02fb22a3e8f7bf,Roots sucks in water and makes a seed grow.,The root grows first so the root can take up water for the plant.,5
+scientsbank:3e02fb22a3e8f7bf,Because it is getting water so the young plant or embryo can have energy to grow.,The root grows first so the root can take up water for the plant.,5
+scientsbank:3e02fb22a3e8f7bf,So it can feed the plant.,The root grows first so the root can take up water for the plant.,5
+scientsbank:3e02fb22a3e8f7bf,The root grew because it needs to help the plant stand up.,The root grows first so the root can take up water for the plant.,0
+scientsbank:ab0c6487b3410767,Another function of the elytra is for strangulating.,The elytra are used to make sounds.,0
+scientsbank:ab0c6487b3410767,Fly around.,The elytra are used to make sounds.,0
+scientsbank:ab0c6487b3410767,The thorax.,The elytra are used to make sounds.,0
+scientsbank:ab0c6487b3410767,The beetle can rub its elytra making noises in order to communicate.,The elytra are used to make sounds.,5
+scientsbank:3ebeffd9dd068de7,She should make sure they each have their own space.,Elena should include a separate shelter for each lizard.,3
+scientsbank:3ebeffd9dd068de7,"Shelter, space, food.",Elena should include a separate shelter for each lizard.,5
+scientsbank:3ebeffd9dd068de7,Add another shelter.,Elena should include a separate shelter for each lizard.,5
+scientsbank:3ebeffd9dd068de7,She needs another shelter.,Elena should include a separate shelter for each lizard.,5
+scientsbank:40f049181d6f872a,A controlled experiment is where you change a variable.,An experiment is controlled if only one variable is changed at a time.,5
+scientsbank:40f049181d6f872a,You just work with the experiment and get it over with.,An experiment is controlled if only one variable is changed at a time.,0
+scientsbank:40f049181d6f872a,To find the answer.,An experiment is controlled if only one variable is changed at a time.,0
+scientsbank:40f049181d6f872a,Only change one variable.,An experiment is controlled if only one variable is changed at a time.,5
+scientsbank:b5bfd82a4ea844e3,The longer your string is the less amount of swings you will get.,"The shorter the string is, the more the string swings in 15 seconds.  The longer the string is, the less the string swings in 15 seconds.",5
+scientsbank:b5bfd82a4ea844e3,The longer the string the shorter the swings.,"The shorter the string is, the more the string swings in 15 seconds.  The longer the string is, the less the string swings in 15 seconds.",3
+scientsbank:b5bfd82a4ea844e3,Well the longer the string the slower it swings so a 90 centimeters swinger will go very slow compared to a 19 centimeters swinger.,"The shorter the string is, the more the string swings in 15 seconds.  The longer the string is, the less the string swings in 15 seconds.",3
+scientsbank:b5bfd82a4ea844e3,If the string is short it has more swings but if it is long it has less swings.,"The shorter the string is, the more the string swings in 15 seconds.  The longer the string is, the less the string swings in 15 seconds.",5
+scientsbank:d85425ad69d0325c,0 marbles.,The boat with 0 marbles is the standard in this experiment.,5
+scientsbank:d85425ad69d0325c,10.,The boat with 0 marbles is the standard in this experiment.,0
+scientsbank:d85425ad69d0325c,10 marbles and 5.8 amount the boat sank.,The boat with 0 marbles is the standard in this experiment.,0
+scientsbank:d85425ad69d0325c,The more Jack put in the lower the boat became under the water.,The boat with 0 marbles is the standard in this experiment.,0
+scientsbank:92014e402610da13,"The more tree rings the faster. The less, the slower.","As time increases, the number of tree rings also increases.",0
+scientsbank:92014e402610da13,This graph tells you how many tree rings grow on a tree in a certain amount of time.,"As time increases, the number of tree rings also increases.",0
+scientsbank:92014e402610da13,This graph shows that the number of tree rings was increasing by a certain amount of time.,"As time increases, the number of tree rings also increases.",5
+scientsbank:92014e402610da13,They look like it increases.,"As time increases, the number of tree rings also increases.",3
+scientsbank:4966abda89f67512,How fast the light speeds and how many times it goes.,"As time increases, the speed of light stays the same (remains constant).",0
+scientsbank:4966abda89f67512,This graph shows that the light was getting lighter and lighter by the minute.,"As time increases, the speed of light stays the same (remains constant).",0
+scientsbank:4966abda89f67512,The speed of light does not change over time.,"As time increases, the speed of light stays the same (remains constant).",5
+scientsbank:4966abda89f67512,The light is staying the same and the time is increasing.,"As time increases, the speed of light stays the same (remains constant).",5
+scientsbank:25b6a775da9f3af7,The more or less of fertilizer about the same mass it is.,"When less than 3 scoops of fertilizer are used, the more fertilizer used, the greater the mass of beans harvested. When more than 3 scoops of fertilizer are used, the more fertilizer used, the less the mass of beans harvested.",0
+scientsbank:25b6a775da9f3af7,"The more you scoop you scoop, the higher, but if you get too deep the less you will get.","When less than 3 scoops of fertilizer are used, the more fertilizer used, the greater the mass of beans harvested. When more than 3 scoops of fertilizer are used, the more fertilizer used, the less the mass of beans harvested.",3
+scientsbank:25b6a775da9f3af7,"The relationship is that they had scoops of fertilizer numbered by 0, one, 2, 3, 4, 5, 6 and they have mass of beans numbered by 0.0, 0.2, 0.4, etcetera. Decimals going by 2's, so the relationship is that both scoops of fertilizer and mass of beans increases, and then decreases all together.","When less than 3 scoops of fertilizer are used, the more fertilizer used, the greater the mass of beans harvested. When more than 3 scoops of fertilizer are used, the more fertilizer used, the less the mass of beans harvested.",5
+scientsbank:25b6a775da9f3af7,Too little scoops of fertilizer is too less but if you put too much it will weigh less as well. But if you put in not too much or not less is good.,"When less than 3 scoops of fertilizer are used, the more fertilizer used, the greater the mass of beans harvested. When more than 3 scoops of fertilizer are used, the more fertilizer used, the less the mass of beans harvested.",3
+scientsbank:6fc38b015e5d81ad,The more blocks the less far it goes the less blocks the farther it goes.,"The more blocks the truck carries, the less distance the truck travels in 10 seconds.",5
+scientsbank:6fc38b015e5d81ad,When he had 0 blocks it went 5 meters and when he had 2 it went 3 meters when had 4 it went one meter.,"The more blocks the truck carries, the less distance the truck travels in 10 seconds.",5
+scientsbank:6fc38b015e5d81ad,The more blocks he adds the more heavier it gets so the more heavier it is the more slow distance it will go.,"The more blocks the truck carries, the less distance the truck travels in 10 seconds.",5
+scientsbank:6fc38b015e5d81ad,The truck goes slower and slower to travel in 10 seconds.,"The more blocks the truck carries, the less distance the truck travels in 10 seconds.",3
+scientsbank:6208f43b0e0e9366,They controlled where they let the ball go.,The launch position (line on the playground) is the variable that is controlled.,0
+scientsbank:6208f43b0e0e9366,The same spot to throw the ball.,The launch position (line on the playground) is the variable that is controlled.,3
+scientsbank:6208f43b0e0e9366,Their strength.,The launch position (line on the playground) is the variable that is controlled.,0
+scientsbank:6208f43b0e0e9366,They all start in the line.,The launch position (line on the playground) is the variable that is controlled.,3
+scientsbank:16e4329f45d2196b,What kind of balls and how to throw the balls.,Different girls are throwing the balls. The girls use different launch techniques. Each girl uses a different type of ball.,3
+scientsbank:16e4329f45d2196b,They did not control the distance the ball went.,Different girls are throwing the balls. The girls use different launch techniques. Each girl uses a different type of ball.,0
+scientsbank:16e4329f45d2196b,Who got the running start and who did not and they had different balls to throw.,Different girls are throwing the balls. The girls use different launch techniques. Each girl uses a different type of ball.,5
+scientsbank:16e4329f45d2196b,"When they are running, standing or stepping. Then the different kinds of balls.",Different girls are throwing the balls. The girls use different launch techniques. Each girl uses a different type of ball.,5
+scientsbank:1c99f68911260e15,They all should stand and throw the same ball to have a controlled experiment.,All variables except the girl need to be held constant (controlled). The girls all need to throw the same ball and use the same launch technique.,5
+scientsbank:1c99f68911260e15,They could all go at the same speed and same distance to get to the line or they could use the same kind of ball.,All variables except the girl need to be held constant (controlled). The girls all need to throw the same ball and use the same launch technique.,5
+scientsbank:1c99f68911260e15,They all had to bring the same kind of ball. And same weight.,All variables except the girl need to be held constant (controlled). The girls all need to throw the same ball and use the same launch technique.,3
+scientsbank:1c99f68911260e15,Have the ball the same.,All variables except the girl need to be held constant (controlled). The girls all need to throw the same ball and use the same launch technique.,3
+scientsbank:809d6e73b2a580a5,In a controlled experiment.,A standard is used for comparison to determine how changing one variable changes the results.,0
+scientsbank:809d6e73b2a580a5,You need to have a standard so you can tell the difference of what the experiment was and so you can tell how far it went.,A standard is used for comparison to determine how changing one variable changes the results.,3
+scientsbank:809d6e73b2a580a5,You use a standard because you know it will be controlled if you do something random it might not work and that is not a controlled experiment.,A standard is used for comparison to determine how changing one variable changes the results.,3
+scientsbank:809d6e73b2a580a5,So when you start with the standard it will help you understand more of the experiment.,A standard is used for comparison to determine how changing one variable changes the results.,0

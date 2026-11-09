@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "VisionGrade (Android with local grading API)",
+      "request": "launch",
+      "type": "dart",
+      "toolArgs": [
+        "--dart-define=GRADING_API_URL=http://127.0.0.1:8001"
+      ]
+    }
+  ]
+}

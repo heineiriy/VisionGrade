@@ -1,0 +1,440 @@
+question_id,student_answer,expected_answer,score
+beetle:76e87fae5d2fb84d,The positive battery terminal is separated by a gap from terminal 1,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,terminal one was positive,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,terminal 1 is positive,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,i have absolutely no idea,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,the terminal is separated from the positive battery terminal.,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,because the positive terminal is separated by a gap from terminal 1,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,Because the terminals are not connected to each other,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,no idea,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,They are connected to the negative charge,Terminal 1 and the positive terminal are separated by the gap,3
+beetle:196a675fedccd17d,They are connected to the positive battery terminal,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,Because they are connected to the positive terminal only.,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,bulb  b,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",0
+beetle:196a675fedccd17d,there terminals are separated by a gap,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",3
+beetle:196a675fedccd17d,"because terminals 4, 5, and 6 are connected to the positive battery terminal","Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,"Terminal 4, terminal 5, and terminal 6 are connected to the positive battery terminal.","Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,"4, 5 and 6 are not connected to the negative battery terminal.","Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,"terminal 4, terminal 5 and terminal 6 are connected to the positive battery terminal","Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,They are connected to the same positive battery terminal.,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",5
+beetle:196a675fedccd17d,yes,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",0
+beetle:196a675fedccd17d,There  is a gap in the circuit,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",3
+beetle:196a675fedccd17d,The other terminals receive current from the positive battery terminal.,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",0
+beetle:196a675fedccd17d,"becuase they gave a reading  of 1.5 V on the multimeter, but that is  just becuase  the meter closed the circuit.  They are really in the same state as  all the others I see.","Terminals 4, 5 and 6 are not connected to the negative battery terminal",0
+beetle:196a675fedccd17d,They are connected to the postive.,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",3
+beetle:196a675fedccd17d,Because they are positive,"Terminals 4, 5 and 6 are not connected to the negative battery terminal",3
+beetle:721f70debb613847,because they are not connected to the positive terminal.,"Terminals 1, 2 and 3 are connected to the negative battery terminal",5
+beetle:721f70debb613847,Because there is a gap caused by damaged bulb B.,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,they are zero,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,a terminal is connected to the negative,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,they are on the other side of the positive terminal,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,1 2 and 3 are on the negative side,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,The path is not closed.,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,a connected to negative,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,They are closest to each other,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,because they are connected to the negative terminal,"Terminals 1, 2 and 3 are connected to the negative battery terminal",5
+beetle:721f70debb613847,"1, 2, and 3 have 0 volts. The negative battery terminal has 0 volts.","Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,"1, 2, and 3 show 0 volts.","Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,yes,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,Because the other side of the terminal is 1.5 volts.,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,because the path in the circuit to the positive battery terminal is disrupted by bulb B,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,Because they all read as not receiving electricity from the negative terminal.,"Terminals 1, 2 and 3 are connected to the negative battery terminal",0
+beetle:721f70debb613847,There is a gap between the negative and positive due to Blub B,"Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:721f70debb613847,"because their voltages are 0, indicating there is no difference between the states","Terminals 1, 2 and 3 are connected to the negative battery terminal",3
+beetle:23e364b28629c13e,kjflkgjg,the bulb is damaged,0
+beetle:23e364b28629c13e,the bulb prior to when the reading jumps to 1.5 is damanged,the bulb is damaged,5
+beetle:23e364b28629c13e,that the terminals are connected to a battery,the bulb is damaged,0
+beetle:23e364b28629c13e,There is a gap.,the bulb is damaged,5
+beetle:23e364b28629c13e,there is a gap,the bulb is damaged,5
+beetle:23e364b28629c13e,The terminal is connected to a different terminal.,the bulb is damaged,0
+beetle:23e364b28629c13e,that the terminal on one side is connected and the other is not connected,the bulb is damaged,0
+beetle:8254a4f48f9d9d42,electricity,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,a measurement of electricity between a positive and negative terminal,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,the measurement of power,Voltage is the difference in electrical states between two terminals,0
+beetle:8254a4f48f9d9d42,The difference in electrical state between terminals.,Voltage is the difference in electrical states between two terminals,5
+beetle:8254a4f48f9d9d42,god,Voltage is the difference in electrical states between two terminals,0
+beetle:8254a4f48f9d9d42,the measurement of electricity,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,tell answer,Voltage is the difference in electrical states between two terminals,0
+beetle:8254a4f48f9d9d42,The difference in electrical state,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,the difference is electrical states,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,The difference in the terminals of a battery.,Voltage is the difference in electrical states between two terminals,3
+beetle:8254a4f48f9d9d42,The difference between the electrical states of two terminals,Voltage is the difference in electrical states between two terminals,5
+beetle:8254a4f48f9d9d42,The difference between the positive and negative side,Voltage is the difference in electrical states between two terminals,0
+beetle:8254a4f48f9d9d42,Voltage is the difference between the electrical states between two terminals.,Voltage is the difference in electrical states between two terminals,5
+beetle:e7226df0f983adb9,There is no voltage between the two terminals,the terminals are connected,0
+beetle:e7226df0f983adb9,they are in different states,the terminals are connected,0
+beetle:e7226df0f983adb9,they are not connected,the terminals are connected,0
+beetle:e7226df0f983adb9,they are connected.,the terminals are connected,5
+beetle:e7226df0f983adb9,the bulb terminal and the battery terminal are connected,the terminals are connected,5
+beetle:e7226df0f983adb9,the terminal is connected to the negative voltage terminal,the terminals are connected,0
+beetle:e7226df0f983adb9,tell me the answer,the terminals are connected,0
+beetle:e7226df0f983adb9,there is no difference between the elactrical states and also that there is a gap in the curcuit,the terminals are connected,0
+beetle:e7226df0f983adb9,the terminals are separated by a gap and the battery terminal and bulb terminal are on the same side of the gap,the terminals are connected,0
+beetle:e7226df0f983adb9,there is a damaged bulb,the terminals are connected,0
+beetle:e7226df0f983adb9,there is a gap,the terminals are connected,0
+beetle:e7226df0f983adb9,A bulb creates a gap between itself and the battery terminal,the terminals are connected,0
+beetle:e7226df0f983adb9,give me a hint,the terminals are connected,0
+beetle:e7226df0f983adb9,There is a short circuit between the connection of the bulb terminal and a battery terminal.,the terminals are connected,0
+beetle:e7226df0f983adb9,That the bulb is connected to the positive end of the terminal,the terminals are connected,0
+beetle:e7226df0f983adb9,that they are connected; no gap,the terminals are connected,5
+beetle:e7226df0f983adb9,They share an electrical state.,the terminals are connected,5
+beetle:e7226df0f983adb9,The two terminals are in the same electrical state.,the terminals are connected,5
+beetle:303a2729e03ae0c9,the bulb is working,the terminals are not connected,0
+beetle:303a2729e03ae0c9,"i don""t know.",the terminals are not connected,0
+beetle:303a2729e03ae0c9,the terminals are separated by a gap,the terminals are not connected,5
+beetle:303a2729e03ae0c9,teh terminals are connected to each other,the terminals are not connected,0
+beetle:303a2729e03ae0c9,they are separated,the terminals are not connected,5
+beetle:303a2729e03ae0c9,the terminals are not connected to each other,the terminals are not connected,5
+beetle:303a2729e03ae0c9,they are not connected to eachother,the terminals are not connected,5
+beetle:303a2729e03ae0c9,its working,the terminals are not connected,0
+beetle:303a2729e03ae0c9,Both the bulb and battery terminals are connected to each other.,the terminals are not connected,0
+beetle:76e87fae5d2fb84d,because i dont know,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,Terminal 1 is not connected to the positive battery terminal.,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,The positive terminal has a 1.5 V charge and terminal one has a 0.00 V,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,There was a gap between terminal 1 and the positive terminal.,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,the bulb isnt connected to the positive battery terminal,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,Terminal 1 is connected to the positive terminal.,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,because the meter measures the difference between the two terminals,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,there is a gap between terminal 1 and the positive terminal,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,because you are measuring the + current,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,Because terminal 1 is connected to the negative battery terminal.,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,Because the voltage of the battery on the closed circuit is the same as the batterys original voltage.,Terminal 1 and the positive terminal are separated by the gap,0
+beetle:76e87fae5d2fb84d,Because terminal 1 was connected to the negative terminal of the battery,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,because terminal 1 is connected to the negative battery terminal,Terminal 1 and the positive terminal are separated by the gap,5
+beetle:76e87fae5d2fb84d,"the leads of the voltmeter were reversed. therefore, the voltages were also reversed.",Terminal 1 and the positive terminal are separated by the gap,0
+beetle:a382e750e42589da,seperated by a gap in terminal 3,Terminal 3 and the positive terminal are separated by the gap,0
+beetle:a382e750e42589da,there is still the same gap,Terminal 3 and the positive terminal are separated by the gap,3
+beetle:c75fe7a71a2f09f6,terminal 2 is not connected to the positive battery terminal.,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:c75fe7a71a2f09f6,because there is a gap between the positive battery terminal and bulb terminal 2.,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:c75fe7a71a2f09f6,Terminal 2 is not connected to the positive terminal.,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:c75fe7a71a2f09f6,positive battery terminal is separated by a gap from terminal 2,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:c75fe7a71a2f09f6,the positive terminal is seperated by a gap from terminal 2,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:c75fe7a71a2f09f6,The positive battery terminal is separated b a gap from terminal 2,Terminal 2 and the positive terminal are separated by the gap,5
+beetle:f3e92279dbc259fb,there is a gap between the positive battery terminal and terminal 4.,Terminal 4 and the positive terminal are connected,0
+beetle:f3e92279dbc259fb,the terminal is conntected to postive end of battery,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,the terminals are blocked by a gap,Terminal 4 and the positive terminal are connected,0
+beetle:f3e92279dbc259fb,there is no gap between terminal 4 and the positive terminal,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,I dont know,Terminal 4 and the positive terminal are connected,0
+beetle:f3e92279dbc259fb,seperted by gap in terminal 4,Terminal 4 and the positive terminal are connected,0
+beetle:f3e92279dbc259fb,BECAUSE IT WAS ATTACHED TO THE NEGATIVE TERMINAL.,Terminal 4 and the positive terminal are connected,0
+beetle:f3e92279dbc259fb,terminal 4 is connected only to the positive battery terminal,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,the positive battery terminal is connected in circuit with terminal 4,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,terminal 4 is not connected to the negative terminal because of a gap in bulb b.,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,The positive battery terminal was not separated by a gap from terminal 4.,Terminal 4 and the positive terminal are connected,5
+beetle:f3e92279dbc259fb,there is no difference in the two terminals. they are in a closed path,Terminal 4 and the positive terminal are connected,0
+beetle:ac68385196e14e81,the positive terminal is connected to terminal 5,Terminal 5 and the positive terminal are connected,5
+beetle:ac68385196e14e81,terminal 5 and the positive terminal are connected.,Terminal 5 and the positive terminal are connected,5
+beetle:ac68385196e14e81,same answer as for terminal 4 and the positive terminal,Terminal 5 and the positive terminal are connected,0
+beetle:7ea21939bbec7b96,Terminal 6 and the positive battery terminal are in the same state.,Terminal 6 and the positive terminal are connected,3
+beetle:7ea21939bbec7b96,same answer as for terminal 4,Terminal 6 and the positive terminal are connected,0
+beetle:7ea21939bbec7b96,Terminal 6 is connected to the postive battery terminal,Terminal 6 and the positive terminal are connected,5
+beetle:5d8a995a6fa7cf7c,The battery is not damaged,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,the battery has a positive and a negative chemical reaction.,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,because there is a difference in the electrical state between the two terminals,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,some things never change,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,"the battery still has it""s chemical reaction",A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,idk,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,because the electrical state difference is still there,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,it always has the same voltage,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,the battery has an electrical state,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,because the circuit does not effect the voltage,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,a battery uses electricity,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,because voltage remains with complete and incomplete circuits. because the terminals are not connected to each other.,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,because battery voltage is a constant,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:5d8a995a6fa7cf7c,there would be a greater difference,A battery uses a chemical reaction to maintain different electrical states at the terminals,0
+beetle:5d8a995a6fa7cf7c,Because the battery is filled with its own chemical reactions.,A battery uses a chemical reaction to maintain different electrical states at the terminals,3
+beetle:7ea21939bbec7b96,the positive battery terminal is connected to terminal six,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,Terminal 6 is only connected to the positive terminal.,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,bulb C does not work,Terminal 6 and the positive terminal are connected,3
+beetle:7ea21939bbec7b96,The positive battery terminal is separated by a gap from terminal 6,Terminal 6 and the positive terminal are connected,0
+beetle:7ea21939bbec7b96,there is no gap between terminal 6 and the positive terminal.,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,A terminal is connected to the positive battery terminal.,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,The positive terminal is not separated by a gap from terminal 6,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,The positive battery terminal is not seperated from terminal 6.,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,i dont know,Terminal 6 and the positive terminal are connected,0
+beetle:7ea21939bbec7b96,The positive battery terminal was not separated by a gap from terminal 6.,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,the 2 are connected,Terminal 6 and the positive terminal are connected,5
+beetle:7ea21939bbec7b96,the terminals are connected,Terminal 6 and the positive terminal are connected,5
+beetle:57f597aead9d3175,because there is a gap,Terminals 1 and 2 are connected,0
+beetle:57f597aead9d3175,there is a gap between the positive terminal and the bulb,Terminals 1 and 2 are connected,0
+beetle:57f597aead9d3175,because terminal 1 is directly connected to terminal 2,Terminals 1 and 2 are connected,5
+beetle:57f597aead9d3175,terminal 1 is connected to,Terminals 1 and 2 are connected,5
+beetle:57f597aead9d3175,there was no gap between terminal 1 and terminal 2,Terminals 1 and 2 are connected,5
+beetle:57f597aead9d3175,terminal 1 and terminal 2 are connected to the negative battery terminal,Terminals 1 and 2 are connected,5
+beetle:57f597aead9d3175,Because the terminals are connected,Terminals 1 and 2 are connected,5
+beetle:57f597aead9d3175,terminal 1 and 2 are connected to the negative battery,Terminals 1 and 2 are connected,3
+beetle:57f597aead9d3175,because they are both connected to the negative battery terminal,Terminals 1 and 2 are connected,3
+beetle:57f597aead9d3175,because they are both recievining the same voltage from negative battery terminal,Terminals 1 and 2 are connected,0
+beetle:57f597aead9d3175,because there was no gap present.,Terminals 1 and 2 are connected,3
+beetle:542000450eb67116,terminal 1 and 4 are connected to the negtive terminal of the battery,Terminals 1 and 4 are connected,5
+beetle:bceb4bc606046891,terminal 6 is conncected to the positive terminal of the battery and terminal 1 is connected to the negative terminal of the battery,Terminals 1 and 6 are separated by the gap,3
+beetle:bceb4bc606046891,terminal 6 is not connected to the negative terminal,Terminals 1 and 6 are separated by the gap,3
+beetle:bceb4bc606046891,there is a separation between them,Terminals 1 and 6 are separated by the gap,3
+beetle:bceb4bc606046891,Terminal 1 is not connected to terminal 1,Terminals 1 and 6 are separated by the gap,0
+beetle:bceb4bc606046891,"they are not connected, there is a gap",Terminals 1 and 6 are separated by the gap,5
+beetle:bceb4bc606046891,Terminal 1 is connected to terminal 6.,Terminals 1 and 6 are separated by the gap,0
+beetle:bceb4bc606046891,Terminal 1 and terminal 6 are separated by a gap.,Terminals 1 and 6 are separated by the gap,5
+beetle:68ece1a5045512ab,measuring voltage allows you to locate the gap in a connection,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,3
+beetle:68ece1a5045512ab,"it allows you to measure electrical states within a connection, or find a gap in the connection",Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,3
+beetle:68ece1a5045512ab,There is a difference in the electrical state at the location of the gap in the circuit.,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:68ece1a5045512ab,The electrical state is non-zero.,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,3
+beetle:68ece1a5045512ab,it shows the chemical reaction of the battery to the telectrical state of the terminal,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:68ece1a5045512ab,voltage shows the chemical reactions of where the ap is,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:68ece1a5045512ab,burnt bulbs have no voltage at one of their terminals.,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:68ece1a5045512ab,Because electrical states will be greater if there is a gap in the circuit,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:68ece1a5045512ab,"When a light bulb is burned out in a closed path, all the light blubs go out. Voltage helps you to find where there is a gap in the path, which indicated a damaged bulb.",Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,3
+beetle:68ece1a5045512ab,Measurimg the voltage allows you to see where there is a gap in the electrical states,Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,3
+beetle:68ece1a5045512ab,"Voltage measures the difference between the electrical states at two terminals. If there is a gap in the connection between the terminals, then a meter will measure a voltage.",Measuring voltage indicates the place where the electrical state changes due to a damaged bulb.,0
+beetle:3f5c368d9c7277e3,they are in a different path of bulb a.,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,bulb a is not in the same path of bulbs b and c.,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,because bulbs b and c have their own closed paths,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,b c are paralled to a,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,"if bulb A burns out, bulb A does not make a gap in the closed path of bulb B or bulb C",bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,thy are in three separate paths,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,Bulbs B and C will still be contained in a closed path with the battery,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,because b and c still have a closed path,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,bulbs b and c are still contained in a closed path with the battery.,bulbs B and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,It has its own bath that is connected to the battery,bulbs B and C are still in closed paths with the battery,3
+beetle:3f5c368d9c7277e3,Because B and C will both still be in a closed circuit,bulbs B and C are still in closed paths with the battery,0
+beetle:3f5c368d9c7277e3,bulb a and bulb b are still in a closed path with the battery.,"If C burns out, then A and B are still in a closed path with the battery.",5
+beetle:3f5c368d9c7277e3,can still be in a closed path with the battery,"If C burns out, then A and B are still in a closed path with the battery.",5
+beetle:3f5c368d9c7277e3,closed pathway with the battery,"If C burns out, then A and B are still in a closed path with the battery.",3
+beetle:3f5c368d9c7277e3,seperate circuits,"If C burns out, then A and B are still in a closed path with the battery.",0
+beetle:3f5c368d9c7277e3,Bulbs A and B are still contained in a closed path to the battery.,"If C burns out, then A and B are still in a closed path with the battery.",5
+beetle:75f4456e083f814d,because bulb a and b are still contained in the closed path with the battery.,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,contain in a closed path,If C burns out then A and B are still in a closed path with the battery,3
+beetle:75f4456e083f814d,because bulb c is not contained in a closed path with the battery,If C burns out then A and B are still in a closed path with the battery,3
+beetle:75f4456e083f814d,bulb a and bulb c are still contained in a closed path with the battery,If C burns out then A and B are still in a closed path with the battery,0
+beetle:75f4456e083f814d,bulb a and bulb b are still contained in closed path with the battery,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,They are contained in a closed path with the battery.,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,because c is in parallel,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,There is still a closed path.,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,becuase bulbs A and B are still in a closed path.,If C burns out then A and B are still in a closed path with the battery,5
+beetle:75f4456e083f814d,They were still contained on closed paths to battery.,If C burns out then A and B are still in a closed path with the battery,5
+beetle:798feca3f0b3c101,the path is not on the same as the battery,If they are in the same path the burned out bulb affects the other bulb.,0
+beetle:798feca3f0b3c101,if it is in the same closed path with the  battery,If they are in the same path the burned out bulb affects the other bulb.,5
+beetle:798feca3f0b3c101,if they are on the same path,If they are in the same path the burned out bulb affects the other bulb.,5
+beetle:798feca3f0b3c101,when there is a gap in the circuit,If they are in the same path the burned out bulb affects the other bulb.,0
+beetle:798feca3f0b3c101,IF IT CREATES A GAP IN THE PATH,If they are in the same path the burned out bulb affects the other bulb.,3
+beetle:fae1cd1b4494d53a,Because bulb A is in a closed path with the positive battery terminal.,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",3
+beetle:fae1cd1b4494d53a,Switch Z and X needs to be closed.,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",0
+beetle:fae1cd1b4494d53a,switch z can close the path for bulb a,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",5
+beetle:fae1cd1b4494d53a,if switch z is closed there is a battery and bulb a contained in a closed path.,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",5
+beetle:fae1cd1b4494d53a,IF Switch Z is closed then it makes a closed path with the battery,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",5
+beetle:fae1cd1b4494d53a,different paths,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",3
+beetle:fae1cd1b4494d53a,bulb a is in a closed path without switch y.,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",5
+beetle:fae1cd1b4494d53a,because bulb a can still be contained in a closed path with the battery even if switch Y is open,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",5
+beetle:fae1cd1b4494d53a,because bulb a is in the path of switch x,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",3
+beetle:fae1cd1b4494d53a,A path can be made by continuing to Bulb C and passing through switch Z,"there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",3
+beetle:c634409de6077700,"bulb a is on a closed circuit with the battery. if bulb b or c are damaged, neither work","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",0
+beetle:c634409de6077700,"Bulb a is on a closed path with the battery. If bulb b burns out, bulb c will no longer be on a closed path with the battery.","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,Bulb B and Bulb C are in the same path.,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,A is in a seperate path and B and C are in the same path,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,bulb a does not affect bulbs b and c,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,circuits,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",0
+beetle:c634409de6077700,"Bulb A is on one path and Bulb""s B and C are on another.  Therefore if Bulb A goes out, it does not affect bulb B or C.  But if Bulb""s B or C go out, both go out but A stays lit","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",5
+beetle:c634409de6077700,i dont know,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",0
+beetle:c634409de6077700,"when bulb a is out, bulb b and bulb c are still in a closed path with the battery.","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,The path bulb A is on is a closed path with the battery even if bulbs B and C are out,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,there are two paths. One contans bulb A alone so it does not affect the other bulbs. The other path contains both bulb B and C so if something happens to either one it will cause them to no longer be in a closed path with the battery.,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",5
+beetle:c634409de6077700,they are in separate paths,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,bulb B is contained in the same closed path bulb C is in with the battery,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,"There are two separate paths in this diagram. One path is made up of bulb a and the battery. The second path is bulb b, bulb c, and the battery. If bulb a is out, it will not affect bulbs b and c since they will still be contained in a closed path with the battery. If bulbs b or c are out, bulb a will not be affected because it will still be contained in a closed path with the battery. If bulb b is out, bulb c will be out too since they are in the same path with the battery.","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",5
+beetle:c634409de6077700,"bulb a is on a closed path. bulbs b and c are on a closed circuit in series. if bulb b is damaged, then bulb c turns off. if bulb c is damaged, then bulb b turns off.","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",0
+beetle:c634409de6077700,there are two seperate paths. Bulb A has its own path and bulb B and C are on the same path,"Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:c634409de6077700,"bulb a is in a closed circuit path regardless of bulbs b and c. if bulb a is burned out, bulbs b and c are still in a complete circuit path. bulb b depends on bulb c, and bulb c depends on bulb b. if bulb b is damaged, bulb c will not come on becuase it is contained in the same circuit path as bulb b. if bulb c is damaged, bulb b will not come one because it is contained in the same circuit path as bulb c.","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",0
+beetle:c634409de6077700,"bulb A is on its own path, so it doesn""t matter if B or C are damaged, A will still be on. bulbs B and C are on the same path so if one of them goes out, the other will too. B and C are not affect","Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",3
+beetle:717290df3401974d,because bulb a was in a closed path.,Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,Bulb A was still in a closed path,Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,Bulb A is still connected to the battery in a closed path.,Bulb A is still contained in a closed path with the battery.,5
+beetle:717290df3401974d,it had a closed path,Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,because it had a closed path,Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,Swtich Y is not on the same path as bulb A.,Bulb A is still contained in a closed path with the battery.,5
+beetle:717290df3401974d,The path was closed.,Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,"Bulb A is contained in a closed path,",Bulb A is still contained in a closed path with the battery.,3
+beetle:717290df3401974d,bulb a was in a closed circuit with the battery.,Bulb A is still contained in a closed path with the battery.,0
+beetle:717290df3401974d,Because the circuit was closed,Bulb A is still contained in a closed path with the battery.,0
+beetle:717290df3401974d,There was still a closed circuit,Bulb A is still contained in a closed path with the battery.,0
+beetle:717290df3401974d,because Bulb a is in a closed circuit with the battery and switch z,Bulb A is still contained in a closed path with the battery.,0
+beetle:717290df3401974d,Switch Z was the only one in the same path as bulb A,Bulb A is still contained in a closed path with the battery.,5
+beetle:aa4fa5df579a410b,path for bulb c was open,Bulb C was no longer in a closed path with the battery,5
+beetle:aa4fa5df579a410b,switch z makes the path incomplete,Bulb C was no longer in a closed path with the battery,0
+beetle:aa4fa5df579a410b,bulb c is still contained in a closed path with the battery,Bulb C was no longer in a closed path with the battery,0
+beetle:aa4fa5df579a410b,bulb c was in an open path with the battery,Bulb C was no longer in a closed path with the battery,5
+beetle:aa4fa5df579a410b,bulb c is contained in the path to the battery,Bulb C was no longer in a closed path with the battery,3
+beetle:aa4fa5df579a410b,bulb c is not contained in a closed path with the battery,Bulb C was no longer in a closed path with the battery,5
+beetle:aa4fa5df579a410b,bulb c was not in a closed path with the battery.,Bulb C was no longer in a closed path with the battery,5
+beetle:aa4fa5df579a410b,it was not in a closed path with the battery,Bulb C was no longer in a closed path with the battery,5
+beetle:aa4fa5df579a410b,idk,Bulb C was no longer in a closed path with the battery,0
+beetle:aa4fa5df579a410b,"Because bulb C is contained in an opened path with the battery, which turns it off.",Bulb C was no longer in a closed path with the battery,5
+beetle:286841e1e0735c5a,"the switch, the bulb, and the battery have to be contained in the closed path.",If a bulb and a switch are in the same path the switch affects the bulb,5
+beetle:286841e1e0735c5a,the path plays an important role,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,uh-huh,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,switch is contained in a circuit,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,whether there is a closed path with a battery,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:286841e1e0735c5a,if that switch is with the path between that bulb and the battery,If a bulb and a switch are in the same path the switch affects the bulb,5
+beetle:286841e1e0735c5a,The path cannot be open,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,The bulb must be contained in a closed path with the battery,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,a bulb must be in a closed path with a battery and a switch for the switch to affect the bulb,If a bulb and a switch are in the same path the switch affects the bulb,5
+beetle:286841e1e0735c5a,the switch being on or off determines whether the bulb is contained in a closed path with the battery or not,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,a switch has to be contained in a closed path with no gaps,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:286841e1e0735c5a,It plays a significant role. If a switch is open it may or may not interfere with a closed path which is essential to light the bulb,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:286841e1e0735c5a,An path with a switch connecting to a battery must be closed,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:286841e1e0735c5a,They must be in the same path to affect the bulb.,If a bulb and a switch are in the same path the switch affects the bulb,5
+beetle:286841e1e0735c5a,a switch affects thebulb if it lies along a path that could create a closed circuit,If a bulb and a switch are in the same path the switch affects the bulb,0
+beetle:286841e1e0735c5a,if the switch is on?,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:286841e1e0735c5a,It must be closed,If a bulb and a switch are in the same path the switch affects the bulb,3
+beetle:37634c94d2cd8903,It is on a complete path with the battery,Bulb A was still contained in the same closed path with the battery.,0
+beetle:37634c94d2cd8903,because it was contained in a closed path to the battery.,Bulb A was still contained in the same closed path with the battery.,5
+beetle:37634c94d2cd8903,The battery is conatined in the same path as the bulb.,Bulb A was still contained in the same closed path with the battery.,3
+beetle:37634c94d2cd8903,there was a gap in therefdjkjreajfjhkldec,Bulb A was still contained in the same closed path with the battery.,0
+beetle:37634c94d2cd8903,Bulb a was in a closed path with a battery.,Bulb A was still contained in the same closed path with the battery.,5
+beetle:37634c94d2cd8903,bulb a and switch z are contained in a closed path with a battery,Bulb A was still contained in the same closed path with the battery.,5
+beetle:37634c94d2cd8903,it does not affect bulb a. switch x does affect bulb a. switch x was closed,Bulb A was still contained in the same closed path with the battery.,3
+beetle:37634c94d2cd8903,Bulb A is in the path of switch x.,Bulb A was still contained in the same closed path with the battery.,3
+beetle:37634c94d2cd8903,Bulb A was in a closed circuit.,Bulb A was still contained in the same closed path with the battery.,0
+beetle:37634c94d2cd8903,"Because it""s path was closed.",Bulb A was still contained in the same closed path with the battery.,3
+beetle:37634c94d2cd8903,it was on a closed path and connected to the battery,Bulb A was still contained in the same closed path with the battery.,5
+beetle:37634c94d2cd8903,Bulb A was on because the path was closed from bulb A to the battery.,Bulb A was still contained in the same closed path with the battery.,5
+beetle:3f5c368d9c7277e3,Bulb B is in the same path,Bulbs A and C are still in closed paths with the battery,0
+beetle:3f5c368d9c7277e3,"There is still a closed path that contains the battery, Bulb A, and Bulb C.",Bulbs A and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,bulb a will be in a closed path. bulb c will be in a closed path.,Bulbs A and C are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,different path,Bulbs A and C are still in closed paths with the battery,3
+beetle:3f5c368d9c7277e3,Bulbs A and C will still have closed circuits with both terminals of the battery.,Bulbs A and C are still in closed paths with the battery,0
+beetle:3f5c368d9c7277e3,bulbs A and C will still be on a closed path with the battery,Bulbs A and C are still in closed paths with the battery,5
+beetle:62f8b25113a9682d,bulbs b and c are contained in a closed path with the battery,Bulb B and Bulb C were still contained in the same closed path with the battery.,5
+beetle:62f8b25113a9682d,Bulbs B and C were still in a closed path with the battery,Bulb B and Bulb C were still contained in the same closed path with the battery.,5
+beetle:62f8b25113a9682d,Becuase the dots allowed bulb A and switch X to be bypassed and still form a closed pathway.,Bulb B and Bulb C were still contained in the same closed path with the battery.,0
+beetle:62f8b25113a9682d,Blub B ab=nd C were still contained in a closed path with the battery,Bulb B and Bulb C were still contained in the same closed path with the battery.,5
+beetle:6c4b094a703bbe6f,when there is a closed path,When the switch and the bulb are contained in the same path,3
+beetle:6c4b094a703bbe6f,a bulb is contained in the closed path,When the switch and the bulb are contained in the same path,3
+beetle:6c4b094a703bbe6f,"If the bulb and the switch are contained in the same path, then the switch affects the bulb.",When the switch and the bulb are contained in the same path,5
+beetle:6c4b094a703bbe6f,the switch will affect the bulb if it is on the path with the bulb to the battery,When the switch and the bulb are contained in the same path,5
+beetle:6c4b094a703bbe6f,"if a bulb is in a closed path with a battery and a switch, the switch will affect the bulb.",When the switch and the bulb are contained in the same path,5
+beetle:6c4b094a703bbe6f,"if a switch is open and the path is not closed, the bulb will be off. if the switch is closed and the path is closed, the bulb will be on.",When the switch and the bulb are contained in the same path,0
+beetle:6c4b094a703bbe6f,when the switch is in the same path as the bulb,When the switch and the bulb are contained in the same path,5
+beetle:6c4b094a703bbe6f,a switch will effect a bulb if it is in the same path as the battery,When the switch and the bulb are contained in the same path,3
+beetle:6c4b094a703bbe6f,if it opens a gap,When the switch and the bulb are contained in the same path,3
+beetle:6c4b094a703bbe6f,"if the switch is open, the bulb will be off. if the switch is closed the bulb will be on.",When the switch and the bulb are contained in the same path,0
+beetle:6c4b094a703bbe6f,When a switch is on the same path as the battery and the bulb,When the switch and the bulb are contained in the same path,5
+beetle:3f5c368d9c7277e3,because the terminal will be closed,bulbs A and B are still in closed paths with the battery,0
+beetle:3f5c368d9c7277e3,there is still a closed path,bulbs A and B are still in closed paths with the battery,3
+beetle:3f5c368d9c7277e3,bulb c is not in the same path as bulb a or bulb b so the gap in the path does not affect bulb a or bulb b,bulbs A and B are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,bulbs a and b are still contained in a closed path with the battery.,bulbs A and B are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,because each bulb has its own pathway,bulbs A and B are still in closed paths with the battery,5
+beetle:3f5c368d9c7277e3,because they will still be in a closed circuit with the battery,bulbs A and B are still in closed paths with the battery,0
+beetle:3f5c368d9c7277e3,A and B are still in a closed circuit,bulbs A and B are still in closed paths with the battery,0
+beetle:2a2f985b38d08377,because yyou are retarded,Bulbs A and C are still contained in closed paths with the battery,0
+beetle:2a2f985b38d08377,bulbs a and c were not in a closed path with bulb b,Bulbs A and C are still contained in closed paths with the battery,5
+beetle:2a2f985b38d08377,a and c are in a closed path with the battery,Bulbs A and C are still contained in closed paths with the battery,5
+beetle:2a2f985b38d08377,because they are in seperate paths,Bulbs A and C are still contained in closed paths with the battery,5
+beetle:2a2f985b38d08377,because bulb b is not in the same path as the other bulbs,Bulbs A and C are still contained in closed paths with the battery,5
+beetle:2a2f985b38d08377,They had a direct contained path,Bulbs A and C are still contained in closed paths with the battery,3
+beetle:3f5c368d9c7277e3,bulbs a and c are in separate closed paths with the battery,A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,bulb c is contained in a closed circuit,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,bulbs A and C are on different baths with the battery,A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,they are in different closed paths and dont effect each other,A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,closed path,B and C are in the same path with the battery,3
+beetle:3f5c368d9c7277e3,bulbs b and c are contained in a closed path,B and C are in the same path with the battery,3
+beetle:3f5c368d9c7277e3,conatined within the same path as the battery,B and C are in the same path with the battery,5
+beetle:3f5c368d9c7277e3,because the outcome of the bulb will affect the other,B and C are in the same path with the battery,0
+beetle:3f5c368d9c7277e3,they are contained in the same path as each other,B and C are in the same path with the battery,5
+beetle:3f5c368d9c7277e3,bulbs b and c are contained in the same closed path.,B and C are in the same path with the battery,5
+beetle:3f5c368d9c7277e3,Bulb B and bulb C are contained in the same closed path with the battery.,B and C are in the same path with the battery,5
+beetle:3f5c368d9c7277e3,they are on the same path,B and C are in the same path with the battery,5
+beetle:3f5c368d9c7277e3,you are stupid,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,bulb A is contained in a closed path,A and C are in different paths with the battery,3
+beetle:3f5c368d9c7277e3,BULB A IS IN A DIFFERENT PATH FROM BULB B AND BULB C.,A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,open paths,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,i give up.,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,Bulb A and bulb C are contained within different closed paths,A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,"Bulbs A, B, and C are not contained within the same path",A and C are in different paths with the battery,5
+beetle:3f5c368d9c7277e3,it is,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,because they are all in a different path,A and C are in different paths with the battery,3
+beetle:3f5c368d9c7277e3,because they are not in a closed path,A and C are in different paths with the battery,0
+beetle:3f5c368d9c7277e3,because the bulbs are on their own closed pathways,A and C are in different paths with the battery,3
+beetle:3f5c368d9c7277e3,because the paths will still be closed,"If bulb A burns out, B and C are no longer in a closed path with the battery",0
+beetle:3f5c368d9c7277e3,they are in different paths,"If bulb A burns out, B and C are no longer in a closed path with the battery",0
+beetle:3f5c368d9c7277e3,There is a gap in the path.,"If bulb A burns out, B and C are no longer in a closed path with the battery",5
+beetle:3f5c368d9c7277e3,Bulbs B and C will no longer be contained in a closed path,"If bulb A burns out, B and C are no longer in a closed path with the battery",5
+beetle:3f5c368d9c7277e3,becuase bulb a breaks the pathway for all bulbs to the battery.,"If bulb A burns out, B and C are no longer in a closed path with the battery",5
+beetle:a77e41aedcd75ed2,the battery is in a closed path,the battery is contained in a path in which there is no bulb,3
+beetle:a77e41aedcd75ed2,The battery is in a closed path alone.,the battery is contained in a path in which there is no bulb,5
+beetle:a77e41aedcd75ed2,The bulb is not contained in the circuit.,the battery is contained in a path in which there is no bulb,3
+beetle:a77e41aedcd75ed2,bulb does not light,the battery is contained in a path in which there is no bulb,0
+beetle:a77e41aedcd75ed2,It is a short circuit because the battery is contained in a closed path without the bulb.,the battery is contained in a path in which there is no bulb,5
+beetle:a77e41aedcd75ed2,the battery is in a closed path without any other components,the battery is contained in a path in which there is no bulb,5
+beetle:a77e41aedcd75ed2,The battery is in a closed path. The battery is not connected to a bulb.,the battery is contained in a path in which there is no bulb,5
+beetle:a77e41aedcd75ed2,bulb is outside the closed path,the battery is contained in a path in which there is no bulb,3
+beetle:a77e41aedcd75ed2,The battery connects to a bulb.,the battery is contained in a path in which there is no bulb,0
+beetle:a77e41aedcd75ed2,Circuit 5 is a short circuit because it is contained in a closed path and the bulb does not interfere.,the battery is contained in a path in which there is no bulb,5
+beetle:ddbb8342e85b99cf,no charge,the battery is damaged,3
+beetle:ddbb8342e85b99cf,the battery is unable to give a charge,the battery is damaged,3
+beetle:ddbb8342e85b99cf,The circuit path is damaged.,the battery is damaged,0
+beetle:ddbb8342e85b99cf,I think it means that the connection is incorrect.,the battery is damaged,0
+beetle:ddbb8342e85b99cf,Do not do this with a real battery.,the battery is damaged,0
+beetle:ddbb8342e85b99cf,The battery is damaged.,the battery is damaged,5
+beetle:ddbb8342e85b99cf,damaged battery,the battery is damaged,5
+beetle:ddbb8342e85b99cf,the circuit is short,the battery is damaged,5
+beetle:ddbb8342e85b99cf,It has a short circuit and is not being used in the correct way.,the battery is damaged,5
+beetle:ddbb8342e85b99cf,That there is a short circut,the battery is damaged,5
+beetle:ddbb8342e85b99cf,that there is a short circuit and that the battery is not hooked up properly.,the battery is damaged,5
+beetle:e697622d1a3b508f,It causes the path to be incomplete.,the open switch creates a gap,0
+beetle:e697622d1a3b508f,the path is open instead of closed,the open switch creates a gap,3
+beetle:e697622d1a3b508f,it makes the path open,the open switch creates a gap,5
+beetle:e697622d1a3b508f,because everything is connected,the open switch creates a gap,0
+beetle:e697622d1a3b508f,A switch creates electricity,the open switch creates a gap,0
+beetle:e697622d1a3b508f,"I don""t know.",the open switch creates a gap,0
+beetle:e697622d1a3b508f,"The electrical current can""t get to the battery",the open switch creates a gap,0
+beetle:e697622d1a3b508f,An open switch makes a gap in the path.,the open switch creates a gap,5
+beetle:e697622d1a3b508f,prevents the circuit from being closed and current from traveling through it,the open switch creates a gap,0
+beetle:e697622d1a3b508f,An open switch creates a gap in the path.,the open switch creates a gap,5
+beetle:e697622d1a3b508f,"it cuts the electrical current that is needed to light up the light bulb. It needs to be connected on both sides and if one is disconnected then the bulb won""t light up.",the open switch creates a gap,0
+beetle:e697622d1a3b508f,it opens up the closed path,the open switch creates a gap,5
+beetle:ef9bbd9b8581e067,a positive and a negative connection.,there is a closed path containing both the bulb and a battery,3
+beetle:ef9bbd9b8581e067,A light bulb must be connected to the battery.,there is a closed path containing both the bulb and a battery,3
+beetle:ef9bbd9b8581e067,the correct connection is made to the proper terminal.,there is a closed path containing both the bulb and a battery,0
+beetle:ef9bbd9b8581e067,the positive and negative charges of the battery must connect to the bulb,there is a closed path containing both the bulb and a battery,5
+beetle:ef9bbd9b8581e067,there has to be a closed circuit,there is a closed path containing both the bulb and a battery,0
+beetle:ef9bbd9b8581e067,i do not know,there is a closed path containing both the bulb and a battery,0
+beetle:ef9bbd9b8581e067,A closed circuit.,there is a closed path containing both the bulb and a battery,0
+beetle:ef9bbd9b8581e067,a closed path between the battery and the bulb,there is a closed path containing both the bulb and a battery,5
+beetle:ef9bbd9b8581e067,"One contact connected to the + and the other attached to the -, in a closed pathway.",there is a closed path containing both the bulb and a battery,3
+beetle:ef9bbd9b8581e067,Both the battery and the bulb must be closed.,there is a closed path containing both the bulb and a battery,3
+beetle:ef9bbd9b8581e067,The battery and the light bulb must be in a closed path,there is a closed path containing both the bulb and a battery,5
+beetle:3f5c368d9c7277e3,gap in connection,bulb B creates a gap,3
+beetle:3f5c368d9c7277e3,"if bulb b is damaged, there will be no path from a to c.",bulb B creates a gap,3
+beetle:3f5c368d9c7277e3,If bulb B is damaged it creates a gap in the path.,bulb B creates a gap,5
+beetle:3f5c368d9c7277e3,no path through the bulb holder= open circuit,bulb B creates a gap,0
+beetle:3f5c368d9c7277e3,because that would create a gap.,bulb B creates a gap,3
+beetle:3f5c368d9c7277e3,"In order for bulbs A and C to work properly, they also need B to work properly because they are all connected to the same battery power.",bulb B creates a gap,3
+beetle:93eb7ecf1d928023,because it creates a gap,a damaged bulb creates a gap,5
+beetle:93eb7ecf1d928023,if a bulb is damaged the path is opned at that bulb,a damaged bulb creates a gap,5
+beetle:93eb7ecf1d928023,there is a gap in the circuit,a damaged bulb creates a gap,5
+beetle:93eb7ecf1d928023,doesnt allow for current to run through the circuit,a damaged bulb creates a gap,0
+beetle:93eb7ecf1d928023,It destroys the path way,a damaged bulb creates a gap,5
+beetle:3f5c368d9c7277e3,Because they are on the same path.,A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,"Bulb A, B, and C are contained in the same path with the battery.",A and C are in the same closed path,5
+beetle:3f5c368d9c7277e3,The buls are contained in the same closed path.  Removing one bulb will shut off the other.,A and C are in the same closed path,5
+beetle:3f5c368d9c7277e3,"if bulb B was damaged, bulb A and bulb C  would be off",A and C are in the same closed path,0
+beetle:3f5c368d9c7277e3,"if one bulb was damaged, the other bulbs would be off.",A and C are in the same closed path,0
+beetle:3f5c368d9c7277e3,"bulbs A and C are contained in the same path. If Bulb A goes out, bulb C is affected",A and C are in the same closed path,5
+beetle:3f5c368d9c7277e3,removing or damaging one bulb will shut off the other bulbs.,A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,they are all on the same path to the battery,A and C are in the same closed path,5
+beetle:3f5c368d9c7277e3,they are contained in the same closed path with the battery.,A and C are in the same closed path,5
+beetle:3f5c368d9c7277e3,when one bulb is removed or damaged it affects the other,A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,they will affect eachother,A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,because there is no other path,A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,"bulbs a, b, and c are all affected by one another.",A and C are in the same closed path,3
+beetle:3f5c368d9c7277e3,"If bulb A was removed, it  wouldn""t affect bulb C.",A and C are in the same closed path,0
+beetle:3f5c368d9c7277e3,"bulb a is connected to bulb b and bulb c. if bulb a is damaged, it will affect bulbs b and c.",A and C are in the same closed path,3
+beetle:bcc8666592d5f20e,bulb is connected to same terminal,The battery in 2 is not in a closed path,0
+beetle:bcc8666592d5f20e,Because the battery is not completely connected.,The battery in 2 is not in a closed path,3
+beetle:bcc8666592d5f20e,the positive and negative ends of battery 2 are not connected,The battery in 2 is not in a closed path,3
+beetle:bcc8666592d5f20e,Circuit 2 is not a short circuit because there is a bulb.,The battery in 2 is not in a closed path,3
+beetle:bcc8666592d5f20e,Only one side of the battery is connected.,The battery in 2 is not in a closed path,3
+beetle:bcc8666592d5f20e,The closed path is only contains the negative side of the battery and the bulb.,The battery in 2 is not in a closed path,0
+beetle:c8e3304ad2ee32e3,circuit 4 is a short circuit.,Circuit 4 has no closed paths,0
+beetle:c8e3304ad2ee32e3,battery is not on a closed path,Circuit 4 has no closed paths,5
+beetle:c8e3304ad2ee32e3,there are no closed paths,Circuit 4 has no closed paths,5
+beetle:c8e3304ad2ee32e3,Because the path is open,Circuit 4 has no closed paths,5

@@ -1,0 +1,51 @@
+{
+	"functions": {
+		"source": "functions"
+	},
+	"firestore": {
+		"rules": "firestore.rules"
+	},
+	"storage": {
+		"rules": "storage.rules"
+	},
+	"hosting": {
+		"public": "web_admin",
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"headers": [
+			{
+				"source": "**",
+				"headers": [
+					{ "key": "X-Content-Type-Options", "value": "nosniff" },
+					{ "key": "X-Frame-Options", "value": "DENY" },
+					{ "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+					{ "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+				]
+			}
+		]
+	},
+	"flutter": {
+		"platforms": {
+			"android": {
+				"default": {
+					"projectId": "visiongrade-20260913",
+					"appId": "1:629739453709:android:275f6ea189cfc085970444",
+					"fileOutput": "android/app/google-services.json"
+				}
+			},
+			"dart": {
+				"lib/firebase_options.dart": {
+					"projectId": "visiongrade-20260913",
+					"configurations": {
+						"android": "1:629739453709:android:275f6ea189cfc085970444",
+						"ios": "1:629739453709:ios:6c5ffbc788857ca7970444",
+						"web": "1:629739453709:web:e145b7f2bd44ccea970444"
+					}
+				}
+			}
+		}
+	}
+}

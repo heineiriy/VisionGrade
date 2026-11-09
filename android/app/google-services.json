@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629739453709",
+    "project_id": "visiongrade-20260913",
+    "storage_bucket": "visiongrade-20260913.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629739453709:android:275f6ea189cfc085970444",
+        "android_client_info": {
+          "package_name": "com.example.visiongrade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpFkRv6pVXLBVyiI3sk9P1TRXLD_ZgoL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "source_note": "Extracted from 19 unique user-provided Grade 7-10 lesson plans; three exact duplicate PDF groups were excluded. The source plans declare AI assistance and do not specify references. English objective summaries and concept terms are normalized for retrieval and require instructor validation.",
+  "training_use": "Curriculum context only. These records are not student responses, score labels, or model-training examples.",
+  "lessons": [
+    {
+      "id": "ap-grade-7-geography-early-cultures",
+      "grade": 7,
+      "learning_area": "Araling Panlipunan",
+      "lesson_title": "Ang Heograpiya at ang Pag-usbong ng Sinaunang Kalinangan sa Pilipinas at Timog Silangang Asya",
+      "source_file": "Copy of AP_T1_W1.doc.pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Identify and map the physical features and topography of the Philippines and Southeast Asia.",
+        "Explain how geography, settlement choices, rivers, coastlines, and local natural resources shaped early communities.",
+        "Analyze how geography influenced beliefs, traditions, arts, and early cultures in the Philippines and Southeast Asia.",
+        "Create a project explaining the relationship between geography, history, and early culture."
+      ],
+      "expected_concepts": [
+        "physical geography",
+        "topography",
+        "Philippines",
+        "Southeast Asia",
+        "settlement patterns",
+        "rivers",
+        "coastlines",
+        "natural resources",
+        "early cultures",
+        "beliefs",
+        "traditions",
+        "arts",
+        "geography and history"
+      ]
+    },
+    {
+      "id": "ap-grade-8-european-japanese-imperialism",
+      "grade": 8,
+      "learning_area": "Araling Panlipunan",
+      "lesson_title": "Ang Hamon at Bakas ng Imperyalismong Europeo at Japan sa Asya at Africa",
+      "source_file": "Copy of AP_T2_W1.doc.pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Explain imperialism and colonialism, including European motives such as God, Gold, and Glory and the role of industrialization.",
+        "Describe direct and indirect colonial rule and analyze effects on people in Asia and Africa.",
+        "Explain the Meiji Restoration, Japanese modernization and imperial expansion, occupied territories, and regional security effects.",
+        "Compare European and Japanese imperialism and propose a response to a current issue connected to nationalism and sovereignty."
+      ],
+      "expected_concepts": [
+        "imperialism",
+        "colonialism",
+        "God Gold Glory",
+        "industrialization",
+        "direct rule",
+        "indirect rule",
+        "Asia",
+        "Africa",
+        "White Man's Burden",
+        "Meiji Restoration",
+        "Japanese modernization",
+        "territorial expansion",
+        "regional security",
+        "nationalism",
+        "sovereignty"
+      ]
+    },
+    {
+      "id": "ap-grade-9-economics-sustainable-development",
+      "grade": 9,
+      "learning_area": "Araling Panlipunan",
+      "lesson_title": "Ekonomiks at Likas-Kayang Pag-unlad: Batayan ng Matalinong Pagpapasya sa Sambahayan",
+      "source_file": "Copy of AP_T1_W1.doc (1).pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Explain economics and its relationship to everyday life, choice, and scarcity.",
+        "Analyze trade-offs, opportunity cost, incentives, and marginal thinking and apply them to decisions.",
+        "Explain allocation as a response to scarcity and connect informed choices to sustainable development.",
+        "Analyze how household decisions relate to demand, supply, production, and consumption."
+      ],
+      "expected_concepts": [
+        "economics",
+        "choice",
+        "scarcity",
+        "allocation",
+        "trade-off",
+        "opportunity cost",
+        "incentives",
+        "marginal thinking",
+        "sustainable development",
+        "household decisions",
+        "demand",
+        "supply",
+        "production",
+        "consumption"
+      ]
+    },
+    {
+      "id": "ap-grade-9-history-independence-martial-law",
+      "grade": 9,
+      "learning_area": "Araling Panlipunan",
+      "lesson_title": "Kasaysayan at Panitikan: Mula Kasarinlan Hanggang Batas Militar",
+      "source_file": "Copy of F_T1_W1 (1).doc.pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Identify significant Philippine historical events after World War II and explain their effects on literature.",
+        "Analyze causes and effects of the Activism period and themes of protest and social awareness in writing.",
+        "Explain Martial Law, censorship, and effects on freedom of expression and literary form.",
+        "Connect events from Independence through Martial Law to present-day Philippine contexts and plan a historically informed graphic-novel cover."
+      ],
+      "expected_concepts": [
+        "Philippine independence",
+        "World War II",
+        "postwar reconstruction",
+        "Activism period",
+        "protest",
+        "social awareness",
+        "Martial Law",
+        "censorship",
+        "freedom of expression",
+        "literature",
+        "historical context",
+        "graphic novel"
+      ]
+    },
+    {
+      "id": "ap-grade-10-contemporary-issues",
+      "grade": 10,
+      "learning_area": "Araling Panlipunan",
+      "lesson_title": "Kamalayan at Pananagutan: Ang Kahalagahan ng mga Kontemporaryong Isyu",
+      "source_file": "Copy of AP_T1_W1.doc (2).pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Define contemporary issues, identify examples in the local community, and explain their relationship to daily life.",
+        "Analyze how awareness of contemporary issues supports personal well-being and responsible citizenship.",
+        "Discuss the effects of limited awareness and propose ways young people can help address local issues.",
+        "Develop an action plan or presentation responding to a local environmental or economic challenge."
+      ],
+      "expected_concepts": [
+        "contemporary issues",
+        "local community",
+        "environmental challenges",
+        "economic issues",
+        "social issues",
+        "public awareness",
+        "responsible citizenship",
+        "decision-making",
+        "youth participation",
+        "action plan"
+      ]
+    },
+    {
+      "id": "english-grade-7-literary-conflict-filipino-values",
+      "grade": 7,
+      "learning_area": "English",
+      "lesson_title": "Navigating Conflicts: Filipino Values in Literary Contexts",
+      "source_file": "Copy of E_T1_W1.doc.pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify external conflict types and analyze character-versus-character conflict in Philippine short stories.",
+        "Relate interpersonal conflict to Filipino values such as pakikisama and kagandahang-loob.",
+        "Analyze character-versus-society conflict, communal expectations, and paninindigan.",
+        "Analyze character-versus-nature conflict, resilience, bayanihan, and pagdamay and synthesize the conflict types in a text."
+      ],
+      "expected_concepts": [
+        "Philippine literature",
+        "literary conflict",
+        "character versus character",
+        "character versus society",
+        "character versus nature",
+        "external conflict",
+        "communal values",
+        "pakikisama",
+        "kagandahang-loob",
+        "paninindigan",
+        "katatagan",
+        "bayanihan",
+        "pagdamay"
+      ]
+    },
+    {
+      "id": "english-grade-8-afro-asian-literature",
+      "grade": 8,
+      "learning_area": "English",
+      "lesson_title": "Unveiling Identities: Exploring Conflict in Afro-Asian Literature",
+      "source_file": "Copy of E_T1_W1.doc (1).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Explain how Afro-Asian literature reflects cultural identity and analyze character-versus-character conflict.",
+        "Analyze character-versus-society conflict, communal values, and social norms in literary settings.",
+        "Analyze character-versus-nature conflict, symbolism, human struggle, and resilience.",
+        "Synthesize conflict types and create a multimodal response reflecting a chosen conflict and cultural identity."
+      ],
+      "expected_concepts": [
+        "Afro-Asian literature",
+        "cultural identity",
+        "character versus character",
+        "character versus society",
+        "character versus nature",
+        "communal values",
+        "social norms",
+        "symbolism",
+        "resilience",
+        "literary analysis",
+        "multimodal response"
+      ]
+    },
+    {
+      "id": "english-grade-9-characterization-conflict",
+      "grade": 9,
+      "learning_area": "English",
+      "lesson_title": "Mirroring the Self and Society: A Deep Dive into Character and Conflict",
+      "source_file": "Copy of E_T1_W1.doc (2).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Distinguish direct and indirect characterization and analyze character traits using Speech, Thoughts, Effects, Actions, and Looks (S.T.E.A.L.).",
+        "Explain how character traits and external conflict express individual or communal values.",
+        "Analyze character-versus-society conflict and the social norms that pressure characters.",
+        "Analyze character-versus-nature conflict and synthesize characterization and conflict in a multimodal response."
+      ],
+      "expected_concepts": [
+        "direct characterization",
+        "indirect characterization",
+        "S.T.E.A.L.",
+        "speech",
+        "thoughts",
+        "effects on others",
+        "actions",
+        "looks",
+        "character traits",
+        "character versus character",
+        "character versus society",
+        "character versus nature",
+        "communal values",
+        "social norms"
+      ]
+    },
+    {
+      "id": "english-grade-10-literary-structures",
+      "grade": 10,
+      "learning_area": "English",
+      "lesson_title": "Values and Visions: Analyzing Literary Structures in Global and Local Contexts",
+      "source_file": "Copy of E_T1_W2.doc.pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify direct and indirect characterization and connect character traits to Filipino or communal values.",
+        "Distinguish character-versus-character and character-versus-society conflict and explain the tension between individual desires and communal expectations.",
+        "Analyze character-versus-nature conflict, resilience, and environmental stewardship.",
+        "Synthesize characterization and conflict to evaluate theme and assess a short-film pitch."
+      ],
+      "expected_concepts": [
+        "literary structure",
+        "direct characterization",
+        "indirect characterization",
+        "character traits",
+        "character versus character",
+        "character versus society",
+        "character versus nature",
+        "individual desires",
+        "communal expectations",
+        "resilience",
+        "environmental stewardship",
+        "theme"
+      ]
+    },
+    {
+      "id": "filipino-grade-7-oral-traditions",
+      "grade": 7,
+      "learning_area": "Filipino",
+      "lesson_title": "Ang Panitikan sa Panahon ng Katutubo: Karunungang Bayan",
+      "source_file": "Copy of F_T1_W1.doc (1).pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Explain the historical context of indigenous-era Philippine literature and the transition from oral tradition to writing.",
+        "Analyze bugtong, tanaga, and sawikain, including meaning, meter, rhyme, and literary elements.",
+        "Interpret the lessons and messages in salawikain and kasabihan.",
+        "Identify the speaker, style, symbols, metaphors, and imagery in indigenous poetry."
+      ],
+      "expected_concepts": [
+        "indigenous-era literature",
+        "oral tradition",
+        "bugtong",
+        "tanaga",
+        "sawikain",
+        "salawikain",
+        "kasabihan",
+        "meter",
+        "rhyme",
+        "persona",
+        "symbolism",
+        "metaphor",
+        "imagery"
+      ]
+    },
+    {
+      "id": "filipino-grade-8-propaganda-revolution-poetry",
+      "grade": 8,
+      "learning_area": "Filipino",
+      "lesson_title": "Panitikan sa Panahon ng Himagsikan at Propaganda: Kasaysayan at Sining ng Tula",
+      "source_file": "Copy of F_T1_W1.doc (2).pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Explain historical events and literary works from the Propaganda and Revolution periods and show their relationship in a timeline.",
+        "Identify a poem's persona, meter, rhyme, topic, content, and ideas.",
+        "Interpret symbols, metaphors, imagery, tone, and style and relate a poem's images to historical and present-day situations.",
+        "Prepare an outline for a video or animation about Filipino culture using visual and multimodal elements."
+      ],
+      "expected_concepts": [
+        "Propaganda period",
+        "Philippine Revolution",
+        "historical context",
+        "poetry",
+        "persona",
+        "meter",
+        "rhyme",
+        "topic",
+        "symbolism",
+        "metaphor",
+        "imagery",
+        "tone",
+        "style",
+        "multimodal composition"
+      ]
+    },
+    {
+      "id": "filipino-grade-10-el-filibusterismo",
+      "grade": 10,
+      "learning_area": "Filipino",
+      "lesson_title": "Kaligirang Pangkasaysayan at Panimulang Pagsusuri sa El Filibusterismo",
+      "source_file": "Copy of F1_T1_W1.doc.pdf",
+      "source_language": "fil",
+      "learning_objectives": [
+        "Identify historical events connected to El Filibusterismo and explain the influence of GOMBURZA on Rizal's writing.",
+        "Analyze the content and message of Pag-aalay and connect historical details about GOMBURZA to the novel.",
+        "Identify key characters and changes involving characters from Noli Me Tangere.",
+        "Analyze changes in tone and purpose between Rizal's two novels."
+      ],
+      "expected_concepts": [
+        "El Filibusterismo",
+        "Noli Me Tangere",
+        "Jose Rizal",
+        "GOMBURZA",
+        "historical context",
+        "Pag-aalay",
+        "characterization",
+        "tone",
+        "purpose",
+        "novel"
+      ]
+    },
+    {
+      "id": "mapeh-grade-7-arts-adolescent-wellbeing",
+      "grade": 7,
+      "learning_area": "MAPEH",
+      "lesson_title": "Contemporary Expressions and Adolescent Well-being: Bridging Arts and Mental Health",
+      "source_file": "Copy of M_T1_W1 (1).doc.pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify representative contemporary Philippine visual arts and explain their role in local cultural identity.",
+        "Compare Philippine and selected Southeast Asian performing arts and explain their contribution to regional cultural diversity.",
+        "Discuss adolescent concerns such as academic pressure, social media, and body image and connect cultural expectations to mental health.",
+        "Create an artistic output expressing identity or a mental-health message."
+      ],
+      "expected_concepts": [
+        "contemporary Philippine visual arts",
+        "local cultural identity",
+        "performing arts",
+        "Southeast Asian arts",
+        "regional cultural diversity",
+        "adolescent concerns",
+        "academic pressure",
+        "social media",
+        "body image",
+        "cultural expectations",
+        "mental health",
+        "creative expression"
+      ]
+    },
+    {
+      "id": "mapeh-grade-8-asian-arts-healthy-sexuality",
+      "grade": 8,
+      "learning_area": "MAPEH",
+      "lesson_title": "Vibrant Asian Arts and the Foundations of Healthy Sexuality",
+      "source_file": "Copy of M_T1_W1 (1).doc (1).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify emerging popular performing and visual arts in East Asian countries and analyze their artistic elements.",
+        "Define sexuality and its dimensions and explain how personal and family values support healthy, positive sexuality.",
+        "Critique portrayals of gender and relationships in Asian popular media and discuss how media may influence gender-based issues.",
+        "Develop an artistic concept promoting healthy sexuality and preventing gender-based issues."
+      ],
+      "expected_concepts": [
+        "East Asian arts",
+        "performing arts",
+        "visual arts",
+        "K-pop",
+        "anime",
+        "digital art",
+        "sexuality",
+        "personal values",
+        "family values",
+        "gender representation",
+        "media influence",
+        "gender-based issues"
+      ]
+    },
+    {
+      "id": "mathematics-grade-8-community-data-algebra",
+      "grade": 8,
+      "learning_area": "Mathematics",
+      "lesson_title": "Analyzing Community Data: Measures of Central Tendency and Algebraic Modeling",
+      "source_file": "Copy of M_T1_W1.doc (1).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Calculate the mean of ungrouped community data and explain its use as a typical value.",
+        "Determine the median and mode and compare when each measure of central tendency is appropriate.",
+        "Draw conclusions and make decisions using mean, median, and mode in contextual situations.",
+        "Model real-life situations with algebraic expressions and translate average-related word problems into equations."
+      ],
+      "expected_concepts": [
+        "ungrouped data",
+        "mean",
+        "median",
+        "mode",
+        "measures of central tendency",
+        "data interpretation",
+        "community data",
+        "algebraic expressions",
+        "variables",
+        "word problems",
+        "equations",
+        "averages"
+      ]
+    },
+    {
+      "id": "mathematics-grade-10-law-of-sines",
+      "grade": 10,
+      "learning_area": "Mathematics",
+      "lesson_title": "Mastering the Law of Sines in Oblique Triangles",
+      "source_file": "Copy of M_T1_W1 (1).doc (2).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify oblique triangles, derive the Law of Sines, and solve for missing sides using known angles and a side.",
+        "Apply the Law of Sines to find missing angles and verify results with the Triangle Angle Sum Theorem.",
+        "Explain the ambiguous SSA case, determine whether it yields zero, one, or two triangles, and use height to assess solutions.",
+        "Translate real-world word problems into diagrams and evaluate whether calculated solutions are reasonable."
+      ],
+      "expected_concepts": [
+        "oblique triangles",
+        "right triangles",
+        "Law of Sines",
+        "sine",
+        "inverse sine",
+        "missing sides",
+        "missing angles",
+        "ASA",
+        "SAA",
+        "SSA",
+        "ambiguous case",
+        "Triangle Angle Sum Theorem",
+        "height",
+        "mathematical modeling"
+      ]
+    },
+    {
+      "id": "science-grade-7-particle-model-matter",
+      "grade": 7,
+      "learning_area": "Science",
+      "lesson_title": "Exploring the Unseen: The Particle Model of Matter",
+      "source_file": "Copy of S_T1_W1.doc.pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Explain why scientists use models for phenomena that are difficult to observe directly and identify model types in daily life.",
+        "Describe the particle model's claim that matter is made of tiny particles and explain how larger substances can be understood as particles.",
+        "Explain that each pure substance has its own kind of particle and distinguish substances by particle identity.",
+        "Use particle-model ideas to explain simple phenomena such as smell spreading and draw a particle arrangement model."
+      ],
+      "expected_concepts": [
+        "scientific models",
+        "particle model of matter",
+        "matter",
+        "particles",
+        "pure substances",
+        "particle identity",
+        "mixtures",
+        "particle arrangement",
+        "diffusion",
+        "smell spreading"
+      ]
+    },
+    {
+      "id": "science-grade-8-digestion-excretion",
+      "grade": 8,
+      "learning_area": "Science",
+      "lesson_title": "Nutrient Network: The Synergy of Digestion and Excretion",
+      "source_file": "Copy of S_T1_W1.doc (1).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Identify digestive organs, trace the pathway of food, and explain mechanical processing in the mouth and stomach.",
+        "Describe secretion and chemical digestion in the stomach and small intestine and explain how enzymes and bile break down food.",
+        "Explain nutrient absorption, water absorption, waste formation, and elimination and connect digestion to excretion.",
+        "Show how digestive and excretory systems work together to maintain body balance and homeostasis."
+      ],
+      "expected_concepts": [
+        "digestive system",
+        "digestive organs",
+        "food pathway",
+        "mechanical digestion",
+        "chemical digestion",
+        "stomach",
+        "small intestine",
+        "enzymes",
+        "bile",
+        "nutrient absorption",
+        "water absorption",
+        "large intestine",
+        "waste formation",
+        "elimination",
+        "excretory system",
+        "homeostasis"
+      ]
+    },
+    {
+      "id": "science-grade-10-reactions-acids-bases",
+      "grade": 10,
+      "learning_area": "Science",
+      "lesson_title": "Chemical Reactions and the Nature of Acids, Bases, and Salts",
+      "source_file": "Copy of S_T1_W1.doc (3).pdf",
+      "source_language": "en",
+      "learning_objectives": [
+        "Describe color and temperature changes as signs of chemical reactions and connect observations to familiar examples.",
+        "Explain precipitate formation and gas release and distinguish chemical gas evolution from physical boiling.",
+        "Identify common household acids, bases, and salts and describe general properties of acids and bases.",
+        "Use natural or commercial indicators to classify substances and evaluate indicator reliability in a controlled investigation."
+      ],
+      "expected_concepts": [
+        "chemical reactions",
+        "color change",
+        "temperature change",
+        "precipitate",
+        "gas evolution",
+        "physical change",
+        "boiling",
+        "acids",
+        "bases",
+        "salts",
+        "indicators",
+        "litmus",
+        "controlled investigation",
+        "reliability"
+      ]
+    }
+  ]
+}
