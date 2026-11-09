@@ -1,7 +1,4 @@
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -17,10 +14,14 @@ Future<void> openTaskAttachment(
   required String name,
 }) async {
   if (isPdfAttachment(url: url, name: name)) {
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => TaskPdfViewer(url: url, title: name),
-      ),
+    final uri = Uri.tryParse(url);
+    if (uri != null &&
+        await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      return;
+    }
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Could not open this PDF in the browser.')),
     );
     return;
   }
@@ -46,29 +47,8 @@ class TaskPdfViewer extends StatefulWidget {
 }
 
 class _TaskPdfViewerState extends State<TaskPdfViewer> {
-  late Future<Uint8List> _documentFuture;
-
-  @override
-  void initState() {
-    super.initState();
-    _documentFuture = _downloadDocument();
-  }
-
-  Future<Uint8List> _downloadDocument() async {
-    final uri = Uri.tryParse(widget.url);
-    if (uri == null || !uri.hasScheme) {
-      throw const FormatException('The PDF URL is invalid.');
-    }
-
-    final response = await http.get(uri).timeout(const Duration(seconds: 30));
-    if (response.statusCode < 200 || response.statusCode >= 300) {
-      throw Exception('The PDF server returned ${response.statusCode}.');
-    }
-    if (response.bodyBytes.isEmpty) {
-      throw const FormatException('The PDF file is empty.');
-    }
-    return response.bodyBytes;
-  }
+  String? _loadError;
+  var _retryKey = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -79,29 +59,25 @@ class _TaskPdfViewerState extends State<TaskPdfViewer> {
         foregroundColor: Colors.white,
         title: Text(widget.title, maxLines: 1, overflow: TextOverflow.ellipsis),
       ),
-      body: FutureBuilder<Uint8List>(
-        future: _documentFuture,
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return _buildLoadError(context, snapshot.error.toString());
-          }
-          if (!snapshot.hasData) {
-            return const Center(
-              child: CircularProgressIndicator(color: Colors.white),
-            );
-          }
-          return SfPdfViewer.memory(
-            snapshot.data!,
-            pageLayoutMode: PdfPageLayoutMode.continuous,
-            scrollDirection: PdfScrollDirection.vertical,
-            pageSpacing: 12,
-            canShowScrollHead: true,
-            canShowScrollStatus: true,
-            enableDoubleTapZooming: true,
-            enableTextSelection: true,
-          );
-        },
-      ),
+      body: _loadError == null
+          ? SfPdfViewer.network(
+              widget.url,
+              key: ValueKey(_retryKey),
+              pageLayoutMode: PdfPageLayoutMode.continuous,
+              scrollDirection: PdfScrollDirection.vertical,
+              pageSpacing: 12,
+              canShowScrollHead: true,
+              canShowScrollStatus: true,
+              enableDoubleTapZooming: true,
+              enableTextSelection: true,
+              onDocumentLoadFailed: (details) {
+                if (!mounted) return;
+                setState(() {
+                  _loadError = details.description;
+                });
+              },
+            )
+          : _buildLoadError(context, _loadError!),
     );
   }
 
@@ -132,7 +108,8 @@ class _TaskPdfViewerState extends State<TaskPdfViewer> {
             const SizedBox(height: 16),
             OutlinedButton.icon(
               onPressed: () => setState(() {
-                _documentFuture = _downloadDocument();
+                _loadError = null;
+                _retryKey++;
               }),
               icon: const Icon(Icons.refresh),
               label: const Text('Try again'),
