@@ -560,7 +560,7 @@ class GradeSheetApiTests(SimpleTestCase):
     @patch('grading_api.views.require_instructor', return_value=None)
     @patch('grading_api.views.OCRGrader.analyze_image')
     @patch('grading_api.views.predict_score')
-    def test_gemini_scan_without_ocr_confidence_is_graded_for_review(
+    def test_azure_scan_without_ocr_confidence_is_graded_for_review(
         self,
         predict,
         analyze_image,
@@ -572,8 +572,8 @@ class GradeSheetApiTests(SimpleTestCase):
             'confidence': 0.6,
         }
         analyze_image.return_value = {
-            'text': 'Gemini transcription.',
-            'ocr_engine': 'gemini',
+            'text': 'Azure transcription.',
+            'ocr_engine': 'azure_computer_vision',
             'ocr_confidence': None,
             'visual_features': {
                 'document_detected': True,
@@ -595,7 +595,10 @@ class GradeSheetApiTests(SimpleTestCase):
 
         self.assertEqual(response.status_code, 200)
         result = response.json()['result']
-        self.assertEqual(result['visual_analysis']['ocr_engine'], 'gemini')
+        self.assertEqual(
+            result['visual_analysis']['ocr_engine'],
+            'azure_computer_vision',
+        )
         self.assertIsNone(result['visual_analysis']['ocr_confidence'])
         self.assertTrue(result['requires_human_review'])
         self.assertFalse(result['assisted_grading_eligible'])
@@ -608,7 +611,9 @@ class GradeSheetApiTests(SimpleTestCase):
     @patch('grading_api.views.require_instructor', return_value=None)
     @patch(
         'grading_api.views.OCRGrader.analyze_image',
-        side_effect=OCRProviderError('Gemini OCR fallback is not configured.'),
+        side_effect=OCRProviderError(
+            'Azure Vision OCR fallback is not configured.',
+        ),
     )
     def test_ocr_provider_error_is_returned_without_generic_failure(
         self,
@@ -626,7 +631,7 @@ class GradeSheetApiTests(SimpleTestCase):
         self.assertEqual(response.status_code, 503)
         self.assertEqual(
             response.json()['error'],
-            'Gemini OCR fallback is not configured.',
+            'Azure Vision OCR fallback is not configured.',
         )
 
     @patch('grading_api.views.require_instructor', return_value=None)

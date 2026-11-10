@@ -153,27 +153,28 @@ For Flutter Web, set `GRADING_ALLOWED_ORIGINS` on Django to the exact web-app
 origin(s), comma-separated, so the browser can call the API. Install the
 backend packages with `pip install -r requirements.txt` from `backend`.
 EasyOCR is the primary OCR engine. When it cannot initialize, returns no text,
-or has confidence below 40%, the backend retries with Gemini image
-transcription. Configure a Gemini API key only on the backend host:
+or has confidence below 40%, the backend retries with Azure Computer Vision
+Image Analysis Read OCR. Configure the resource endpoint and key only on the
+backend host:
 
 ```powershell
-$env:GEMINI_API_KEY = 'your-gemini-api-key'
-# Optional; defaults to gemini-3.8-flash
-$env:GEMINI_OCR_MODEL = 'gemini-3.8-flash'
+$env:AZURE_VISION_ENDPOINT = 'https://your-resource.cognitiveservices.azure.com'
+$env:AZURE_VISION_KEY = 'your-resource-key'
 ```
 
-Create a Gemini API key in Google AI Studio; never put the key in the Flutter
-app or commit it to source control. Gemini fallback requires backend internet
-access and is subject to Google's applicable limits and pricing. Gemini does
-not return a calibrated OCR confidence score, so Gemini transcriptions can
-receive an AI score suggestion but are always marked for instructor
-verification against the original scan and are never eligible for
-high-confidence assisted grading. If Gemini is not configured or is
-unavailable, the API reports an explicit OCR service error. Tesseract remains
-installed only for optional page orientation detection. The backend verifies
-Firebase ID tokens and active instructor accounts, so run it with Firebase
-Admin Application Default Credentials that can read `instructor_accounts`
-(locally, configure `GOOGLE_APPLICATION_CREDENTIALS`).
+The backend sends each fallback scan to Azure Computer Vision's synchronous
+Image Analysis `read` API. Never put the key in the Flutter app or commit it to
+source control. Azure fallback requires backend internet access and is subject
+to Azure limits and pricing. Azure fallback results do not supply the app's
+aggregate OCR confidence score, so scans using this fallback can receive an
+AI score suggestion but always require instructor verification against the
+original scan and are never eligible for high-confidence assisted grading. If
+Azure is not configured or is unavailable, the API reports an explicit OCR
+service error. Tesseract remains installed only for optional page orientation
+detection. The backend verifies Firebase ID tokens and active instructor
+accounts, so run it with Firebase Admin Application Default Credentials that
+can read `instructor_accounts` (locally, configure
+`GOOGLE_APPLICATION_CREDENTIALS`).
 
 When an instructor saves a grade for a scanned submission, VisionGrade stores a
 `aiTrainingExample` with the OCR text, task reference, and instructor's

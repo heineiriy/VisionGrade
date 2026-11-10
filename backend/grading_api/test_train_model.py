@@ -19,6 +19,7 @@ from .train_model import (
     ModelArtifactError,
     SCIENTSBANK_TRAIN_PATH,
     build_text,
+    _load_model_cached,
     load_model,
     load_dataset,
     _read_dataset,
@@ -27,6 +28,9 @@ from .essay_model import _load_essay_dataset, load_essay_model
 
 
 class ModelLoadTests(unittest.TestCase):
+    def tearDown(self):
+        _load_model_cached.cache_clear()
+
     def test_missing_short_answer_model_does_not_trigger_training(self):
         with TemporaryDirectory() as directory:
             model_path = Path(directory) / 'missing.joblib'
@@ -34,6 +38,22 @@ class ModelLoadTests(unittest.TestCase):
                 with self.assertRaises(ModelArtifactError):
                     load_model(model_path)
             train.assert_not_called()
+
+    def test_short_answer_model_is_loaded_once_until_artifact_changes(self):
+        with TemporaryDirectory() as directory:
+            model_path = Path(directory) / 'model.joblib'
+            model_path.write_bytes(b'first model')
+            model = object()
+
+            with patch('grading_api.train_model.joblib.load', return_value=model) as load:
+                self.assertIs(load_model(model_path), model)
+                self.assertIs(load_model(model_path), model)
+                load.assert_called_once_with(str(model_path.resolve()))
+
+                model_path.write_bytes(b'replacement model')
+                self.assertIs(load_model(model_path), model)
+
+            self.assertEqual(load.call_count, 2)
 
     def test_missing_essay_model_does_not_trigger_training(self):
         with TemporaryDirectory() as directory:
@@ -188,7 +208,37 @@ class ExportTeacherFeedbackTests(unittest.TestCase):
 
 
 class ImageSegmentationTests(unittest.TestCase):
-    def test_gemini_fallback_returns_text_without_confidence_score(self):
+    def test_preprocessing_caps_large_images_before_expensive_operations(self):
+        image_bytes = io.BytesIO()
+        Image.new('RGB', (4000, 3000), color='white').save(
+            image_bytes,
+            format='JPEG',
+        )
+        observed_shapes = []
+
+        def segment(image):
+            observed_shapes.append(image.shape)
+            return image, False, 1.0
+
+        with (
+            patch.object(OCRGrader, '_segment_document', side_effect=segment),
+            patch(
+                'grading_api.ocr.pytesseract.image_to_osd',
+                return_value={'rotate': 0},
+            ),
+        ):
+            processed, diagnostics = OCRGrader()._prepare_image(
+                image_bytes.getvalue(),
+            )
+
+        self.assertEqual(observed_shapes, [(1800, 2400, 3)])
+        self.assertEqual(max(processed.shape), 2400)
+        self.assertEqual(diagnostics['image_size'], {
+            'width': 4000,
+            'height': 3000,
+        })
+
+    def test_azure_fallback_returns_text_without_confidence_score(self):
         image = np.full((120, 120), 255, dtype=np.uint8)
 
         with (
@@ -200,17 +250,17 @@ class ImageSegmentationTests(unittest.TestCase):
             patch.object(OCRGrader, '_easyocr_reader', return_value=None),
             patch.object(
                 OCRGrader,
-                '_read_with_gemini',
+                '_read_with_azure_vision',
                 return_value=('The response', None),
             ),
         ):
             result = OCRGrader().analyze_image(b'page')
 
         self.assertEqual(result['text'], 'The response')
-        self.assertEqual(result['ocr_engine'], 'gemini')
+        self.assertEqual(result['ocr_engine'], 'azure_computer_vision')
         self.assertIsNone(result['ocr_confidence'])
 
-    def test_low_confidence_easyocr_retries_with_gemini(self):
+    def test_low_confidence_easyocr_retries_with_azure(self):
         image = np.full((120, 120), 255, dtype=np.uint8)
         reader = Mock()
         reader.readtext.return_value = [([[0, 0]], 'unclear', 0.2)]
@@ -224,120 +274,107 @@ class ImageSegmentationTests(unittest.TestCase):
             patch.object(OCRGrader, '_easyocr_reader', return_value=reader),
             patch.object(
                 OCRGrader,
-                '_read_with_gemini',
+                '_read_with_azure_vision',
                 return_value=('Verified fallback text', None),
-            ) as gemini,
+            ) as azure,
         ):
             result = OCRGrader().analyze_image(b'page')
 
         self.assertEqual(result['text'], 'Verified fallback text')
-        self.assertEqual(result['ocr_engine'], 'gemini')
+        self.assertEqual(result['ocr_engine'], 'azure_computer_vision')
         self.assertIsNone(result['ocr_confidence'])
-        gemini.assert_called_once_with(b'page')
+        azure.assert_called_once_with(b'page')
 
-    def test_gemini_requires_backend_api_key(self):
+    def test_azure_vision_requires_backend_configuration(self):
         with (
             patch.dict(
                 'os.environ',
-                {'GEMINI_API_KEY': ''},
+                {
+                    'AZURE_VISION_ENDPOINT': '',
+                    'AZURE_VISION_KEY': '',
+                },
                 clear=False,
             ),
             self.assertRaisesRegex(
                 RuntimeError,
-                'Gemini OCR fallback is not configured',
+                'Azure Vision OCR fallback is not configured',
             ),
         ):
-            OCRGrader._read_with_gemini(b'page')
+            OCRGrader._read_with_azure_vision(b'page')
 
-    def test_gemini_sends_image_and_returns_transcription(self):
+    def test_azure_vision_sends_image_and_returns_transcription(self):
         response = Mock(status_code=200)
         response.json.return_value = {
-            'candidates': [{
-                'content': {'parts': [{'text': 'A handwritten answer.'}]},
-            }],
+            'readResult': {
+                'blocks': [{
+                    'lines': [
+                        {'text': 'A handwritten answer.'},
+                        {'text': 'Second line.'},
+                    ],
+                }],
+            },
         }
 
         with (
             patch.dict(
                 'os.environ',
-                {'GEMINI_API_KEY': 'test-key'},
+                {
+                    'AZURE_VISION_ENDPOINT': 'https://vision.example.com',
+                    'AZURE_VISION_KEY': 'test-key',
+                },
                 clear=False,
             ),
             patch('grading_api.ocr.requests.post', return_value=response) as post,
         ):
             buffer = io.BytesIO()
             Image.new('RGB', (10, 10), color='white').save(buffer, format='PNG')
-            text, confidence = OCRGrader._read_with_gemini(buffer.getvalue())
+            text, confidence = OCRGrader._read_with_azure_vision(
+                buffer.getvalue(),
+            )
 
-        self.assertEqual(text, 'A handwritten answer.')
+        self.assertEqual(text, 'A handwritten answer.\nSecond line.')
         self.assertIsNone(confidence)
         self.assertTrue(
             post.call_args.args[0].endswith(
-                '/gemini-3.8-flash:generateContent'
+                '/computervision/imageanalysis:analyze'
             )
         )
         self.assertEqual(
-            post.call_args.kwargs['headers']['x-goog-api-key'],
-            'test-key',
+            post.call_args.kwargs['headers'],
+            {
+                'Ocp-Apim-Subscription-Key': 'test-key',
+                'Content-Type': 'application/octet-stream',
+            },
         )
-        parts = post.call_args.kwargs['json']['contents'][0]['parts']
-        self.assertEqual(parts[1]['inline_data']['mime_type'], 'image/jpeg')
-        self.assertTrue(parts[1]['inline_data']['data'])
+        self.assertEqual(post.call_args.kwargs['data'], buffer.getvalue())
+        self.assertEqual(
+            post.call_args.kwargs['params'],
+            {
+                'features': 'read',
+                'model-version': 'latest',
+                'language': 'en',
+                'api-version': '2024-02-01',
+            },
+        )
 
-    def test_gemini_retries_temporary_server_error(self):
-        unavailable = Mock(status_code=503)
-        success = Mock(status_code=200)
-        success.json.return_value = {
-            'candidates': [{
-                'content': {'parts': [{'text': 'Recovered transcription.'}]},
-            }],
-        }
-
+    def test_azure_vision_rejects_endpoint_with_path(self):
         with (
             patch.dict(
                 'os.environ',
-                {'GEMINI_API_KEY': 'test-key'},
+                {
+                    'AZURE_VISION_ENDPOINT': 'https://vision.example.com/other',
+                    'AZURE_VISION_KEY': 'test-key',
+                },
                 clear=False,
             ),
-            patch(
-                'grading_api.ocr.requests.post',
-                side_effect=[unavailable, success],
-            ) as post,
-            patch('grading_api.ocr.time.sleep') as sleep,
-        ):
-            buffer = io.BytesIO()
-            Image.new('RGB', (10, 10), color='white').save(buffer, format='PNG')
-            text, confidence = OCRGrader._read_with_gemini(buffer.getvalue())
-
-        self.assertEqual(text, 'Recovered transcription.')
-        self.assertIsNone(confidence)
-        self.assertEqual(post.call_count, 2)
-        sleep.assert_called_once_with(1)
-
-    def test_gemini_reports_temporary_error_after_retry_limit(self):
-        unavailable = Mock(status_code=503)
-
-        with (
-            patch.dict(
-                'os.environ',
-                {'GEMINI_API_KEY': 'test-key'},
-                clear=False,
-            ),
-            patch(
-                'grading_api.ocr.requests.post',
-                return_value=unavailable,
-            ) as post,
-            patch('grading_api.ocr.time.sleep'),
+            patch('grading_api.ocr.requests.post') as post,
             self.assertRaisesRegex(
                 RuntimeError,
-                'temporarily unavailable after retries \\(HTTP 503\\)',
+                'valid HTTPS Azure endpoint',
             ),
         ):
-            buffer = io.BytesIO()
-            Image.new('RGB', (10, 10), color='white').save(buffer, format='PNG')
-            OCRGrader._read_with_gemini(buffer.getvalue())
-
-        self.assertEqual(post.call_count, 3)
+            OCRGrader._read_with_azure_vision(b'page')
+        post.assert_not_called()
 
     def test_segments_a_photographed_page_from_a_contrasting_background(self):
         image = np.full((600, 800, 3), 35, dtype=np.uint8)

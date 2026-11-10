@@ -1,5 +1,6 @@
 import json
 import argparse
+from functools import lru_cache
 import re
 from pathlib import Path
 
@@ -364,6 +365,17 @@ def load_model(model_path: Path = MODEL_PATH):
             'The short-answer grading model is missing. Train it explicitly '
             'before requesting AI grading.'
         )
+    resolved_path = model_path.resolve()
+    stat = resolved_path.stat()
+    return _load_model_cached(
+        str(resolved_path),
+        stat.st_mtime_ns,
+        stat.st_size,
+    )
+
+
+@lru_cache(maxsize=4)
+def _load_model_cached(model_path: str, modified_ns: int, size: int):
     return joblib.load(model_path)
 
 
