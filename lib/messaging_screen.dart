@@ -396,7 +396,9 @@ class InstructorMessagesScreen extends StatelessWidget {
 
 class _MessagingScreenState extends State<MessagingScreen> {
   final _controller = TextEditingController();
+  final _messagesScrollController = ScrollController();
   bool _sending = false;
+  bool _hasScrolledToLatest = false;
 
   @override
   Widget build(BuildContext context) {
@@ -438,12 +440,25 @@ class _MessagingScreenState extends State<MessagingScreen> {
                   );
                 }
 
+                if (!_hasScrolledToLatest) {
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    if (!mounted || !_messagesScrollController.hasClients) {
+                      return;
+                    }
+                    _messagesScrollController.jumpTo(
+                      _messagesScrollController.position.maxScrollExtent,
+                    );
+                    _hasScrolledToLatest = true;
+                  });
+                }
+
                 return RefreshIndicator(
                   onRefresh: () => FirestoreService.refreshMessages(
                     studentEmail: widget.studentEmail,
                     instructorEmail: widget.instructorEmail,
                   ),
                   child: ListView.builder(
+                    controller: _messagesScrollController,
                     physics: const AlwaysScrollableScrollPhysics(),
                     padding: const EdgeInsets.all(16),
                     itemCount: messages.length,
@@ -690,6 +705,7 @@ class _MessagingScreenState extends State<MessagingScreen> {
   @override
   void dispose() {
     _controller.dispose();
+    _messagesScrollController.dispose();
     super.dispose();
   }
 }

@@ -83,6 +83,24 @@ service cloud.firestore {
           || request.resource.data.updatedAt is timestamp);
     }
 
+    match /support_messages/{messageId} {
+      allow read: if isDashboardAdmin();
+      allow create: if request.auth != null
+        && request.resource.data.senderUid == request.auth.uid
+        && request.resource.data.senderEmail == request.auth.token.email
+        && request.resource.data.senderRole in ['student', 'instructor']
+        && request.resource.data.subject is string
+        && request.resource.data.subject.size() > 0
+        && request.resource.data.subject.size() <= 200
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 5000
+        && request.resource.data.senderName is string
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.status == 'unread';
+      allow update, delete: if isDashboardAdmin();
+    }
+
     match /system_counters/{counterId} {
       allow get: if isDashboardAdmin()
         && counterId.matches('^student_ids_[0-9]{4}$');

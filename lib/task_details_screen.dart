@@ -3124,6 +3124,7 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
       ),
     );
 
+    await Future<void>.delayed(const Duration(milliseconds: 300));
     score.dispose();
     max.dispose();
     feedback.dispose();

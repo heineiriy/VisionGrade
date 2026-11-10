@@ -6,7 +6,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
@@ -2741,9 +2740,6 @@ class ClassroomTab extends StatelessWidget {
   }) async {
     final titleController = TextEditingController(text: draft?.title ?? '');
     final bodyController = TextEditingController(text: draft?.body ?? '');
-    String? attachmentName = draft?.attachmentName;
-    String? attachmentUrl = draft?.attachmentUrl;
-    bool uploadingAttachment = false;
     bool isPosting = false;
     String? validationError;
 
@@ -2868,135 +2864,6 @@ class ClassroomTab extends StatelessWidget {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 12),
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: ElevatedButton.icon(
-                              onPressed: uploadingAttachment
-                                  ? null
-                                  : () async {
-                                      final result = await FilePicker.platform
-                                          .pickFiles(
-                                            withData: true,
-                                            type: FileType.any,
-                                          );
-                                      if (result == null ||
-                                          result.files.isEmpty) {
-                                        return;
-                                      }
-                                      final file = result.files.single;
-                                      final extension = file.name
-                                          .split('.')
-                                          .last
-                                          .toLowerCase();
-                                      if (!_instructionFileExtensions.contains(
-                                        extension,
-                                      )) {
-                                        if (context.mounted) {
-                                          ScaffoldMessenger.of(
-                                            context,
-                                          ).showSnackBar(
-                                            const SnackBar(
-                                              content: Text(
-                                                'Choose a PDF, Excel, or CSV file.',
-                                              ),
-                                            ),
-                                          );
-                                        }
-                                        return;
-                                      }
-                                      if (file.bytes == null) {
-                                        if (context.mounted) {
-                                          ScaffoldMessenger.of(
-                                            context,
-                                          ).showSnackBar(
-                                            const SnackBar(
-                                              content: Text(
-                                                'This file could not be read.',
-                                              ),
-                                            ),
-                                          );
-                                        }
-                                        return;
-                                      }
-                                      setState(
-                                        () => uploadingAttachment = true,
-                                      );
-                                      try {
-                                        final safeName = file.name.replaceAll(
-                                          RegExp(r'[/\\"]'),
-                                          '_',
-                                        );
-                                        final storageRef = FirebaseStorage
-                                            .instance
-                                            .ref()
-                                            .child(
-                                              'announcements/${subject.id}/${DateTime.now().millisecondsSinceEpoch}_$safeName',
-                                            );
-                                        final contentType = switch (extension) {
-                                          'pdf' => 'application/pdf',
-                                          'xls' => 'application/vnd.ms-excel',
-                                          'xlsx' =>
-                                            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                                          'csv' => 'text/csv',
-                                          _ => throw FormatException(
-                                            'Unsupported attachment type: $extension',
-                                          ),
-                                        };
-                                        final snapshot = await storageRef.putData(
-                                          file.bytes!,
-                                          SettableMetadata(
-                                            contentType: contentType,
-                                            contentDisposition:
-                                                extension == 'pdf'
-                                                ? 'inline; filename="$safeName"'
-                                                : 'attachment; filename="$safeName"',
-                                          ),
-                                        );
-                                        attachmentName = file.name;
-                                        attachmentUrl = await snapshot.ref
-                                            .getDownloadURL();
-                                        if (context.mounted) {
-                                          setState(() {});
-                                        }
-                                      } catch (error) {
-                                        if (context.mounted) {
-                                          ScaffoldMessenger.of(
-                                            context,
-                                          ).showSnackBar(
-                                            SnackBar(
-                                              content: Text(
-                                                'Upload failed: $error',
-                                              ),
-                                            ),
-                                          );
-                                        }
-                                      } finally {
-                                        if (context.mounted) {
-                                          setState(
-                                            () => uploadingAttachment = false,
-                                          );
-                                        }
-                                      }
-                                    },
-                              icon: const Icon(Icons.attach_file, size: 15),
-                              label: Text(
-                                uploadingAttachment
-                                    ? 'Uploading...'
-                                    : attachmentName ?? 'Add attachment',
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF8A887C),
-                                foregroundColor: AppPalette.cream,
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 12,
-                                ),
-                                minimumSize: const Size(0, 30),
-                                shape: const StadiumBorder(),
-                                textStyle: const TextStyle(fontSize: 10),
-                              ),
-                            ),
-                          ),
                           if (validationError != null) ...[
                             const SizedBox(height: 8),
                             _validationMessage(validationError!),
@@ -3006,9 +2873,7 @@ class ClassroomTab extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: ElevatedButton.icon(
-                                  onPressed: uploadingAttachment
-                                      ? null
-                                      : () async {
+                                  onPressed: () async {
                                           final updatedDraft = DraftItem(
                                             type: 'Announcement',
                                             title:
@@ -3022,8 +2887,6 @@ class ClassroomTab extends StatelessWidget {
                                             createdAt:
                                                 draft?.createdAt ??
                                                 DateTime.now(),
-                                            attachmentName: attachmentName,
-                                            attachmentUrl: attachmentUrl,
                                           );
                                           if (draftIndex == null) {
                                             DraftStore.add(updatedDraft);
@@ -3057,7 +2920,7 @@ class ClassroomTab extends StatelessWidget {
                               const SizedBox(width: 8),
                               Expanded(
                                 child: ElevatedButton(
-                                  onPressed: isPosting || uploadingAttachment
+                                  onPressed: isPosting
                                       ? null
                                       : () async {
                                           if (titleController.text
@@ -3072,7 +2935,6 @@ class ClassroomTab extends StatelessWidget {
                                             );
                                             return;
                                           }
-                                          if (uploadingAttachment) return;
                                           setState(() => isPosting = true);
                                           try {
                                             await FirestoreService.publishPost(
@@ -3084,8 +2946,6 @@ class ClassroomTab extends StatelessWidget {
                                               body: bodyController.text.trim(),
                                               posterName: instructorName,
                                               posterEmail: instructorEmail,
-                                              attachmentName: attachmentName,
-                                              attachmentUrl: attachmentUrl,
                                             );
                                             if (draftIndex != null) {
                                               DraftStore.remove(draftIndex);
@@ -4316,6 +4176,7 @@ class ClassroomTab extends StatelessWidget {
         ),
       ),
     );
+    await Future<void>.delayed(const Duration(milliseconds: 200));
     titleController.dispose();
     bodyController.dispose();
   }

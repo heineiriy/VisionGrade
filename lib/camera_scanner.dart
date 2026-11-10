@@ -4,7 +4,6 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
 import 'app_theme.dart';
-import 'image_crop_screen.dart';
 
 class HardcopyScanner {
   HardcopyScanner._();
@@ -173,12 +172,12 @@ class _CameraCapturePageState extends State<_CameraCapturePage> {
     });
   }
 
-  Future<List<Uint8List>?> _showFullScreenImages(
+  Future<void> _showFullScreenImages(
     List<Uint8List> images,
     int initialIndex,
   ) async {
-    if (images.isEmpty) return null;
-    return showDialog<List<Uint8List>>(
+    if (images.isEmpty) return;
+    await showDialog<void>(
       context: context,
       useSafeArea: false,
       builder: (_) =>
@@ -210,25 +209,10 @@ class _CameraCapturePageState extends State<_CameraCapturePage> {
                     borderRadius: BorderRadius.circular(8),
                     child: GestureDetector(
                       onTap: () async {
-                        final result = await _showFullScreenImages(
+                        await _showFullScreenImages(
                           _capturedBytes,
                           index,
                         );
-                        if (!sheetContext.mounted || result == null) return;
-                        setState(() {
-                          for (
-                            var imageIndex = 0;
-                            imageIndex < result.length;
-                            imageIndex++
-                          ) {
-                            _capturedBytes[imageIndex] = result[imageIndex];
-                            _capturedImages[imageIndex] =
-                                _imageFileFromCroppedBytes(
-                                  result[imageIndex],
-                                  imageIndex,
-                                );
-                          }
-                        });
                       },
                       child: Image.memory(
                         _capturedBytes[index],
@@ -267,14 +251,6 @@ class _CameraCapturePageState extends State<_CameraCapturePage> {
           ),
         ),
       ),
-    );
-  }
-
-  XFile _imageFileFromCroppedBytes(Uint8List bytes, int index) {
-    return XFile.fromData(
-      bytes,
-      name: 'cropped_${DateTime.now().millisecondsSinceEpoch}_$index.png',
-      mimeType: 'image/png',
     );
   }
 
@@ -379,21 +355,9 @@ class _CameraCapturePageState extends State<_CameraCapturePage> {
                             if (_showCapturedPreview && previewBytes != null)
                               GestureDetector(
                                 onTap: () async {
-                                  final result = await _showFullScreenImages([
+                                  await _showFullScreenImages([
                                     previewBytes,
                                   ], 0);
-                                  if (result == null ||
-                                      result.isEmpty ||
-                                      !mounted) {
-                                    return;
-                                  }
-                                  setState(() {
-                                    _pendingBytes = result.first;
-                                    _pendingImage = _imageFileFromCroppedBytes(
-                                      result.first,
-                                      0,
-                                    );
-                                  });
                                 },
                                 child: Image.memory(
                                   previewBytes,
@@ -592,16 +556,6 @@ class _ScannedImageGalleryState extends State<_ScannedImageGallery> {
     super.dispose();
   }
 
-  Future<void> _cropCurrentImage() async {
-    final cropped = await showImageCropper(
-      context,
-      _previewImages[_currentPage],
-    );
-    if (cropped != null && mounted) {
-      setState(() => _previewImages[_currentPage] = cropped);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Dialog.fullscreen(
@@ -653,16 +607,6 @@ class _ScannedImageGalleryState extends State<_ScannedImageGallery> {
                   ),
                 ),
               ),
-            ),
-          ),
-        ),
-        bottomNavigationBar: SafeArea(
-          minimum: const EdgeInsets.all(14),
-          child: Center(
-            child: FilledButton.icon(
-              onPressed: _cropCurrentImage,
-              icon: const Icon(Icons.edit_outlined),
-              label: const Text('Edit photo'),
             ),
           ),
         ),

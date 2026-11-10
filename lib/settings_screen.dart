@@ -7,7 +7,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'remember_me_store.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'app_theme.dart';
 import 'cloudinary_service.dart';
 import 'firestore_service.dart';
@@ -48,11 +47,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
     super.initState();
     _currentProfileImageUrl =
         widget.profileImageUrl ?? FirebaseAuth.instance.currentUser?.photoURL;
-    _displayName = widget.userName.isNotEmpty
+    final authDisplayName = FirebaseAuth.instance.currentUser?.displayName
+        ?.trim();
+    _displayName = authDisplayName?.isNotEmpty == true
+        ? authDisplayName!
+        : widget.userName.isNotEmpty
         ? widget.userName
-        : FirebaseAuth.instance.currentUser?.displayName?.trim().isNotEmpty ==
-              true
-        ? FirebaseAuth.instance.currentUser!.displayName!
         : (widget.role == UserRole.instructor ? 'Instructor' : 'Student');
     _loadPreferences();
   }
@@ -81,17 +81,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
     ScaffoldMessenger.of(
       context,
     ).showSnackBar(SnackBar(content: Text(message)));
-  }
-
-  void _openClassSchedule() {
-    final email = widget.userEmail.trim().isNotEmpty
-        ? widget.userEmail.trim()
-        : FirebaseAuth.instance.currentUser?.email?.trim() ?? '';
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => InstructorClassesScheduleScreen(instructorEmail: email),
-      ),
-    );
   }
 
   String _profileValue(Map<String, dynamic> data, String key) {
@@ -386,8 +375,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       orElse: () => '',
     );
 
-    var didSave = false;
-    await showDialog<void>(
+    final savedName = await showDialog<String>(
       context: context,
       builder: (dialogContext) => StatefulBuilder(
         builder: (dialogContext, setDialogState) => AlertDialog(
@@ -526,8 +514,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   await currentUser.updateDisplayName(name);
                   await profileDocument.reference.update(updates);
                   if (!dialogContext.mounted) return;
-                  didSave = true;
-                  Navigator.of(dialogContext).pop();
+                  Navigator.of(dialogContext).pop(name);
                 } on FirebaseAuthException {
                   if (!dialogContext.mounted) return;
                   ScaffoldMessenger.of(dialogContext).showSnackBar(
@@ -553,11 +540,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       ),
     );
 
-    final savedName = nameController.text.trim();
+    await Future<void>.delayed(const Duration(milliseconds: 300));
     nameController.dispose();
     phoneController.dispose();
     emailController.dispose();
-    if (didSave && mounted) {
+    if (savedName != null && mounted) {
       setState(() {
         _displayName = savedName;
       });
@@ -702,8 +689,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  void _showHelpDialog() {
-    showDialog(
+  Future<void> _showHelpDialog() async {
+    final shouldContactSupport = await showDialog<bool>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         title: const Text('Help & support'),
@@ -730,25 +717,145 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: () async {
-              final supportUri = Uri(
-                scheme: 'mailto',
-                path: 'support@visiongrade.edu',
-                query: 'subject=VisionGrade%20Support',
-              );
-              if (await canLaunchUrl(supportUri)) {
-                await launchUrl(supportUri);
-              }
-            },
+            onPressed: () => Navigator.of(dialogContext).pop(true),
             child: const Text('Contact support'),
           ),
           TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(),
+            onPressed: () => Navigator.of(dialogContext).pop(false),
             child: const Text('Close'),
           ),
         ],
       ),
     );
+    if (shouldContactSupport == true && mounted) {
+      await Future<void>.delayed(const Duration(milliseconds: 200));
+      if (!mounted) return;
+      _showContactSupportDialog();
+    }
+  }
+
+  Future<void> _showContactSupportDialog() async {
+    final subjectController = TextEditingController();
+    final messageController = TextEditingController();
+    var isSending = false;
+    String? errorMessage;
+
+    final sent = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          title: const Text('Contact support'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (errorMessage != null) ...[
+                  Text(
+                    errorMessage!,
+                    style: TextStyle(color: Colors.red.shade700),
+                  ),
+                  const SizedBox(height: 12),
+                ],
+                TextField(
+                  controller: subjectController,
+                  decoration: const InputDecoration(
+                    labelText: 'Subject',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: messageController,
+                  minLines: 4,
+                  maxLines: 7,
+                  decoration: const InputDecoration(
+                    labelText: 'Message',
+                    alignLabelWithHint: true,
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: isSending
+                  ? null
+                  : () => Navigator.of(dialogContext).pop(),
+              child: const Text('Cancel'),
+            ),
+            FilledButton(
+              onPressed: isSending
+                  ? null
+                  : () async {
+                      final subject = subjectController.text.trim();
+                      final message = messageController.text.trim();
+                      final currentUser = FirebaseAuth.instance.currentUser;
+                      if (subject.isEmpty || message.isEmpty) {
+                        setDialogState(() {
+                          errorMessage = 'Enter a subject and message.';
+                        });
+                        return;
+                      }
+                      if (currentUser == null || currentUser.email == null) {
+                        setDialogState(() {
+                          errorMessage =
+                              'Please sign in before contacting support.';
+                        });
+                        return;
+                      }
+                      setDialogState(() {
+                        isSending = true;
+                        errorMessage = null;
+                      });
+                      try {
+                        await FirebaseFirestore.instance
+                            .collection('support_messages')
+                            .add({
+                              'subject': subject,
+                              'message': message,
+                              'senderName': _displayName,
+                              'senderEmail': currentUser.email,
+                              'senderRole': widget.role == UserRole.instructor
+                                  ? 'instructor'
+                                  : 'student',
+                              'senderUid': currentUser.uid,
+                              'createdAt': FieldValue.serverTimestamp(),
+                              'status': 'unread',
+                            });
+                        if (!dialogContext.mounted) return;
+                        Navigator.of(dialogContext).pop(true);
+                      } on FirebaseException catch (error, stackTrace) {
+                        debugPrint(
+                          'Failed to send support message: $error\n$stackTrace',
+                        );
+                        if (dialogContext.mounted) {
+                          setDialogState(() {
+                            isSending = false;
+                            errorMessage =
+                                'Could not send your message. Please try again.';
+                          });
+                        }
+                      }
+                    },
+              child: isSending
+                  ? const SizedBox(
+                      width: 18,
+                      height: 18,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : const Text('Send'),
+            ),
+          ],
+        ),
+      ),
+    );
+    await Future<void>.delayed(const Duration(milliseconds: 200));
+    subjectController.dispose();
+    messageController.dispose();
+    if (sent == true && mounted) {
+      _showMessage('Your message was sent to support.');
+    }
   }
 
   List<Widget> _buildSettingsList() {
@@ -760,19 +867,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle:
                   'View your email and edit your name, phone, gender, and picture',
               onTap: _showProfileDialog,
-            ),
-            _SettingRow(
-              icon: Icons.badge_outlined,
-              title: 'Instructor Details',
-              subtitle: 'Department, office hours, and contact info',
-              onTap: () =>
-                  _showMessage('Instructor details are ready for setup.'),
-            ),
-            _SettingRow(
-              icon: Icons.class_rounded,
-              title: 'Classes & Schedule',
-              subtitle: 'Manage assigned classes and teaching timetable',
-              onTap: _openClassSchedule,
             ),
             _SettingRow(
               icon: Icons.lock_outline,
@@ -1029,7 +1123,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute(
                           builder: (_) => InstructorHomePage(
-                            instructorName: widget.userName,
+                            instructorName: _displayName,
                             instructorEmail: widget.userEmail,
                             profileImageUrl: _currentProfileImageUrl,
                           ),
@@ -1040,7 +1134,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute(
                           builder: (_) => StudentHomePage(
-                            studentName: widget.userName,
+                            studentName: _displayName,
                             studentEmail: widget.userEmail,
                             profileImageUrl: _currentProfileImageUrl,
                           ),

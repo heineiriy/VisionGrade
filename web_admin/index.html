@@ -325,7 +325,7 @@
 
                     <!-- Right Bar Controls -->
                     <div class="flex items-center space-x-4">
-                        <button type="button" onclick="switchTab('announcements')" aria-label="View announcements" class="dashboard-notifications relative flex items-center justify-center" title="Announcements">
+                        <button type="button" onclick="switchTab('support')" aria-label="View support messages" class="dashboard-notifications relative flex items-center justify-center" title="Support messages">
                             <i class="fa-regular fa-bell" aria-hidden="true"></i>
                             <span class="notification-dot" aria-hidden="true"></span>
                         </button>
@@ -763,7 +763,20 @@
                     </div>
 
                     <!-- ========================================== -->
-                    <!-- TAB 7: SETTINGS VIEW                       -->
+                    <!-- TAB 7: SUPPORT MESSAGES VIEW              -->
+                    <!-- ========================================== -->
+                    <div id="tab-support" class="tab-content hidden space-y-6">
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-cream-300 min-h-[480px] flex flex-col">
+                            <div class="mb-6">
+                                <h3 class="text-lg font-bold text-gray-900">Support Messages</h3>
+                                <p class="text-xs text-gray-500">Messages sent by students and instructors through Contact support</p>
+                            </div>
+                            <div id="supportMessagesList" class="flex-1 min-h-0 max-h-[60vh] overflow-y-auto overscroll-contain"></div>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- TAB 8: SETTINGS VIEW                       -->
                     <!-- ========================================== -->
                     <div id="tab-settings" class="tab-content hidden space-y-6">
                         <!-- Account Overview Box -->
@@ -1377,6 +1390,16 @@
                     });
                     renderAnnouncements();
                 }),
+                firestore.collection('support_messages').orderBy('createdAt', 'desc').onSnapshot(snapshot => {
+                    state.supportMessages = snapshot.docs.map(doc => ({
+                        id: doc.id,
+                        ...doc.data()
+                    }));
+                    renderSupportMessages(activeSearchQuery);
+                }, error => {
+                    console.error('Unable to load support messages.', error);
+                    showToast(error.message || 'Unable to load support messages.');
+                }),
                 firestore.collection('subjects').orderBy('name').onSnapshot(snapshot => {
                     const subjectRecords = snapshot.docs.map(doc => {
                         const data = doc.data();
@@ -1503,6 +1526,7 @@
                 submissionsLoaded: false
             },
             announcements: [],
+            supportMessages: [],
             pendingEnrollments: [],
             subjectArchives: [],
             subjectAuditLogs: []
@@ -1720,6 +1744,7 @@
                 'rubrics': 'Rubric Templates',
                 'evaluation': 'AI Evaluation',
                 'announcements': 'Announcements',
+                'support': 'Support Messages',
                 'settings': 'Settings'
             };
             document.getElementById('viewTitle').innerText = titles[tabName] || 'Dashboard';
@@ -2328,11 +2353,52 @@
             }
         }
 
+        function renderSupportMessages(filterText = '') {
+            const container = document.getElementById('supportMessagesList');
+            if (!container) return;
+            const query = filterText.trim().toLowerCase();
+            const messages = state.supportMessages.filter(message =>
+                [message.subject, message.message, message.senderName, message.senderEmail, message.senderRole]
+                    .some(value => String(value || '').toLowerCase().includes(query))
+            );
+            if (messages.length === 0) {
+                container.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center text-center py-16">
+                        <i class="fa-regular fa-envelope-open text-6xl text-sky-400 opacity-80 mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-900">${query ? 'No matching support messages' : 'No support messages'}</h4>
+                        <p class="text-xs text-gray-400 mt-1">Messages sent through Contact support will appear here.</p>
+                    </div>
+                `;
+                return;
+            }
+            container.innerHTML = messages.map(message => {
+                const date = message.createdAt && typeof message.createdAt.toDate === 'function'
+                    ? message.createdAt.toDate().toLocaleString()
+                    : 'Just now';
+                const role = String(message.senderRole || 'user');
+                return `
+                    <article class="w-full bg-cream-100 p-4 mb-3 rounded-2xl border border-cream-300 shadow-sm">
+                        <div class="flex flex-wrap justify-between gap-2 mb-2">
+                            <h4 class="font-bold text-gray-900 text-sm">${escapeHtml(message.subject || 'Support request')}</h4>
+                            <span class="text-[10px] bg-burgundy-800 text-white px-2 py-0.5 rounded-full">${escapeHtml(date)}</span>
+                        </div>
+                        <p class="text-xs text-gray-700 leading-relaxed whitespace-pre-wrap">${escapeHtml(message.message || '')}</p>
+                        <div class="mt-3 flex flex-wrap gap-3 text-[10px] text-gray-500">
+                            <span><i class="fa-solid fa-user mr-1"></i>${escapeHtml(message.senderName || 'Unknown sender')}</span>
+                            <span><i class="fa-solid fa-envelope mr-1"></i>${escapeHtml(message.senderEmail || '')}</span>
+                            <span class="capitalize"><i class="fa-solid fa-tag mr-1"></i>${escapeHtml(role)}</span>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
         function renderAllTables() {
             renderInstructorsTable(activeSearchQuery);
             renderSubjectsTable(activeSearchQuery);
             renderStudentsTable(activeSearchQuery);
             renderAnnouncements(activeSearchQuery);
+            renderSupportMessages(activeSearchQuery);
             populateInstructorSelects();
             renderOnlineUsers();
             renderAcademicReportSummaries();
