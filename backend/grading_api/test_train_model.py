@@ -10,6 +10,7 @@ from PIL import Image
 
 from .features import AnswerPairFeatures
 from .export_teacher_feedback import training_row_from_submission
+from .evaluate_ocr_feedback import evaluate_ocr_feedback
 from .ocr import OCRGrader
 from .train_model import (
     BEETLE_TRAIN_PATH,
@@ -205,6 +206,49 @@ class ExportTeacherFeedbackTests(unittest.TestCase):
 
         self.assertIsNone(training_row_from_submission(unreviewed))
         self.assertIsNone(training_row_from_submission(invalid_score))
+
+    def test_exports_reviewed_transcription_and_original_ocr_separately(self):
+        snapshot = self._snapshot(
+            'subjects/science/posts/task-1/submissions/student-1',
+            {
+                'aiTrainingExample': {
+                    'student_answer': 'The water cycle has three steps.',
+                    'corrected_text': 'The water cycle has three steps.',
+                    'ocr_text': 'The woter cycle has three steps.',
+                    'ocr_engine': 'easyocr',
+                    'ocr_confidence': 0.81,
+                    'expected_answer': 'The water cycle includes three steps.',
+                    'score': 4,
+                    'teacher_corrected': True,
+                },
+            },
+        )
+
+        row = training_row_from_submission(snapshot)
+
+        self.assertEqual(row['student_answer'], 'The water cycle has three steps.')
+        self.assertEqual(row['corrected_text'], 'The water cycle has three steps.')
+        self.assertEqual(row['ocr_text'], 'The woter cycle has three steps.')
+        self.assertEqual(row['ocr_engine'], 'easyocr')
+        self.assertEqual(row['ocr_confidence'], 0.81)
+
+    def test_evaluates_ocr_errors_against_corrected_transcriptions(self):
+        with TemporaryDirectory() as directory:
+            dataset_path = Path(directory) / 'ocr_feedback.csv'
+            dataset_path.write_text(
+                'ocr_text,corrected_text,ocr_engine\n'
+                'hello word,hello world,easyocr\n'
+                ',unused,azure_computer_vision\n',
+                encoding='utf-8',
+            )
+
+            report = evaluate_ocr_feedback(dataset_path)
+
+        self.assertEqual(report['evaluated_samples'], 1)
+        self.assertEqual(report['skipped_samples'], 1)
+        self.assertEqual(report['overall']['wer'], 0.5)
+        self.assertEqual(report['overall']['cer'], 0.0909)
+        self.assertIn('easyocr', report['by_engine'])
 
 
 class ImageSegmentationTests(unittest.TestCase):

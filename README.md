@@ -108,9 +108,12 @@ scans work assigned to a named student, a clearly different name next to a
 asks the instructor to verify the scan. Unlabeled or unclear names do not prove
 ownership, so instructors must still verify every scan. When an instructor
 publishes a grade, the submission retains the AI pre-score,
-normalized teacher final score, any override reason, and the reviewed OCR,
-rubric, score difference, and feedback in its `aiTrainingExample`. This is
-evaluation logging only; model training remains an explicit operation.
+normalized teacher final score, any override reason, and the reviewed OCR
+transcription, rubric, score difference, and feedback in its
+`aiTrainingExample`. Instructors can edit OCR text while reviewing a scan; the
+original OCR and teacher-corrected transcription are kept separately. These
+records support OCR evaluation and grading-model training, both of which remain
+explicit operations.
 
 The rubric editor also lets instructors select an optional grade-matched lesson
 plan. Its learning objectives and expected concepts are stored with the task
@@ -176,28 +179,52 @@ accounts, so run it with Firebase Admin Application Default Credentials that
 can read `instructor_accounts` (locally, configure
 `GOOGLE_APPLICATION_CREDENTIALS`).
 
-When an instructor saves a grade for a scanned submission, VisionGrade stores a
-`aiTrainingExample` with the OCR text, task reference, and instructor's
-corrected score (normalized to the model's 0-5 scale) in that submission.
-Export only these reviewed examples from Firestore (the export omits student
-names and email addresses) using Firebase Admin credentials authorized to read
-the VisionGrade project:
+## OCR evaluation and grading-model training workflow
+
+VisionGrade currently uses pretrained EasyOCR and may fall back to Azure
+Computer Vision; it does not train a custom OCR model. Instructors can correct
+the OCR transcription in the scan review dialog. Saving a reviewed grade keeps
+the original OCR output and the corrected transcription separately, alongside
+the teacher's corrected score (normalized to the grading model's 0-5 scale).
+This creates labeled OCR evaluation examples and corrected text for grading
+training. The Firestore export omits student names and email addresses, but
+still contains student work; handle it as sensitive data.
+
+Run the workflow from `backend` with Firebase Admin credentials authorized to
+read the VisionGrade project:
 
 ```powershell
 cd backend
 $env:GOOGLE_APPLICATION_CREDENTIALS = 'C:\path\to\firebase-service-account.json'
 python -m grading_api.export_teacher_feedback
+python -m grading_api.evaluate_ocr_feedback
 python -m unittest grading_api.test_train_model
 python manage.py test grading_api.test_views
-python -m grading_api.train_model
+python -m grading_api.train_model --output grading_api/models/answer_grader_candidate.joblib
 ```
 
 The export writes `backend/data/teacher_feedback.csv`, refuses to overwrite an
 existing export unless `--overwrite` is specified, and is ignored by Git because
-it contains student work. The trainer includes this optional CSV alongside the
-existing training splits. Keep official benchmark test splits out of
-teacher-feedback data. Model scores are imperfect suggestions; retain
-instructor review, especially for handwriting and scans with low OCR quality.
+it contains student work. The OCR evaluation reports character error rate (CER)
+and word error rate (WER), overall and by OCR engine, against teacher-corrected
+transcriptions. It skips records without both texts. Use new scans for tracking
+changes over time; this workflow evaluates the existing OCR provider and does
+not fine-tune its weights.
+
+The trainer uses corrected transcriptions in the optional feedback CSV along
+with the existing training splits, and writes the candidate model and metrics
+to `answer_grader_candidate.joblib` and `answer_grader_candidate.json`. Review
+the training report and held-out benchmark results before promoting a candidate.
+Only after review, promote both files to the production artifact names:
+
+```powershell
+Copy-Item grading_api\models\answer_grader_candidate.joblib grading_api\models\answer_grader.joblib
+Copy-Item grading_api\models\answer_grader_candidate.json grading_api\models\answer_grader.json
+```
+
+Keep official benchmark test splits out of teacher-feedback data. Model scores
+are imperfect suggestions; retain instructor review, especially for
+handwriting and scans with low OCR quality.
 
 The backend grader is trained with the local teacher-scored examples, Mohler
 ASAG, SciEntsBank, Beetle, DigiKlausur ASAG, and the training portion of JorGPT.

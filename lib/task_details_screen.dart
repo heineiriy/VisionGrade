@@ -2596,6 +2596,9 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
     final overrideReason = TextEditingController(
       text: submission['override_reason'] as String? ?? '',
     );
+    final reviewedOcrText = TextEditingController(
+      text: submission['extractedText'] as String? ?? '',
+    );
     final scanUrls = <String>[
       if (submission['scanUrls'] is Iterable)
         for (final url in submission['scanUrls'] as Iterable)
@@ -2888,7 +2891,7 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
                                 .isNotEmpty) ...[
                           const SizedBox(height: 8),
                           Text(
-                            'Extracted text',
+                            'OCR transcription',
                             style: GoogleFonts.inter(
                               color: const Color(0xFF302823),
                               fontWeight: FontWeight.w700,
@@ -2896,13 +2899,28 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
                             ),
                           ),
                           const SizedBox(height: 4),
-                          Text(
-                            submission['extractedText'] as String,
-                            style: const TextStyle(
-                              color: Color(0xFF57483D),
-                              fontSize: 12,
+                          if (isEditing)
+                            TextField(
+                              controller: reviewedOcrText,
+                              minLines: 3,
+                              maxLines: 8,
+                              decoration: const InputDecoration(
+                                labelText:
+                                    'Verify and correct the transcription',
+                                helperText:
+                                    'Compare with the scan. The reviewed text is used for grading feedback.',
+                                border: OutlineInputBorder(),
+                                isDense: true,
+                              ),
+                            )
+                          else
+                            Text(
+                              reviewedOcrText.text,
+                              style: const TextStyle(
+                                color: Color(0xFF57483D),
+                                fontSize: 12,
+                              ),
                             ),
-                          ),
                         ],
                         if (isEditing) ...[
                           const SizedBox(height: 14),
@@ -3035,14 +3053,14 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
                                     (submission['extractedText'] as String)
                                         .trim()
                                         .isNotEmpty &&
+                                    reviewedOcrText.text.trim().isNotEmpty &&
                                     submission['aiExpectedAnswer'] is String &&
                                     (submission['aiExpectedAnswer'] as String)
                                         .trim()
                                         .isNotEmpty
                                 ? {
-                                    'student_answer':
-                                        (submission['extractedText'] as String)
-                                            .trim(),
+                                    'student_answer': reviewedOcrText.text
+                                        .trim(),
                                     'expected_answer':
                                         (submission['aiExpectedAnswer']
                                                 as String)
@@ -3055,6 +3073,25 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
                                     'ocr_text':
                                         (submission['extractedText'] as String)
                                             .trim(),
+                                    'corrected_text': reviewedOcrText.text
+                                        .trim(),
+                                    'ocr_engine':
+                                        (submission['visualAnalysis'] is Map
+                                                ? (submission['visualAnalysis']
+                                                      as Map)['ocr_engine']
+                                                : null)
+                                            ?.toString(),
+                                    'ocr_confidence':
+                                        (submission['visualAnalysis'] is Map
+                                                ? (submission['visualAnalysis']
+                                                      as Map)['ocr_confidence']
+                                                : null)
+                                            is num
+                                        ? ((submission['visualAnalysis']
+                                                      as Map)['ocr_confidence']
+                                                  as num)
+                                              .toDouble()
+                                        : null,
                                     'rubric': task['rubric'],
                                     'ai_score': aiScoreValue,
                                     'teacher_final_score': teacherFinalScore,
@@ -3077,6 +3114,7 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
                           );
                           savedGrade = {
                             ...submission,
+                            'extractedText': reviewedOcrText.text.trim(),
                             'score': scoreValue,
                             'maxScore': maxValue,
                             'feedback': feedback.text.trim(),
@@ -3129,6 +3167,7 @@ class _TaskDetailsScreenState extends State<TaskDetailsScreen> {
     max.dispose();
     feedback.dispose();
     overrideReason.dispose();
+    reviewedOcrText.dispose();
     if (savedGrade != null && mounted) {
       await _showReviewDialog(studentEmail, savedGrade!);
     }

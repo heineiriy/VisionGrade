@@ -37,7 +37,6 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   late String _displayName;
-  String _language = 'English';
   bool _notificationsEnabled = true;
   String? _currentProfileImageUrl;
   bool _isUploadingAvatar = false;
@@ -61,14 +60,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     setState(() {
-      _language = prefs.getString('settings_language') ?? 'English';
       _notificationsEnabled = prefs.getBool('settings_notifications') ?? true;
     });
-  }
-
-  Future<void> _saveStringPreference(String key, String value) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(key, value);
   }
 
   Future<void> _saveBoolPreference(String key, bool value) async {
@@ -147,13 +140,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       debugPrint('Could not update notification settings: $error\n$stackTrace');
       _showMessage('Could not save notification settings. Please try again.');
     }
-  }
-
-  Future<void> _setLanguage(String value) async {
-    await _saveStringPreference('settings_language', value);
-    setState(() {
-      _language = value;
-    });
   }
 
   Future<void> _pickAndUploadProfileImage({
@@ -661,30 +647,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  void _showLanguageDialog() {
-    final options = ['English', 'Filipino', 'Spanish'];
-    showDialog(
-      context: context,
-      builder: (dialogContext) => SimpleDialog(
-        title: const Text('Language'),
-        children: options.map((language) {
-          final isSelected = _language == language;
-          return RadioListTile<String>(
-            title: Text(language),
-            value: language,
-            groupValue: _language,
-            onChanged: (value) async {
-              if (value == null) return;
-              Navigator.of(dialogContext).pop();
-              await _setLanguage(value);
-            },
-            selected: isSelected,
-          );
-        }).toList(),
       ),
     );
   }

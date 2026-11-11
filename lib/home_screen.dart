@@ -326,6 +326,7 @@ class UserProfileAvatar extends StatelessWidget {
   final double radius;
 
   const UserProfileAvatar({
+    super.key,
     required this.role,
     required this.userEmail,
     required this.profileImageUrl,
@@ -493,7 +494,6 @@ class _SubjectCard extends StatefulWidget {
   final Future<void> Function()? onThumbnailChanged;
 
   const _SubjectCard({
-    super.key,
     required this.subject,
     this.onTap,
     this.canEditThumbnail = false,
@@ -543,7 +543,7 @@ class _SubjectCardState extends State<_SubjectCard> {
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.08),
+                    color: Colors.black.withValues(alpha: 0.08),
                     blurRadius: 10,
                     offset: const Offset(0, 4),
                   ),

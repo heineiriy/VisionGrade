@@ -209,7 +209,7 @@ class _ClassworksScreenState extends State<ClassworksScreen> {
           color: AppPalette.cream,
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 6),
+            BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 6),
           ],
         ),
         padding: const EdgeInsets.all(12),

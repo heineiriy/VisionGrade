@@ -9,7 +9,17 @@ from firebase_admin import firestore
 from google.auth.exceptions import DefaultCredentialsError
 
 DATASET_PATH = Path(__file__).resolve().parent.parent / 'data' / 'teacher_feedback.csv'
-FIELDNAMES = ('question_id', 'student_answer', 'expected_answer', 'score', 'teacher_corrected')
+FIELDNAMES = (
+    'question_id',
+    'student_answer',
+    'expected_answer',
+    'score',
+    'teacher_corrected',
+    'ocr_text',
+    'corrected_text',
+    'ocr_engine',
+    'ocr_confidence',
+)
 
 
 def training_row_from_submission(snapshot) -> dict[str, object] | None:
@@ -28,6 +38,9 @@ def training_row_from_submission(snapshot) -> dict[str, object] | None:
         return None
 
     student_answer = example.get('student_answer')
+    corrected_text = example.get('corrected_text')
+    if isinstance(corrected_text, str) and corrected_text.strip():
+        student_answer = corrected_text
     expected_answer = example.get('expected_answer')
     score = example.get('score')
     if (
@@ -41,13 +54,27 @@ def training_row_from_submission(snapshot) -> dict[str, object] | None:
     ):
         return None
 
-    return {
+    row = {
         'question_id': f'{path_parts[1]}:{path_parts[3]}',
         'student_answer': student_answer.strip(),
         'expected_answer': expected_answer.strip(),
         'score': score,
         'teacher_corrected': True,
     }
+    ocr_text = example.get('ocr_text')
+    if (
+        isinstance(ocr_text, str)
+        and ocr_text.strip()
+        and isinstance(corrected_text, str)
+        and corrected_text.strip()
+    ):
+        row.update({
+            'ocr_text': ocr_text.strip(),
+            'corrected_text': corrected_text.strip(),
+            'ocr_engine': str(example.get('ocr_engine') or 'unknown'),
+            'ocr_confidence': example.get('ocr_confidence'),
+        })
+    return row
 
 
 def export_teacher_feedback(
